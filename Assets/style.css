@@ -1,0 +1,124 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* VARIABLES */
+:root{
+    --body-back: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%);
+    --container-back: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
+
+    --black: #1C1C1C;
+    --white: #F7F7F7;
+}
+
+/* BODY */
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--body-back) no-repeat;
+    color: var(--black);
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+}
+
+/* BORDER */
+.border{
+    border-radius: 1.2rem;
+}
+
+
+/* CONTAINER */
+.container2{
+    min-width: 300px;
+    max-width: 700px;
+    min-height: 300px;
+    background-color: var(--white);
+    margin: 0 auto;
+    padding: 2rem;
+}
+/* HEADER */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.header .img-container img{
+    max-height: 110px;
+    border-radius: 50%;
+}
+.header .text{
+    margin-left: 1rem;
+}
+
+/* MAIN */
+.main{
+    background: var(--container-back) no-repeat;
+    text-align: center;
+    padding: 1rem;
+}
+.main h2{
+    margin-bottom: 1rem;
+}
+.main .projects h2 {
+    width: 300px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    position: relative;
+    margin: 0.9rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+/* ROSE ICON */
+.main .projects h2 .icon-container{
+    width: 20px;
+    height: 10px;
+    position: relative;
+    margin-left: 2rem;
+}
+.main .projects h2 .icon-container .icon{
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: var(--black);
+    color: var(--black);
+    transform: rotate(45deg);
+    border-radius: 0.5rem;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.25s;
+}
+.main .projects h2 .icon-container .rose-icon2{
+    transform: rotate(-45deg);
+    left: 28%;
+}
+.main .projects h2.show .icon-container .rose-icon{
+    transform: rotate(-45deg);
+}
+.main .projects h2.show .icon-container .rose-icon2{
+    transform: rotate(45deg);
+    left: 28%;
+}
+.main .projects p{
+    display: none;
+    width: 300px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 0.85rem;
+}

@@ -71,7 +71,7 @@ body{
 .main{
     background: var(--container-back) no-repeat;
     text-align: center;
-    padding: 1rem;
+    padding: 1.6rem 1rem;
 }
 .main h2{
     margin-bottom: 1rem;
@@ -81,10 +81,25 @@ body{
     font-size: 1.1rem;
     font-weight: 400;
     position: relative;
-    margin: 0.9rem auto;
+    margin: 1.4rem auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    position: relative;
+}
+.main .projects h2::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    color: var(--black);
+}
+.main .projects h2:hover{
+    color: var(--white);
+    cursor: pointer;
 }
 /* ROSE ICON */
 .main .projects h2 .icon-container{

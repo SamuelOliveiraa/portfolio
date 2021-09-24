@@ -46,18 +46,25 @@ body{
 /* CONTAINER */
 .container2{
     min-width: 300px;
-    max-width: 700px;
+    max-width: 600px;
     min-height: 300px;
     background-color: var(--white);
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
 /* HEADER */
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: 
+        "img"
+        "text"
+        "social-media"
+    ;
+    justify-items: center;
     margin-bottom: 1rem;
+}
+.header .img-container{
+    grid-area: img;       
 }
 .header .img-container img{
     max-height: 110px;
@@ -65,20 +72,39 @@ body{
 }
 .header .text{
     margin-left: 1rem;
+    text-align: center;
+    grid-area: text;
+}
+.header .text h2{
+    font-size: 2rem;
+}
+.header .text strong{
+    color: #448fe6;
+}
+.header .social-media{
+    margin: 1rem 0;
+    grid-area: social-media;
+    width: 130px;
+}
+.header .social-media img{
+    width: 27px;
+    margin-right: 0.5rem;
 }
 
 /* MAIN */
 .main{
+    max-width: 400px;
     background: var(--container-back) no-repeat;
     text-align: center;
     padding: 1.6rem 1rem;
+    margin: 0 auto;
 }
 .main h2{
     margin-bottom: 1rem;
 }
 .main .projects h2 {
-    width: 300px;
-    font-size: 1.1rem;
+    max-width: 350px;
+    font-size: 0.9rem;
     font-weight: 400;
     position: relative;
     margin: 1.4rem auto;
@@ -86,6 +112,7 @@ body{
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
+    transition: .2s;
 }
 .main .projects h2::before{
     content: "";
@@ -117,7 +144,7 @@ body{
     color: var(--black);
     transform: rotate(45deg);
     border-radius: 0.5rem;
-    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.25s;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.3s;
 }
 .main .projects h2 .icon-container .rose-icon2{
     transform: rotate(-45deg);
@@ -132,8 +159,36 @@ body{
 }
 .main .projects p{
     display: none;
-    width: 300px;
+    max-width: 300px;
     margin: 0 auto;
     text-align: justify;
     font-size: 0.85rem;
 }
+@media screen and (min-width: 416px){
+    .header{
+        display: grid;
+        grid-template-areas: 
+        "img text"
+        "img social-media"
+        ;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 110px 278px;
+    } 
+    .header .social-media{
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 550px){
+    .header{
+        display: grid;
+        grid-template-areas: 
+        "img text social-media";
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .header .social-media{
+        margin-left: 1rem;
+    }
+}
+

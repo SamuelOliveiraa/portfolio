@@ -52,3 +52,36 @@ function remove(idTitulo, idPar){
     $(idTitulo).removeClass('show')
     $(idPar).hide()
 }
+
+$('#instagram').hover(
+    function(){
+        $('#instagram').attr('color', '#499CFE')
+    },
+    function(){
+        $('#instagram').attr('color', 'black')
+    }
+);
+
+$('#github').hover(
+    function(){
+        $('#github').attr('color', '#499CFE')
+    },
+    function(){
+        $('#github').attr('color', 'black')
+    }
+);
+
+$('#linkedin').hover(
+    function(){
+        $('#linkedin').attr('color', '#499CFE')
+    },
+    function(){
+        $('#linkedin').attr('color', 'black')
+    }
+);
+
+$('#tit1').hover(
+    function() {
+        
+    }
+);

@@ -53,6 +53,7 @@ function remove(idTitulo, idPar){
     $(idPar).hide()
 }
 
+/* FUNÇÃO HOVER PARA OS ICONES DO INSTAGRAM, LINKEDIN E GITHUB */
 $('#instagram').hover(
     function(){
         $('#instagram').attr('color', '#499CFE')
@@ -114,6 +115,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 
+    /* TIRA E COLOCA A ESTILIZAÇÃO DOS ICONES SE O MODO ESCURO ESTA ATIVO OU NÃO */
     if($('.container2').hasClass("dark-theme")){
         
         $('#instagram').attr('color', 'white')

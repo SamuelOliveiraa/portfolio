@@ -80,6 +80,8 @@ body{
     padding: 2rem 1rem;
     position: relative;
 }
+
+/* ADICIONA A ESTILIZAÇÃO DOS ELEMENTOS SE O MODO ESCURO ESTIVER ATIVO*/
 .container2.dark-theme{
     background-color: rgba(31, 21, 21, 0.76);
     color: var(--white);
@@ -93,6 +95,7 @@ body{
 .container2.dark-theme .main .projects h2 .icon-container .icon{
     background-color: var(--white);
 }
+
 /* HEADER */
 .header{
     display: grid;
@@ -201,9 +204,11 @@ body{
 .main .projects p{
     display: none;
     max-width: 300px;
-    margin-left: 0.6rem;
-    text-align: justify;
-    font-size: 0.85rem;
+    margin: 0 auto;
+}
+.main .projects p img{
+    width: 100%;
+    border-radius: 0.8rem;
 }
 @media screen and (min-width: 416px){
     .header{

@@ -11,6 +11,7 @@
 
     <!-- BOX-ICON -->
     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
     <!--JQUERY-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -27,6 +28,11 @@
 <body>
     <div class="container">
         <div class="container2 border">
+            <!--DARK/LIGHT THEME-->
+            <div class="clock__theme">
+                <i class="bx bxs-moon" id="theme-button"></i>
+            </div>
+
             <div class="header border">
                 <div class="img-container">
                     <img src="Assets/imagens/euu.jpg" alt="Samuel Oliveira">
@@ -62,7 +68,7 @@
                 </h2>
 
                 <div class="projects project1">
-                    <h2 id="tit1">
+                    <h2 class="titulo" id="tit1">
                         Bookmark Landing Page
     
                         <div class="icon-container icon-container1">
@@ -79,7 +85,7 @@
                 </div>
                 
                 <div class="projects project2">
-                    <h2 class="hide2" id="tit2">
+                    <h2 class="titulo" id="tit2">
                         Time Tracking Dashboard Main
     
                         <div class="icon-container" >
@@ -95,7 +101,7 @@
                 </div>
     
                 <div class="projects project3">
-                    <h2 class="hide3" id="tit3">
+                    <h2 class="titulo" id="tit3">
                         Fylo dark landing page
     
                         <div class="icon-container">
@@ -110,7 +116,7 @@
                 </div>
     
                 <div class="projects project4">
-                    <h2 id="tit4">
+                    <h2 class="titulo" id="tit4">
                         Instagram login page
     
                         <div class="icon-container">
@@ -125,7 +131,7 @@
                 </div>
 
                 <div class="projects project5">
-                    <h2 id="tit5">
+                    <h2 class="titulo" id="tit5">
                         Research Form
     
                         <div class="icon-container">

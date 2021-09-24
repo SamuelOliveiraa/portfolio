@@ -80,8 +80,107 @@ $('#linkedin').hover(
     }
 );
 
-$('#tit1').hover(
-    function() {
+//      DARK/LIGHT THEME
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'bxs-sun'
+
+const container = document.querySelector('.container2')
+const social = document.querySelector('.social-media')
+
+
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bxs-moon' : 'bxs-sun'
+
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+  container.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+  themeButton.classList[selectedIcon === 'bxs-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+    // Add or remove the dark / icon theme
+    container.classList.toggle(darkTheme)
+    social.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    // We save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+
+    if($('.container2').hasClass("dark-theme")){
         
+        $('#instagram').attr('color', 'white')
+        
+        $('#github').attr('color', 'white')
+        
+        $('#linkedin').attr('color', 'white')
+
+        $('#instagram').hover(
+            function(){
+                $('#instagram').attr('color', '#499CFE')
+            },
+            function(){
+                $('#instagram').attr('color', 'white')
+            }
+        );
+        
+        $('#github').hover(
+            function(){
+                $('#github').attr('color', '#499CFE')
+            },
+            function(){
+                $('#github').attr('color', 'white')
+            }
+        );
+        
+        $('#linkedin').hover(
+            function(){
+                $('#linkedin').attr('color', '#499CFE')
+            },
+            function(){
+                $('#linkedin').attr('color', 'white')
+            }
+        );
+    }else{
+        $('#instagram').attr('color', 'black')
+        
+        $('#github').attr('color', 'black')
+        
+        $('#linkedin').attr('color', 'black')
+
+        $('#instagram').hover(
+            function(){
+                $('#instagram').attr('color', '#499CFE')
+            },
+            function(){
+                $('#instagram').attr('color', 'black')
+            }
+        );
+        
+        $('#github').hover(
+            function(){
+                $('#github').attr('color', '#499CFE')
+            },
+            function(){
+                $('#github').attr('color', 'black')
+            }
+        );
+        
+        $('#linkedin').hover(
+            function(){
+                $('#linkedin').attr('color', '#499CFE')
+            },
+            function(){
+                $('#linkedin').attr('color', 'black')
+            }
+        );
     }
-);
+})
+

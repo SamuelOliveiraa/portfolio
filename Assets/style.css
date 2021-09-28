@@ -50,7 +50,6 @@ a{
 
 /* BODY */
 body{
-    min-width: 100vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -200,15 +199,6 @@ body{
 .main .projects h2.show .icon-container .rose-icon2{
     transform: rotate(45deg);
     left: 28%;
-}
-.main .projects p{
-    display: none;
-    max-width: 300px;
-    margin: 0 auto;
-}
-.main .projects p img{
-    width: 100%;
-    border-radius: 0.8rem;
 }
 @media screen and (min-width: 416px){
     .header{

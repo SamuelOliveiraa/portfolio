@@ -1,158 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Portfolio</title>
 
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="Assets/imagens/favicon.png" type="image/x-icon">
+        <!-- BOX-ICONS -->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- BOX-ICON -->
-    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-    <!--JQUERY-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    
+        <!-- STYLES -->
+        <link rel="stylesheet" href="Assets/styles/style.css">
+    </head>
+    <body>
+        
 
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- STYLE -->
-    <link rel="stylesheet" href="Assets/style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="container2 border">
-            <!--DARK/LIGHT THEME-->
-            <div class="clock__theme">
-                <i class="bx bxs-moon" id="theme-button"></i>
-            </div>
-
-            <div class="header border">
-                <div class="img-container">
-                    <img src="Assets/imagens/euu.jpg" alt="Samuel Oliveira">
-                </div>
-                <div class="text">
-                    <h2>
-                        Samuel Oliveira
-                    </h2>
-                    <p>
-                        Estudante de <strong>Desenvolvimento Web</strong>
-                    </p>
-                </div>
-
-                
-                <div class="social-media">
-                    <a href="https://www.instagram.com/samuka.oliveira0/" target="_blank">
-                        <box-icon type='logo' name='instagram' id="instagram" size="md"></box-icon>
-                    </a>
-                    
-                    <a href="https://github.com/samueloliveiraa" target="_blank">
-                        <box-icon type='logo' name='github'  id="github" size="md"></box-icon>
-                    </a>
-                    
-                    <a href="https://www.linkedin.com/in/samuel-oliveira-de-ara%C3%BAjo-473254191/" target="_blank">
-                        <box-icon name='linkedin-square' type='logo' id="linkedin" size="md"></box-icon>
-                    </a>
-                </div>
-            </div>
-            <div class="main border">
-
-                <h2>
-                    Projetos
-                </h2>
-
-                <div class="projects project1">
-                    <h2 class="titulo" id="tit1">
-                        Bookmark Landing Page
-    
-                        <div class="icon-container icon-container1">
-                            <span class="rose-icon icon"></span>
-                            <span class="rose-icon2 icon"></span>
-                        </div>
-                    
-                    </h2>
-                    
-                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWoPmdX" data-user="Samuel-Oliveiraa" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                        <span>See the Pen <a href="https://codepen.io/Samuel-Oliveiraa/pen/MWoPmdX">
-                        </a> by Samuel Oliveira (<a href="https://codepen.io/Samuel-Oliveiraa">@Samuel-Oliveiraa</a>)
-                        on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
-                </div>
-                
-                <div class="projects project2">
-                    <h2 class="titulo" id="tit2">
-                        Time Tracking Dashboard Main
-    
-                        <div class="icon-container" >
-                            <span class="rose-icon icon"></span>
-                            <span class="rose-icon2 icon"></span>
-                        </div>
-                    </h2>
-    
-                    <p id="par2">
-                        Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-                        Suspendisse imperdiet. Vivamus luctus eros
-                    </p>
-                </div>
-    
-                <div class="projects project3">
-                    <h2 class="titulo" id="tit3">
-                        Fylo dark landing page
-    
-                        <div class="icon-container">
-                            <span class="rose-icon icon"></span>
-                            <span class="rose-icon2 icon"></span>
-                        </div>
-                    </h2>
-    
-                    <p id="par3">
-                        Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-                    </p>
-                </div>
-    
-                <div class="projects project4">
-                    <h2 class="titulo" id="tit4">
-                        Instagram login page
-    
-                        <div class="icon-container">
-                            <span class="rose-icon icon"></span>
-                            <span class="rose-icon2 icon"></span>
-                        </div>  
-                    </h2>
-                    
-                    <p id="par4">
-                        Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, a
-                    </p>
-                </div>
-
-                <div class="projects project5">
-                    <h2 class="titulo" id="tit5">
-                        Research Form
-    
-                        <div class="icon-container">
-                            <span class="rose-icon icon"></span>
-                            <span class="rose-icon2 icon"></span>
-                        </div>  
-                    </h2>
-                    
-                    <p id="par5">
-                        Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CODEPEN -->
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-    <!-- MY SCRIPT -->
-    <script src="Assets/script.js"></script>
-</body>
+        <script src="Assets/Js/script.js"></script>
+    </body>
 </html>

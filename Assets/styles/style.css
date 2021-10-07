@@ -1,0 +1,22 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root{
+    --gren: #00DF5E;
+    --light-gray: #333333;
+    --dar-gray: #212121;
+    --gray: #828282;
+    --black: #171717;
+    --white: #f9f9f9;
+}
+
+/* BODY */
+body{
+    background-color: var(--black);
+    font-family: 'DM Sans', sans-serif;
+}

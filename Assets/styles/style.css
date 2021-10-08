@@ -4,10 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+ul, li{
+    list-style: none;
+}
+a, a:visited{
+    text-decoration: none;
+    color: var(--white);
+}
 
 /* VARIABLES */
 :root{
-    --gren: #00DF5E;
+    --green: #00DF5E;
     --light-gray: #333333;
     --dar-gray: #212121;
     --gray: #828282;
@@ -15,8 +22,210 @@
     --white: #f9f9f9;
 }
 
+/* GENERAL */
+.grid{
+    display: grid;
+}
+
+.button{
+    max-width: 164px;
+    padding: 12px 22px;
+    background-color: var(--black);
+    border: 1px solid var(--light-gray);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
 /* BODY */
 body{
     background-color: var(--black);
     font-family: 'DM Sans', sans-serif;
+    color: var(--white);
+}
+p{
+    color: var(--gray);
+}
+/* CONTAINER */
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+header #nav ul{
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+
+/* linha de navegacao */
+header .icon{
+    width: 30px;
+    height: 15px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+header .icon .line{
+    display: block;
+    background-color: var(--green);
+    width: 100%;
+    height: 3px;
+    border-radius: 1rem;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+    position: absolute;
+}
+header .icon .line1{
+    top: 0;
+}
+header .icon .line2{
+    top: 52%;
+}
+header .icon .line3{
+    top: 100%;
+}
+header .icon.close .line1{
+    background-color: var(--green);
+    z-index: 20;
+    transform: rotate(45deg);
+    top: 48%;
+}
+header .icon.close .line2{
+    display: none;
+}
+header .icon.close .line3{
+    background-color: var(--green);
+    z-index: 20;
+    transform: rotate(132deg);
+    top: 48%;
+}
+
+
+/* DOWLOAD */
+.dowload{
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.dowload .text{
+    min-width: 300px;
+    max-width: 366px;
+    margin-bottom: 3rem;
+}
+.dowload .text span{
+    display: block;
+}
+.dowload .text p{
+    margin: 15px 0 30px 0;
+}
+.dowload .text .btn-container{
+    min-width: 295px;
+    max-width: 310px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+}
+.dowload .text .btn-container .button:first-child{
+    color: var(--black);
+    background-color: var(--green);
+}
+
+/* ABOUT */
+.about{
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+}
+.about h2{
+    margin-bottom: 1rem;
+}
+
+/* CONTACT */
+.contact{
+    max-width: 950px;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 200px));
+    margin: 3rem 0;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.contact .card .icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: var(--dar-gray);
+    border-radius: 50%;
+}
+.contact .card .icon-container i{
+    font-size: 28px;
+    color: var(--green);
+}
+.contact .card h2{
+    font-size: 1rem;
+    margin: 1rem 0 6px 0;
+}
+.contact .card p{
+    font-size: 12px;
+}
+
+/* PROJECTS , SERVICES and SKILLS*/
+.projects h2, .services h2, .skills h2{
+    text-align: center;
+}
+.projects .cards, .services .cards{
+    grid-template-columns: repeat(auto-fill, minmax(299px, 300px));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.projects .cards .card, .services .cards .card{
+    width: 320px;
+    padding: 20px 25px;
+    background-color: var(--dar-gray);
+}
+
+/* SERVICES */
+.services .cards .card{
+    border-bottom: 5px solid var(--green);
+}
+.services .cards .card i{
+    font-size: 50px;
+    color: var(--green);
+}
+.services .cards .card h2{
+    color: var(--gray);
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+/* SKILLS */
+
+.skills .cards{
+    max-width: 500px;
+    grid-template-columns: repeat(auto-fill, minmax(95px, 100px));
+    gap: 2rem;
+    margin: 0 auto;
+}
+.skills .cards .card{
+    width: 100px;
+    padding: 30px 25px;
+    background-color: var(--dar-gray);
+    text-align: center;
+}
+.skills .cards .card i{
+    font-size: 56px;
+    color: var(--green);
 }

@@ -51,7 +51,6 @@ $(document).ready(function () {
 
     $('.services .cards .card').hover(  
           function(){
-
                 $(this).children('p').css('display', 'block')
                 $(this).css('height', '250px')
             }, function() {
@@ -59,6 +58,28 @@ $(document).ready(function () {
                 $(this).css('height', '180px')
             }
     )
+    $('.skills .cards .card').hover(  
+        function(){
+            $(this).children('.button').css('display', 'block')
+          }, function() {
+            $(this).children('.button').css('display', 'none')
+          }
+  )
+    
+    /* SCROLL REVEAL */
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '50px',
+        duration: 1400,
+        reset: true
+    });
+
+    ScrollReveal().reveal('.dowload', { delay: 200 });
+    ScrollReveal().reveal('.about', { delay: 250 });
+    ScrollReveal().reveal('.contact', { delay: 300 });
+    ScrollReveal().reveal('.projects', { delay: 350 });
+    ScrollReveal().reveal('.services', { delay: 400 });
+    ScrollReveal().reveal('.skills', { delay: 450 });
 })
 
 function condition(vpWidth) {

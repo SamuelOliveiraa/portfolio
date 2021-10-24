@@ -51,20 +51,22 @@ $(document).ready(function () {
 
     $('.services .cards .card').hover(  
           function(){
-                $(this).children('p').css('display', 'block')
+                $(this).children('p').css('height', '57.6px')
+                $(this).children('p').css('opacity', '1')
                 $(this).css('height', '250px')
             }, function() {
-                $(this).children('p').css('display', 'none')
+                $(this).children('p').css('height', '0')
+                $(this).children('p').css('opacity', '0')
                 $(this).css('height', '180px')
             }
     )
     $('.skills .cards .card').hover(  
         function(){
-            $(this).children('.button').css('display', 'block')
+            $(this).children('.button').css('opacity', '1')
           }, function() {
-            $(this).children('.button').css('display', 'none')
+            $(this).children('.button').css('opacity', '0')
           }
-  )
+    )
     
     /* SCROLL REVEAL */
     const sr = ScrollReveal({

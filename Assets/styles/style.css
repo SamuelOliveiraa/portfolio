@@ -101,7 +101,7 @@ header{
     padding: 25px 15px;
     position: fixed;
     top: 0;
-    transition: ease-in;
+    transition: background .3s;
     z-index: 100;
 }
 header.scroll{
@@ -354,7 +354,7 @@ header .icon.close .line3{
     height: 180px;
     border-bottom: 5px solid var(--green);
     text-align: center;
-    transition: ease-in-out 0.2s;
+    transition: all 0.2s;
     cursor: pointer;
 }
 .services .cards .card h2{
@@ -362,7 +362,9 @@ header .icon.close .line3{
 }
 .services .cards .card p{
     font-size: 0.9rem;
-    display: none;
+    height: 0;
+    opacity: 0;
+    transition: all .2s;
 }
 
 /* SKILLS */
@@ -396,7 +398,6 @@ footer .social a i:hover,
     color: var(--white);
 }
 .skills .cards .card .button{
-    display: none;
     min-width: 100px;
     background-color: var(--light-gray);
     position: absolute;
@@ -405,7 +406,8 @@ footer .social a i:hover,
     padding: 6px;
     border: 0;
     font-size: 12px;
-    transition: ease-in-out 0.2s;
+    opacity: 0;
+    transition: opacity .2s;
 }
 
 @keyframes bounce{

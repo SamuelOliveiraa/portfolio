@@ -382,6 +382,7 @@ header .icon.close .line3{
     padding: 30px 25px;
     text-align: center;
     position: relative;
+    border-bottom: 3px solid transparent;
 }
 .skills .cards .card:hover,
 footer .social a i:hover,

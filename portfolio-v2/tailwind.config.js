@@ -1,6 +1,13 @@
+import { fontFamily } from "tailwindcss/defaultTheme";
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+
+const config = {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}"
+  ],
   darkMode: "class", // habilita dark mode via classe
   theme: {
     extend: {
@@ -22,8 +29,14 @@ module.exports = {
         green: {
           500: "#10b981"
         }
+      },
+
+      fontFamily: {
+        sans: ["Inter", ...fontFamily.sans]
       }
     }
   },
-  plugins: []
+  plugins: ["tailwindcss-animate"]
 };
+
+export default config;

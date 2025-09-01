@@ -24,8 +24,8 @@ export default function Skills() {
       id="skills"
     >
       <HeaderSection
-        title="Skills"
-        description="The skills, tools and technologies I am really good at:"
+        title="Habilidades"
+        description="As habilidades, ferramentas e tecnologias em que sou realmente bom:"
       />
 
       <div className="flex flex-wrap gap-x-10 gap-y-6 md:gap-20 items-center justify-center">

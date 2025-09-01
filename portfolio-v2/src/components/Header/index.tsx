@@ -29,25 +29,25 @@ export default function Header() {
                 href={"#about"}
                 className="opacity-60 font-bold hover:opacity-100"
               >
-                About
+                Sobre
               </Link>
               <Link
                 href={"#projects"}
                 className="opacity-60 font-bold hover:opacity-100"
               >
-                Projects
+                Projetos
               </Link>
               <Link
                 href={"#experience"}
                 className="opacity-60 font-bold hover:opacity-100"
               >
-                Experience
+                Experiências
               </Link>
               <Link
                 href={"#contact"}
                 className="opacity-60 font-bold hover:opacity-100"
               >
-                Contact
+                Contato
               </Link>
             </div>
             <div className="flex gap-3 items-center">
@@ -86,7 +86,7 @@ export default function Header() {
                       href={"#about"}
                       className="opacity-60 font-bold hover:opacity-100"
                     >
-                      About
+                      Sobre
                     </Link>
                   </SheetClose>
 
@@ -95,7 +95,7 @@ export default function Header() {
                       href={"#projects"}
                       className="opacity-60 font-bold hover:opacity-100"
                     >
-                      Projects
+                      Projetos
                     </Link>
                   </SheetClose>
 
@@ -104,7 +104,7 @@ export default function Header() {
                       href={"#experience"}
                       className="opacity-60 font-bold hover:opacity-100"
                     >
-                      Experience
+                      Experiências
                     </Link>
                   </SheetClose>
 
@@ -113,7 +113,7 @@ export default function Header() {
                       href={"#contact"}
                       className="opacity-60 font-bold hover:opacity-100"
                     >
-                      Contact
+                      Contato
                     </Link>
                   </SheetClose>
 
@@ -127,7 +127,7 @@ export default function Header() {
                     className="mb-4 transition-colors duration-300 rounded-md ease-in-out flex justify-between items-center"
                     onClick={toggleDarkMode}
                   >
-                    <span>Switch Theme</span>
+                    <span>Mudar Tema</span>
                     <Sun className="text-gray-600" />
                   </div>
                   <SheetClose asChild>

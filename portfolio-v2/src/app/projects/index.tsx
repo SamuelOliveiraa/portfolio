@@ -5,8 +5,8 @@ export default function Projects() {
   return (
     <section className="flex flex-col gap-6 md:gap-12" id="projects">
       <HeaderSection
-        title="Projects"
-        description="Some of the noteworthy projects I have built:"
+        title="Projetos"
+        description="Alguns dos projetos notáveis ​​que construí:"
       />
 
       <ProjectCard

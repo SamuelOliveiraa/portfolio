@@ -8,8 +8,8 @@ export default function Experiences() {
       className="w-full bg-gray-100 flex flex-col gap-12 px-4 py-16 my-24 md:py-24"
     >
       <HeaderSection
-        title="Experiences"
-        description="Here is a quick summary of my most recent experiences:"
+        title="Experiências"
+        description="Aqui está um rápido resumo das minhas experiências mais recentes:"
       />
 
       <div className="flex flex-col gap-12 px-4 justify-center items-center ">

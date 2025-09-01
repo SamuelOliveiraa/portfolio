@@ -8,7 +8,7 @@ export default function Button() {
         download
         className="text-gray-50"
       >
-        Download CV
+        Baixar CV
       </Link>
     </div>
   );

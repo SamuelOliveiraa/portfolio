@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <section className="w-full bg-gray-100 flex flex-col justify-center items-center py-16 md:py-20 px-4 text-gray-900 gap-12">
-      <Tag text="About me" />
+      <Tag text="Sobre mim" />
       <div className="flex items-center justify-center flex-col md:flex-row max-w-7xl mx-auto gap-20">
         <div className="relative flex items-center  ">
           <div className="absolute w-full -inset-1 -translate-x-2 translate-y-3 bg-gray-300 md:-inset-2 md:-translate-x-5 md:translate-y-4 " />
@@ -12,7 +12,7 @@ export default function About() {
           <Image
             className=" relative"
             src={"/me-2.jpg"}
-            alt="A photo about me"
+            alt="Uma foto minha"
             width={300}
             height={300}
           />

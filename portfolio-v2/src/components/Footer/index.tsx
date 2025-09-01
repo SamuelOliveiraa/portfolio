@@ -2,16 +2,16 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="px-2 py-5 w-full bg-gray-100 flex justify-center items-center text-gray-600 text-center gap-2 text-xs sm:text-sm">
+    <footer className="px-2 py-5 w-full flex justify-center items-center text-gray-600 text-center gap-2 text-xs sm:text-sm">
       <p>
         <Link href={"https://github.com/shahsagarm"} className="underline">
-          Designed
+          Projetado
         </Link>{" "}
-        by Sagar Shah and{" "}
+        por Sagar Shah e{" "}
         <Link href={"https://github.com/samueloliveiraa"} className="underline">
-          coded
+          codificado
         </Link>{" "}
-        with ❤️️ by Samuel Oliveira
+        com ❤️️ por Samuel Oliveira
       </p>
     </footer>
   );

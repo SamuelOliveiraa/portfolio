@@ -7,12 +7,13 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="flex justify-center items-center min-h-96 flex-col gap-5 text-center sm:py-24 px-4 sm:px-20"
+      className="flex bg-gray-100 justify-center items-center min-h-80 flex-col gap-5 text-center mt-20 py-12 sm:py-24 px-4 sm:px-20"
     >
-      <Tag text="Get in touch" />
+      <Tag text="Entre em contato" />
       <p className="text-gray-600 max-w-xl w-full ">
-        What’s next? Feel free to reach out to me if you’re looking for a
-        developer, have a query, or simply want to connect.
+        O que vem a seguir? Sinta-se à vontade para entrar em contato comigo se
+        estiver procurando um desenvolvedor, tiver alguma dúvida ou simplesmente
+        quiser se conectar.
       </p>
 
       <div className="flex items-center gap-2">

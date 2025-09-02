@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row px-4 py-16 md:py-24 relative gap-10 md:gap-20 items-center justify-center">
         <div className="max-w-3xl text-gray-900 md:flex-1">
           <div className="flex flex-col gap-4">
-            <h1 className="font-bold text-2xl">{t("title")}</h1>
+            <h1 className="font-bold text-4xl ">{t("title")}</h1>
             <p>
               {t("intro")} <strong> {t("technologies")}</strong>
               {t("summary")}

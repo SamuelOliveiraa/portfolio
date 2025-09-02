@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import About from "./about/page";
+import About from "./about";
 import Contact from "./contact";
 import Experiences from "./experience";
 import HeroSection from "./hero";

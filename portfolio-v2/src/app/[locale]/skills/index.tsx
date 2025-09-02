@@ -1,5 +1,6 @@
 import HeaderSection from "@/components/HeaderSection";
 import SkillCardIcon from "@/components/SkillCardIcon";
+import { useTranslations } from "next-intl";
 import { FaNode } from "react-icons/fa";
 import {
   SiAndroidstudio,
@@ -18,17 +19,15 @@ import {
 } from "react-icons/si";
 
 export default function Skills() {
+  const t = useTranslations("SkillsSection");
   return (
     <section
       className="flex flex-col items-center justify-center max-w-6xl mx-auto gap-12 my-24 px-2"
       id="skills"
     >
-      <HeaderSection
-        title="Habilidades"
-        description="As habilidades, ferramentas e tecnologias em que sou realmente bom:"
-      />
+      <HeaderSection title={t("tagText")} description={t("title")} />
 
-      <div className="flex flex-wrap gap-x-10 gap-y-6 md:gap-20 items-center justify-center">
+      <div className="flex flex-wrap gap-x-8 gap-y-4 md:gap-12 items-center justify-center">
         <SkillCardIcon
           Icon={SiHtml5}
           title="HTML5"

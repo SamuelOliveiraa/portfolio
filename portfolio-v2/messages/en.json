@@ -1,0 +1,121 @@
+{
+  "Header": {
+    "linkAbout": "About",
+    "linkProjects": "Projects",
+    "linkExperience": "Experience",
+    "linkContact": "Contact",
+    "switchTheme": "Switch Theme"
+  },
+  "Footer": {
+    "designedBy": "Designed",
+    "designedByName": "by Sagar Shah and ",
+    "codedBy": "Coded",
+    "codedByName": "with ❤️️ by Samuel Oliveira"
+  },
+  "SwitchLanguage": {
+    "title": "Languages",
+    "portuguese": "Portuguese",
+    "english": "English"
+  },
+  "Button": {
+    "buttonText": "Download CV"
+  },
+  "HeroSection": {
+    "title": "Hello, my name is Samuel👋",
+    "intro": "I am a Junior Front-End Developer with hands-on experience in ",
+    "technologies": "React.js, React Native, TypeScript, and Node.js.",
+    "summary": " Passionate about technology and creating modern, accessible, and functional interfaces, I am always eager to learn new tools and turn ideas into digital solutions.",
+    "availability": "Available for new projects"
+  },
+  "AboutSection": {
+    "tagText": "About Me",
+    "title": "Want to know more about me? Here it goes:",
+    "paragraph1": "I am a Junior Front-End Developer, studying Systems Analysis and Development and passionate about creating digital experiences. I have hands-on experience with ",
+    "technologies1": "HTML, CSS, JavaScript, React.js, and React Native",
+    "paragraph2": " as well as personal and bootcamp projects that allowed me to put into practice what I have learned.",
+
+    "paragraph3": "In recent years, I have been diving deeper into modern technologies such as ",
+    "technologies2": "TypeScript, TailwindCSS, Next.js, Node.js, and Express",
+    "paragraph4": " always seeking to combine good coding practices with functional and accessible design.",
+
+    "paragraph5": "I believe in continuous learning and collaborative work. I am familiar with agile methodologies such as Kanban and Scrum, and I highly value organization, clear communication, and attention to detail in every project I participate in.",
+
+    "paragraph6": "Outside of developer mode, I enjoy learning new technologies, cycling with my wife, and exploring new places. I also share my learnings and projects on ",
+
+    "paragraph7": " and on ",
+
+    "quickPointsTitle": "Some quick points about me:",
+
+    "quickPoints": "Ongoing studies: Systems Analysis and Development|Front-End experience with React.js and React Native|Back-End knowledge with Node.js and Express|Practice with Git, GitHub, and agile methodologies|Languages: Portuguese (native), English (basic), and Spanish (basic)",
+
+    "closing": "Oh, and one last thing: I am open to ",
+    "highlightClosing": "freelance",
+    "closingEnd": " opportunities or collaborations on projects. If you want to chat or have a project in mind, feel free to reach out 😉"
+  },
+  "SkillsSection": {
+    "tagText": "Skills",
+    "title": "The skills, tools, and technologies I'm really good at:"
+  },
+  "ExperienceSection": {
+    "tagText": "Experience",
+    "title": "Here's a quick summary of my most recent experiences:",
+    "jobs1": {
+      "title": "Mid-Level Service Agent",
+      "points": {
+        "point1": "Worked as an administrative receptionist, focusing on customer support and process organization.",
+        "point2": "Managed emails and reservations for guests and groups.",
+        "point3": "Handled financial control using spreadsheets and executed group account closings."
+      },
+      "date": "Aug 2024 - Jul 2025"
+    },
+    "jobs2": {
+      "title": "Night Service Agent",
+      "points": {
+        "point1": "Worked as a night auditor, performing financial checks and account closings.",
+        "point2": "Prepared management reports and followed up on pending financial matters.",
+        "point3": "Assisted guests with check-ins, check-outs, and night operational support."
+      },
+      "date": "Oct 2023 - Aug 2024"
+    },
+    "jobs3": {
+      "title": "Messenger",
+      "points": {
+        "point1": "Assisted guests with luggage, deliveries, and various requests.",
+        "point2": "Organized the lobby and supported the reception team.",
+        "point3": "Provided friendly and efficient service, ensuring a great customer experience."
+      },
+      "date": "Aug 2022 - Oct 2023"
+    }
+  },
+  "ContactSection": {
+    "tagText": "Get in touch",
+    "description": "What's next? Feel free to contact me if you're looking for a developer, have any questions, or just want to connect.",
+    "emailText": "mailto:samuel.oliveira.developer@gmail.com?subject=Professional%20Contact&body=Hello%2C%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20regarding%20your%20portfolio.%0D%0A%0D%0ABest%20regards%2C"
+  },
+  "ContactLinks": { "text": "You can also find me on these platforms!" },
+  "ProjectsSection": {
+    "tagText": "Projects",
+    "title": "Some of the notable projects I've built:",
+    "project1": {
+      "title": "Site.set",
+      "tags": "React.Js | Next.Js | TypeScript |Tailwind CSS |Contentlayer | Shadcn/UI | Next-Intl",
+      "image": "/site-blog.png",
+      "link": "https://site-blog-rho.vercel.app/pt",
+      "description": "This is a modern blogging project, the goal is to provide a simple and customizable platform for creating an affiliate store and sharing content on a blog."
+    },
+    "project2": {
+      "title": "TMDB Movies",
+      "tags": "React.Js | React Icons | JavaScript |Tailwind CSS |Vite | Shadcn/UI | TMDB API | MUI Components",
+      "image": "/Thumbnail-tmdb.png",
+      "link": "https://samueloliveiraa.github.io/TMDB-MOVIES/",
+      "description": "This web application was developed to display information about movies and allow users to search for films of interest. The application uses the TMDB (The Movie Database) API to obtain movie data."
+    },
+    "project3": {
+      "title": "Site.set",
+      "tags": "React.Js | Next.Js | TypeScript |Tailwind CSS |Contentlayer | Shadcn/UI | Next-Intl",
+      "image": "/site-blog.png",
+      "link": "https://site-blog-rho.vercel.app/pt",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut mollitia aliquam. Sequi,"
+    }
+  }
+}

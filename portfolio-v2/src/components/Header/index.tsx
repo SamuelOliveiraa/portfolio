@@ -1,8 +1,10 @@
 "use client";
 
 import { Menu, Sun, X } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Button from "../Button";
+import LanguageSwitch from "../LanguageSwitch";
 import Logo from "../Logo";
 import {
   Sheet,
@@ -17,6 +19,8 @@ export default function Header() {
     document.querySelector("html")?.classList.toggle("dark");
   }
 
+  const t = useTranslations("Header");
+
   return (
     <header className="sticky w-full border-b border-transparent bg-gray max-md:border-gray-100 top-0 z-30 bg-gray/50 backdrop-blur-xl ">
       <div className="flex justify-between items-center max-w-7xl mx-auto p-4">
@@ -24,35 +28,38 @@ export default function Header() {
 
         <div className="hidden sm:block">
           <div className="flex gap-6 items-center">
-            <div className="flex gap-3 text-gray-600 ">
+            <div className="flex items-center gap-3 text-gray-600 ">
               <Link
                 href={"#about"}
                 className="opacity-60 font-bold hover:opacity-100"
               >
-                Sobre
+                {t("linkAbout")}
               </Link>
               <Link
                 href={"#projects"}
                 className="opacity-60 font-bold hover:opacity-100"
               >
-                Projetos
+                {t("linkProjects")}
               </Link>
               <Link
-                href={"#experience"}
+                href={"#experiences"}
                 className="opacity-60 font-bold hover:opacity-100"
               >
-                Experiências
+                {t("linkExperience")}
               </Link>
               <Link
                 href={"#contact"}
                 className="opacity-60 font-bold hover:opacity-100"
               >
-                Contato
+                {t("linkContact")}
               </Link>
+
+              <LanguageSwitch />
             </div>
+
             <div className="flex gap-3 items-center">
               <div
-                className="p-2 transition-colors duration-300 rounded-md ease-in-out hover:cursor-pointer hover:bg-gray-100"
+                className="p-2 transition-all duration-300 rounded-md ease-in-out hover:cursor-pointer hover:bg-gray-100"
                 onClick={toggleDarkMode}
               >
                 <Sun className="text-gray-600" />
@@ -86,7 +93,7 @@ export default function Header() {
                       href={"#about"}
                       className="opacity-60 font-bold hover:opacity-100"
                     >
-                      Sobre
+                      {t("linkAbout")}
                     </Link>
                   </SheetClose>
 
@@ -95,16 +102,16 @@ export default function Header() {
                       href={"#projects"}
                       className="opacity-60 font-bold hover:opacity-100"
                     >
-                      Projetos
+                      {t("linkProjects")}
                     </Link>
                   </SheetClose>
 
                   <SheetClose className="items-center text-md" asChild>
                     <Link
-                      href={"#experience"}
+                      href={"#experiences"}
                       className="opacity-60 font-bold hover:opacity-100"
                     >
-                      Experiências
+                      {t("linkExperience")}
                     </Link>
                   </SheetClose>
 
@@ -113,21 +120,21 @@ export default function Header() {
                       href={"#contact"}
                       className="opacity-60 font-bold hover:opacity-100"
                     >
-                      Contato
+                      {t("linkContact")}
                     </Link>
                   </SheetClose>
 
-                  {/* <SheetClose className="items-center text-xl" asChild>
-                  <LanguageSwitch />
-                </SheetClose> */}
+                  <SheetClose className="items-center text-xl" asChild>
+                    <LanguageSwitch />
+                  </SheetClose>
                 </div>
 
                 <div className="px-4">
                   <div
-                    className="mb-4 transition-colors duration-300 rounded-md ease-in-out flex justify-between items-center"
+                    className="mb-4 transition-all duration-300 rounded-md ease-in-out flex justify-between items-center"
                     onClick={toggleDarkMode}
                   >
-                    <span>Mudar Tema</span>
+                    <span>{t("switchTheme")}</span>
                     <Sun className="text-gray-600" />
                   </div>
                   <SheetClose asChild>

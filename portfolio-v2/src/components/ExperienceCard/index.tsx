@@ -34,7 +34,7 @@ export default function ExperienceCard({
         </ul>
       </div>
 
-      <p className="hidden md:block text-gray-700">Ago 2024 - Jul 2025</p>
+      <p className="hidden md:block text-gray-700">{date}</p>
     </div>
   );
 }

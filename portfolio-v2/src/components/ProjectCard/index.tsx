@@ -35,13 +35,15 @@ export default function ProjectCard({
              : "md:rounded-tl-md md:rounded-bl-md"
          } flex items-center justify-center text-center`}
         >
-          <Image
-            src={image}
-            alt={title}
-            className="w-full object-cover rounded-md transition-all duration-300"
-            width={500}
-            height={500}
-          />
+          <Link href={link} target="_blank">
+            <Image
+              src={image}
+              alt={title}
+              className="w-full object-cover rounded-md transition-all duration-500 hover:scale-105 "
+              width={500}
+              height={500}
+            />
+          </Link>
         </div>
 
         <div
@@ -60,7 +62,11 @@ export default function ProjectCard({
               <Tag text={tag} key={tag} />
             ))}
           </div>
-          <Link href={link} target="_blank">
+          <Link
+            href={link}
+            target="_blank"
+            className="p-2 hover:bg-gray-200 w-fit rounded-md transition-all duration-200"
+          >
             <ExternalLink />
           </Link>
         </div>

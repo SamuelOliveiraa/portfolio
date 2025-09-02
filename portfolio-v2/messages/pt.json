@@ -1,0 +1,123 @@
+{
+  "Header": {
+    "linkAbout": "Sobre",
+    "linkProjects": "Projetos",
+    "linkExperience": "Experiências",
+    "linkContact": "Contato",
+    "switchTheme": "Mudar Tema"
+  },
+  "Footer": {
+    "designedBy": "Projetado",
+    "designedByName": "por Sagar Shah e ",
+    "codedBy": "codificado",
+    "codedByName": "com ❤️️ por Samuel Oliveira"
+  },
+  "SwitchLanguage": {
+    "title": "Linguagens",
+    "portuguese": "Português",
+    "english": "Inglês"
+  },
+  "Button": {
+    "buttonText": "Baixar CV"
+  },
+  "HeroSection": {
+    "title": "Ola, meu nome é Samuel👋",
+    "intro": "Sou desenvolvedor Front-End Júnior com experiência prática em ",
+    "technologies": "React.js, React Native, TypeScript, and Node.js.",
+    "summary": " A paixonado por tecnologia e por criar interfaces modernas, acessíveis e funcionais, estou sempre em busca de aprender novas ferramentas e transformar ideias em soluções digitais.",
+    "availability": "Disponivel para novos projetos"
+  },
+  "AboutSection": {
+    "tagText": "Sobre mim",
+    "title": "Quer saber mais sobre mim? Aqui vai:",
+    "paragraph1": "Sou Desenvolvedor Front-End Júnior, estudante de Análise e Desenvolvimento de Sistemas e apaixonado por criar experiências digitais. Tenho experiência prática com ",
+    "technologies1": "HTML, CSS, JavaScript, React.js e React Native",
+    "paragraph2": " além de projetos pessoais e de bootcamp que me permitiram aplicar na prática o que aprendi.",
+
+    "paragraph3": "Nos últimos anos, venho me aprofundando cada vez mais em tecnologias modernas como ",
+    "technologies2": "TypeScript, TailwindCSS, Next.js, Node.js e Express",
+    "paragraph4": " sempre buscando unir boas práticas de código a um design funcional e acessível.",
+
+    "paragraph5": "Acredito no aprendizado contínuo e no trabalho colaborativo. Tenho familiaridade com metodologias ágeis como Kanban e Scrum, e valorizo muito a organização, a clareza na comunicação e a atenção aos detalhes em cada projeto que participo.",
+
+    "paragraph6": "Fora do modo desenvolvedor, gosto de aprender novas tecnologias, andar de bicicleta com minha esposa e conhecer lugares novos. Também compartilho meus aprendizados e projetos no ",
+
+    "paragraph7": " e no ",
+
+    "quickPointsTitle": "Alguns pontos rápidos sobre mim:",
+
+    "quickPoints": "Formação em andamento: Análise e Desenvolvimento de Sistemas|Experiência em Front-End com React.js e React Native|Conhecimentos em Back-End com Node.js e Express|Prática com Git, GitHub e metodologias ágeis|Idiomas: Português (nativo), Inglês (básico) e Espanhol (básico)",
+
+    "closing": "Ah, e uma última coisa: estou aberto a oportunidades de ",
+    "highlightClosing": "freelance",
+    "closingEnd": " ou colaborações em projetos. Se quiser trocar uma ideia ou tiver um projeto em mente, sinta-se à vontade para me chamar 😉"
+  },
+  "SkillsSection": {
+    "tagText": "Habilidades",
+    "title": "As habilidades, ferramentas e tecnologias em que sou realmente bom:"
+  },
+  "ExperienceSection": {
+    "tagText": "Experiências",
+    "title": "Aqui está um rápido resumo das minhas experiências mais recentes:",
+    "jobs1": {
+      "title": "Agente de Serviços Pleno",
+      "points": {
+        "point1": "Atendimento como recepcionista administrativo, com foco em suporte ao cliente e organização de processos.",
+        "point2": "Gestão de e-mails e reservas de hóspedes e grupos.",
+        "point3": "Controle financeiro utilizando planilhas e execução de encerramento de contas de grupos."
+      },
+      "date": "Ago 2024 - Jul 2025"
+    },
+    "jobs2": {
+      "title": "Agente de Serviços Noturno",
+      "points": {
+        "point1": "Atuação como auditor noturno, realizando conferências financeiras e encerramento de contas.",
+        "point2": "Emissão de relatórios gerenciais e cobrança de pendências financeiras.",
+        "point3": "Atendimento a hóspedes em check-ins, check-outs e suporte operacional noturno."
+      },
+      "date": "Out 2023 - Ago 2024"
+    },
+    "jobs3": {
+      "title": "Mensageiro",
+      "points": {
+        "point1": "Auxílio a hóspedes com bagagens, entregas e solicitações diversas.",
+        "point2": "Organização do lobby e apoio à recepção.",
+        "point3": "Prestação de atendimento cordial e ágil, garantindo uma boa experiência ao cliente."
+      },
+      "date": "Ago 2022 - Out 2023"
+    }
+  },
+  "ContactSection": {
+    "tagText": "Entre em contato",
+    "description": "O que vem a seguir? Sinta-se à vontade para entrar em contato comigo se estiver procurando um desenvolvedor, tiver alguma dúvida ou simplesmente quiser se conectar.",
+    "emailText": "mailto:samuel.oliveira.developer@gmail.com"
+  },
+  "ContactLinks": {
+    "text": "Você também pode me encontrar nessas plataformas!"
+  },
+  "ProjectsSection": {
+    "tagText": "Projetos",
+    "title": "Alguns dos projetos notáveis ​​que construí:",
+    "project1": {
+      "title": "Site.set",
+      "tags": "React.Js | Next.Js | TypeScript |Tailwind CSS |Contentlayer | Shadcn/UI | Next-Intl",
+      "image": "/site-blog.png",
+      "link": "https://site-blog-rho.vercel.app/pt",
+      "description": "Este é um projeto de blog moderno, o objetivo é fornecer uma plataforma simples e personalizável para criar uma loja de afiliados e compartilhar conteúdos em um blog."
+    },
+    "project2": {
+      "title": "TMDB Movies",
+      "tags": "React.Js | React Icons | JavaScript |Tailwind CSS |Vite | Shadcn/UI | TMDB API | MUI Components",
+      "image": "/Thumbnail-tmdb.png",
+      "link": "https://samueloliveiraa.github.io/TMDB-MOVIES/",
+      "description": "Esta aplicação web foi desenvolvida para exibir informações sobre filmes e permitir que os usuários pesquisem filmes de seu interesse. A aplicação utiliza a API TMDB (The Movie Database) para obter dados sobre filmes."
+    },
+    "project3": {
+      "title": "Site.set",
+      "tags": "React.Js | Next.Js | TypeScript |Tailwind CSS |Contentlayer | Shadcn/UI | Next-Intl",
+      "image": "/site-blog.png",
+      "link": "https://site-blog-rho.vercel.app/pt",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut mollitia aliquam. Sequi,"
+    }
+  }
+}

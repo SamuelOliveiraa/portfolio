@@ -39,7 +39,7 @@ export default function HeroSection() {
         </div>
 
         <div className="relative flex items-center ">
-          <div className="absolute w-full -inset-1 -translate-x-2 translate-y-3 bg-gray-300 md:-inset-2 md:-translate-x-5 md:translate-y-4 " />
+          <div className="absolute w-full -inset-1 -translate-x-2 translate-y-3 bg-gray-300 md:-inset-2 md:-translate-x-3 md:translate-y-4 " />
 
           <Image
             className=" relative"

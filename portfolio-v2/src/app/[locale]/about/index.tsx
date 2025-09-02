@@ -10,15 +10,15 @@ export default function About() {
       className="w-full bg-gray-100 flex flex-col justify-center items-center py-16 md:py-20 px-4 text-gray-900 gap-12"
     >
       <Tag text={t("tagText")} />
-      <div className="flex items-center justify-center flex-col md:flex-row max-w-7xl mx-auto gap-20">
-        <div className="relative flex items-center  ">
-          <div className="absolute w-full -inset-1 -translate-x-2 translate-y-3 bg-gray-300 md:-inset-2 md:-translate-x-5 md:translate-y-4 " />
+      <div className="flex items-center justify-center flex-col lg:flex-row max-w-7xl mx-auto gap-20">
+        <div className="relative flex items-center justify-center  ">
+          <div className="absolute mx-auto w-8/12  md:w-full -inset-1 -translate-x-2 translate-y-3 bg-gray-300 md:-inset-2 md:-translate-x-5 md:translate-y-4 " />
 
           <Image
-            className=" relative"
+            className="relative w-8/12 md:w-full"
             src={"/me-2.jpg"}
             alt="Uma foto minha"
-            width={300}
+            width={450}
             height={300}
           />
         </div>

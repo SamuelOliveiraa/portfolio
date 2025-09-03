@@ -1,6 +1,7 @@
 import ContactLinks from "@/components/ContactLinks";
+import CopyButton from "@/components/CopyButton";
 import Tag from "@/components/Tag";
-import { Copy, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export default function Contact() {
@@ -24,7 +25,7 @@ export default function Contact() {
           samuel.oliveira.developer@gmail.com
         </a>
 
-        <Copy className="text-gray-600" />
+        <CopyButton text="samuel.oliveira.developer@gmail.com" />
       </div>
 
       <div className="flex items-center gap-2">
@@ -36,7 +37,7 @@ export default function Contact() {
           {"+55 (11) 96898-9860"}
         </a>
 
-        <Copy className="text-gray-600" />
+        <CopyButton text="+55 (11) 96898-9860" />
       </div>
 
       <ContactLinks />

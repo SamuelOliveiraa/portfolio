@@ -109,13 +109,9 @@
       "image": "/Thumbnail-tmdb.png",
       "link": "https://samueloliveiraa.github.io/TMDB-MOVIES/",
       "description": "This web application was developed to display information about movies and allow users to search for films of interest. The application uses the TMDB (The Movie Database) API to obtain movie data."
-    },
-    "project3": {
-      "title": "Site.set",
-      "tags": "React.Js | Next.Js | TypeScript |Tailwind CSS |Contentlayer | Shadcn/UI | Next-Intl",
-      "image": "/site-blog.png",
-      "link": "https://site-blog-rho.vercel.app/pt",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut mollitia aliquam. Sequi,"
     }
+  },
+  "CopyButton": {
+    "text": "Text copied!"
   }
 }

@@ -26,6 +26,10 @@ export async function generateMetadata({ params }: LayoutProps) {
       locale === "pt"
         ? `Bem-vindo ao portfolio de ${NAME}. Confira meus projetos e experiências.`
         : `Welcome to ${NAME}'s portfolio. Check out my projects and experiences.`,
+    robots: {
+      index: true,
+      follow: true
+    },
     openGraph: {
       title: `${NAME} | Portfolio`,
       description:
@@ -67,6 +71,11 @@ export default async function RootLayout({ children, params }: LayoutProps) {
   return (
     <html lang="pt" className={inter.className} suppressHydrationWarning>
       <head>
+        <meta
+          name="description"
+          content="Bem-vindo ao portfolio de Samuel Oliveira. Confira meus projetos e experiências."
+        />
+        <script dangerouslySetInnerHTML={{ __html: `...` }} />
         <script
           dangerouslySetInnerHTML={{
             __html: `

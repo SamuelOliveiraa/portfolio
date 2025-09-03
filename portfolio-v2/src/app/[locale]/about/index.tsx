@@ -20,6 +20,7 @@ export default function About() {
             alt="Uma foto minha"
             width={450}
             height={300}
+            loading="lazy"
           />
         </div>
 

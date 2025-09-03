@@ -18,16 +18,28 @@ export default function LanguageSwitch() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="p-2 flex items-center hover:bg-gray-100 rounded-md transition-all duration-200">
+      <DropdownMenuTrigger
+        className="p-2 flex items-center hover:bg-gray-100 rounded-md transition-all duration-200"
+        aria-label="Mudar linguagem | Change Language"
+        title="Mudar linguagem | Change Language"
+      >
         <Languages className="text-gray-800" size={26} />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-gray-100 dark:bg-gray-800">
         <DropdownMenuLabel>{t("title")}</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <Link href={pathname} locale="pt">
+        <Link
+          href={pathname}
+          locale="pt"
+          aria-label="Mudar para o idioma portugues | Change to portuguese language"
+        >
           <DropdownMenuItem>{t("portuguese")}</DropdownMenuItem>
         </Link>
-        <Link href={pathname} locale="en">
+        <Link
+          href={pathname}
+          locale="en"
+          aria-label="Mudar para o idioma inglês | Change to english language"
+        >
           <DropdownMenuItem>{t("english")}</DropdownMenuItem>
         </Link>
       </DropdownMenuContent>

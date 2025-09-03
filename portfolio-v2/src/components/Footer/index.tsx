@@ -11,6 +11,7 @@ export default function Footer() {
           href={"https://github.com/shahsagarm"}
           className="underline hover:opacity-70"
           target="_blank"
+          aria-label="Link para o Github do Shah Sagarm | Link to Shah Sagarm´s Github"
         >
           {t("designedBy")}
         </Link>{" "}
@@ -19,6 +20,7 @@ export default function Footer() {
           href={"https://github.com/samueloliveiraa"}
           className="underline hover:opacity-70"
           target="_blank"
+          aria-label="Link para o meu Github | Link to my Github"
         >
           {t("codedBy")}
         </Link>

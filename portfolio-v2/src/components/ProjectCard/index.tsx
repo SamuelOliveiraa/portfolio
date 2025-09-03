@@ -35,13 +35,18 @@ export default function ProjectCard({
              : "md:rounded-tl-md md:rounded-bl-md"
          } flex items-center justify-center text-center`}
         >
-          <Link href={link} target="_blank">
+          <Link
+            href={link}
+            target="_blank"
+            aria-label={`Link para o projeto ${title} | Link to project ${title}`}
+          >
             <Image
               src={image}
               alt={title}
               className="w-full object-cover rounded-md transition-all duration-500 hover:scale-105 "
               width={500}
               height={500}
+              loading="lazy"
             />
           </Link>
         </div>
@@ -66,6 +71,7 @@ export default function ProjectCard({
             href={link}
             target="_blank"
             className="p-2 hover:bg-gray-200 w-fit rounded-md transition-all duration-200"
+            aria-label={`Link para o projeto ${title} | Link to project ${title}`}
           >
             <ExternalLink />
           </Link>

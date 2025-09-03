@@ -20,6 +20,7 @@ export default function ExperienceCard({
           alt="Blue tree"
           width={300}
           height={400}
+          loading="lazy"
         />
       </div>
 

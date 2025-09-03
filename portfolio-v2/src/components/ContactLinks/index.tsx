@@ -16,6 +16,7 @@ export default function ContactLinks({ text }: ContactLinksProps) {
           href={"https://github.com/samueloliveiraa"}
           target="_blank"
           className="p-2 rounded-md hover:bg-gray-200 transition-all duration-200 hover:scale-110"
+          aria-label="Link para o meu Github | Link to my Github"
         >
           <GithubIcon />
         </Link>
@@ -23,6 +24,7 @@ export default function ContactLinks({ text }: ContactLinksProps) {
           href={"https://www.linkedin.com/in/samuel-oliveiraa-de-araujo/"}
           target="_blank"
           className="p-2 rounded-md hover:bg-gray-200 transition-all duration-200 hover:scale-110"
+          aria-label="Link para o meu Linkedin | Link to my Linkedin"
         >
           <LinkedinIcon />
         </Link>
@@ -30,6 +32,7 @@ export default function ContactLinks({ text }: ContactLinksProps) {
           href={"https://t.me/Samuka_oliveira0"}
           target="_blank"
           className="p-2 rounded-md hover:bg-gray-200 transition-all duration-200 hover:scale-110"
+          aria-label="Link para me enviar um email | Link to send me an email"
         >
           <Send />
         </Link>

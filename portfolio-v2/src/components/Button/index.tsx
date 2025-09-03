@@ -9,6 +9,8 @@ export default function Button() {
         href={"/CV Samuel Oliveira De Araujo.pdf"}
         download
         className="text-gray-50"
+        aria-label={t("buttonText")}
+        title={t("buttonText")}
       >
         {t("buttonText")}
       </Link>

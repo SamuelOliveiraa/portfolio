@@ -1,11 +1,12 @@
 "use client";
 
-import { Menu, Sun, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Button from "../Button";
 import LanguageSwitch from "../LanguageSwitch";
 import Logo from "../Logo";
+import SwitchTheme from "../SwitchTheme";
 import {
   Sheet,
   SheetClose,
@@ -15,10 +16,6 @@ import {
 } from "../ui/sheet";
 
 export default function Header() {
-  function toggleDarkMode() {
-    document.querySelector("html")?.classList.toggle("dark");
-  }
-
   const t = useTranslations("Header");
 
   return (
@@ -32,24 +29,28 @@ export default function Header() {
               <Link
                 href={"#about"}
                 className="opacity-60 font-bold hover:opacity-100"
+                aria-label="Link para seção Sobre | Link to section About"
               >
                 {t("linkAbout")}
               </Link>
               <Link
                 href={"#projects"}
                 className="opacity-60 font-bold hover:opacity-100"
+                aria-label="Link para seção Projetos | Link to section Projects"
               >
                 {t("linkProjects")}
               </Link>
               <Link
                 href={"#experiences"}
                 className="opacity-60 font-bold hover:opacity-100"
+                aria-label="Link para seção Experiencias | Link to section Experiences"
               >
                 {t("linkExperience")}
               </Link>
               <Link
                 href={"#contact"}
                 className="opacity-60 font-bold hover:opacity-100"
+                aria-label="Link para seção Contato | Link to section Contact"
               >
                 {t("linkContact")}
               </Link>
@@ -57,13 +58,8 @@ export default function Header() {
               <LanguageSwitch />
             </div>
 
-            <div className="flex gap-3 items-center">
-              <div
-                className="p-2 transition-all duration-300 rounded-md ease-in-out hover:cursor-pointer hover:bg-gray-100"
-                onClick={toggleDarkMode}
-              >
-                <Sun className="text-gray-600" />
-              </div>
+            <div className="flex gap-3 items-center justify-center">
+              <SwitchTheme />
               <Button />
             </div>
           </div>
@@ -72,7 +68,7 @@ export default function Header() {
         <div className="block sm:hidden bg-gray">
           <Sheet>
             <nav className="flex items-center gap-6">
-              <SheetTrigger>
+              <SheetTrigger aria-label="Fechar menu suspenso | Close menu hamburguer">
                 <Menu className="text-gray-600" size={28} />
               </SheetTrigger>
             </nav>
@@ -92,6 +88,7 @@ export default function Header() {
                     <Link
                       href={"#about"}
                       className="opacity-60 font-bold hover:opacity-100"
+                      aria-label="Link para seção Sobre | Link to section About"
                     >
                       {t("linkAbout")}
                     </Link>
@@ -101,6 +98,7 @@ export default function Header() {
                     <Link
                       href={"#projects"}
                       className="opacity-60 font-bold hover:opacity-100"
+                      aria-label="Link para seção Projetos | Link to section Projects"
                     >
                       {t("linkProjects")}
                     </Link>
@@ -110,6 +108,7 @@ export default function Header() {
                     <Link
                       href={"#experiences"}
                       className="opacity-60 font-bold hover:opacity-100"
+                      aria-label="Link para seção Experiencias | Link to section Experiences"
                     >
                       {t("linkExperience")}
                     </Link>
@@ -119,6 +118,7 @@ export default function Header() {
                     <Link
                       href={"#contact"}
                       className="opacity-60 font-bold hover:opacity-100"
+                      aria-label="Link para seção Contato | Link to section Contact"
                     >
                       {t("linkContact")}
                     </Link>
@@ -130,13 +130,7 @@ export default function Header() {
                 </div>
 
                 <div className="px-4">
-                  <div
-                    className="mb-4 transition-all duration-300 rounded-md ease-in-out flex justify-between items-center"
-                    onClick={toggleDarkMode}
-                  >
-                    <span>{t("switchTheme")}</span>
-                    <Sun className="text-gray-600" />
-                  </div>
+                  <SwitchTheme />
                   <SheetClose asChild>
                     <Button />
                   </SheetClose>

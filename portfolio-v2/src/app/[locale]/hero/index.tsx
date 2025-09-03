@@ -47,6 +47,7 @@ export default function HeroSection() {
             alt="A photo about me"
             width={300}
             height={300}
+            priority={true}
           />
         </div>
       </div>

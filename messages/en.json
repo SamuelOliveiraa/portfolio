@@ -61,6 +61,7 @@
     "title": "Here's a quick summary of my most recent experiences:",
     "jobs1": {
       "title": "Mid-Level Service Agent",
+      "image": "/blue-tree-hotels.png",
       "points": {
         "point1": "Worked as an administrative receptionist, focusing on customer support and process organization.",
         "point2": "Managed emails and reservations for guests and groups.",
@@ -70,6 +71,8 @@
     },
     "jobs2": {
       "title": "Night Service Agent",
+      "image": "/blue-tree-hotels.png",
+
       "points": {
         "point1": "Worked as a night auditor, performing financial checks and account closings.",
         "point2": "Prepared management reports and followed up on pending financial matters.",
@@ -79,12 +82,24 @@
     },
     "jobs3": {
       "title": "Messenger",
+      "image": "/blue-tree-hotels.png",
+
       "points": {
         "point1": "Assisted guests with luggage, deliveries, and various requests.",
         "point2": "Organized the lobby and supported the reception team.",
         "point3": "Provided friendly and efficient service, ensuring a great customer experience."
       },
       "date": "Aug 2022 - Oct 2023"
+    },
+    "jobs4": {
+      "title": "Level 1 Support Agent",
+      "image": "/autoglass.webp",
+      "points": {
+        "point1": "Remote access for diagnosing and resolving technical issues.",
+        "point2": "Guidance on the use of systems, software, and corporate tools.",
+        "point3": "Escalation of complex incidents to higher-level teams."
+      },
+      "date": "Sep 2025 - Present"
     }
   },
   "ContactSection": {

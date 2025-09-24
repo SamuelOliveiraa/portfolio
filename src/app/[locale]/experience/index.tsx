@@ -13,6 +13,18 @@ export default function Experiences() {
 
       <div className="flex flex-col gap-12 px-4 justify-center items-center ">
         <ExperienceCard
+          image={t("jobs4.image")}
+          title={t("jobs4.title")}
+          date={t("jobs4.date")}
+          itens={[
+            t("jobs4.points.point1"),
+            t("jobs4.points.point2"),
+            t("jobs4.points.point3")
+          ]}
+        />
+
+        <ExperienceCard
+          image={t("jobs1.image")}
           title={t("jobs1.title")}
           date={t("jobs1.date")}
           itens={[
@@ -23,6 +35,7 @@ export default function Experiences() {
         />
 
         <ExperienceCard
+          image={t("jobs2.image")}
           title={t("jobs2.title")}
           date={t("jobs2.date")}
           itens={[
@@ -33,6 +46,7 @@ export default function Experiences() {
         />
 
         <ExperienceCard
+          image={t("jobs3.image")}
           title={t("jobs3.title")}
           date={t("jobs3.date")}
           itens={[

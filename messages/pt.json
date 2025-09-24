@@ -24,7 +24,7 @@
     "title": "Olá, meu nome é Samuel👋",
     "intro": "Sou desenvolvedor Front-End Júnior com experiência prática em ",
     "technologies": "React.js, React Native, TypeScript, and Node.js.",
-    "summary": " A paixonado por tecnologia e por criar interfaces modernas, acessíveis e funcionais, estou sempre em busca de aprender novas ferramentas e transformar ideias em soluções digitais.",
+    "summary": " Apaixonado por tecnologia e por criar interfaces modernas, acessíveis e funcionais, estou sempre em busca de aprender novas ferramentas e transformar ideias em soluções digitais.",
     "availability": "Disponivel para novos projetos"
   },
   "AboutSection": {
@@ -61,6 +61,7 @@
     "title": "Aqui está um rápido resumo das minhas experiências mais recentes:",
     "jobs1": {
       "title": "Agente de Serviços Pleno",
+      "image": "/blue-tree-hotels.png",
       "points": {
         "point1": "Atendimento como recepcionista administrativo, com foco em suporte ao cliente e organização de processos.",
         "point2": "Gestão de e-mails e reservas de hóspedes e grupos.",
@@ -70,6 +71,7 @@
     },
     "jobs2": {
       "title": "Agente de Serviços Noturno",
+      "image": "/blue-tree-hotels.png",
       "points": {
         "point1": "Atuação como auditor noturno, realizando conferências financeiras e encerramento de contas.",
         "point2": "Emissão de relatórios gerenciais e cobrança de pendências financeiras.",
@@ -79,12 +81,23 @@
     },
     "jobs3": {
       "title": "Mensageiro",
+      "image": "/blue-tree-hotels.png",
       "points": {
         "point1": "Auxílio a hóspedes com bagagens, entregas e solicitações diversas.",
         "point2": "Organização do lobby e apoio à recepção.",
         "point3": "Prestação de atendimento cordial e ágil, garantindo uma boa experiência ao cliente."
       },
       "date": "Ago 2022 - Out 2023"
+    },
+    "jobs4": {
+      "title": "Agente de Suporte N1",
+      "image": "/autoglass.webp",
+      "points": {
+        "point1": "Acesso remoto para diagnóstico e resolução de problemas técnicos.",
+        "point2": "Orientação no uso de sistemas, softwares e ferramentas corporativas.",
+        "point3": "Escalonamento de incidentes complexos para equipes de nível superior."
+      },
+      "date": "Set 2025 - Atualmente"
     }
   },
   "ContactSection": {

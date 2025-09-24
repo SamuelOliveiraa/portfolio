@@ -2,6 +2,7 @@ import Image from "next/image";
 
 type ExperienceCardProps = {
   date: string;
+  image: string;
   title: string;
   itens: string[];
 };
@@ -9,14 +10,15 @@ type ExperienceCardProps = {
 export default function ExperienceCard({
   date,
   title,
-  itens
+  itens,
+  image
 }: ExperienceCardProps) {
   return (
     <div className="flex flex-col md:flex-row max-w-4xl bg-gray-200 text-gray-900 gap-8 md:gap-8 p-8 rounded-md ">
       <div className="flex justify-center items-center text-center rounded-md   md:w-1/4">
         <Image
           className="w-3/4 md:w-full text-center"
-          src={"/blue-tree-hotels.png"}
+          src={image}
           alt="Blue tree"
           width={300}
           height={400}

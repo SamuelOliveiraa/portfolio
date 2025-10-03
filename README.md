@@ -1,4 +1,4 @@
-# Samuel Oliveira | [Portfólio](https://portfolio-pi-tawny-22.vercel.app/en)
+# Samuel Oliveira | [Portfólio](https://portfolio-samuel-oliveira.vercel.app/pt)
 
 ![Imagem do Portfólio](public/og-image.png)
 

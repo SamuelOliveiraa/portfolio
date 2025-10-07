@@ -22,12 +22,12 @@ export default function LanguageSwitch() {
         <DropdownMenuLabel>Languages</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <Link href={pathname} locale="pt">
-          <DropdownMenuItem className="cursor-pointer rounded-sm transition-colors duration-200 hover:bg-gray-200 hover:dark:bg-gray-800">
+          <DropdownMenuItem className="cursor-pointer rounded-sm transition-colors duration-200 hover:bg-gray-300 hover:dark:bg-gray-700">
             Portugues
           </DropdownMenuItem>
         </Link>
         <Link href={pathname} locale="en">
-          <DropdownMenuItem className="cursor-pointer rounded-sm transition-colors duration-200 hover:bg-gray-200 hover:dark:bg-gray-800">
+          <DropdownMenuItem className="cursor-pointer rounded-sm transition-colors duration-200 hover:bg-gray-300 hover:dark:bg-gray-700">
             Ingles
           </DropdownMenuItem>
         </Link>

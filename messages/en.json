@@ -114,16 +114,23 @@
     "project1": {
       "title": "Site.set",
       "tags": "React.Js | Next.Js | TypeScript |Tailwind CSS |Contentlayer | Shadcn/UI | Next-Intl",
-      "image": "/site-blog.png",
+      "image": "/thumbnail-site-blog.png",
       "link": "https://site-blog-rho.vercel.app/pt",
       "description": "This is a modern blogging project, the goal is to provide a simple and customizable platform for creating an affiliate store and sharing content on a blog."
     },
     "project2": {
       "title": "TMDB Movies",
       "tags": "React.Js | React Icons | JavaScript |Tailwind CSS |Vite | Shadcn/UI | TMDB API | MUI Components",
-      "image": "/Thumbnail-tmdb.png",
+      "image": "/thumbnail-tmdb.png",
       "link": "https://samueloliveiraa.github.io/TMDB-MOVIES/",
       "description": "This web application was developed to display information about movies and allow users to search for films of interest. The application uses the TMDB (The Movie Database) API to obtain movie data."
+    },
+    "project3": {
+      "title": "Kanban Task",
+      "tags": "React.Js | Next.JS | TailwindCSS | TypeScript | Shadcn/UI | Lucide React | Zustand | React Hook Form",
+      "image": "/thumbnail-kanban-task.webp",
+      "link": "https://kanban-task-samuel.vercel.app/",
+      "description": "Web application for Kanban-style task management, allowing users to create, organize, and track their tasks intuitively."
     }
   },
   "CopyButton": {

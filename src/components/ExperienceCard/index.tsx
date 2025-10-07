@@ -14,8 +14,8 @@ export default function ExperienceCard({
   image
 }: ExperienceCardProps) {
   return (
-    <div className="flex flex-col md:flex-row max-w-4xl bg-gray-200 text-gray-900 gap-8 md:gap-8 p-8 rounded-md ">
-      <div className="flex justify-center items-center text-center rounded-md   md:w-1/4">
+    <div className="flex flex-col items-center md:flex-row max-w-4xl bg-gray-200 text-gray-900 gap-8 md:gap-8 p-8 rounded-md">
+      <div className="flex bg-white px-4 h-40 md:max-h-40 justify-center items-center text-center rounded-md md:w-1/4">
         <Image
           className="w-3/4 md:w-full text-center"
           src={image}
@@ -36,8 +36,9 @@ export default function ExperienceCard({
           ))}
         </ul>
       </div>
-
-      <p className="hidden md:block text-gray-700">{date}</p>
+      <div className="flex md:h-36">
+        <p className="hidden md:block text-gray-700 ">{date}</p>
+      </div>
     </div>
   );
 }

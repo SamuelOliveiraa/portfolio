@@ -24,6 +24,14 @@ export default function Projects() {
         description={t("project2.description")}
         invert
       />
+
+      <ProjectCard
+        tags={t("project3.tags").split("|")}
+        title={t("project3.title")}
+        image={t("project3.image")}
+        link={t("project3.link")}
+        description={t("project3.description")}
+      />
     </section>
   );
 }

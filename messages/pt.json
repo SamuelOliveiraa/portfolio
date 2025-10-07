@@ -110,20 +110,27 @@
   },
   "ProjectsSection": {
     "tagText": "Projetos",
-    "title": "Alguns dos projetos notáveis ​​que construí:",
+    "title": "Alguns dos projetos notáveis ​que construí:",
     "project1": {
       "title": "Site.set",
-      "tags": "React.Js | Next.Js | TypeScript |Tailwind CSS |Contentlayer | Shadcn/UI | Next-Intl",
-      "image": "/site-blog.png",
+      "tags": "React.Js | Next.Js | TypeScript | Tailwind CSS |Contentlayer | Shadcn/UI | Next-Intl",
+      "image": "/thumbnail-site-blog.png",
       "link": "https://site-blog-rho.vercel.app/pt",
       "description": "Este é um projeto de blog moderno, o objetivo é fornecer uma plataforma simples e personalizável para criar uma loja de afiliados e compartilhar conteúdos em um blog."
     },
     "project2": {
       "title": "TMDB Movies",
-      "tags": "React.Js | React Icons | JavaScript |Tailwind CSS |Vite | Shadcn/UI | TMDB API | MUI Components",
-      "image": "/Thumbnail-tmdb.png",
+      "tags": "React.Js | React Icons | JavaScript |Tailwind CSS | Vite | Shadcn/UI | TMDB API | MUI Components",
+      "image": "/thumbnail-tmdb.png",
       "link": "https://samueloliveiraa.github.io/TMDB-MOVIES/",
       "description": "Esta aplicação web foi desenvolvida para exibir informações sobre filmes e permitir que os usuários pesquisem filmes de seu interesse. A aplicação utiliza a API TMDB (The Movie Database) para obter dados sobre filmes."
+    },
+    "project3": {
+      "title": "Kanban Task",
+      "tags": "React.Js | Next.JS | TailwindCSS | TypeScript | Shadcn/UI | Lucide React | Zustand | React Hook Form",
+      "image": "/thumbnail-kanban-task.webp",
+      "link": "https://kanban-task-samuel.vercel.app/",
+      "description": "Aplicação web de gerenciamento de tarefas no estilo Kanban, permitindo que os usuários criem, organizem e acompanhem suas tarefas de forma intuitiva."
     }
   },
   "CopyButton": {

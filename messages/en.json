@@ -121,7 +121,7 @@
     "project2": {
       "title": "TMDB Movies",
       "tags": "React.Js | React Icons | JavaScript |Tailwind CSS |Vite | Shadcn/UI | TMDB API | MUI Components",
-      "image": "/thumbnail-tmdb.png",
+      "image": "/thumbnail-tmdb-movies.png",
       "link": "https://samueloliveiraa.github.io/TMDB-MOVIES/",
       "description": "This web application was developed to display information about movies and allow users to search for films of interest. The application uses the TMDB (The Movie Database) API to obtain movie data."
     },

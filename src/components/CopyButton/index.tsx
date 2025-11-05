@@ -24,7 +24,8 @@ export default function CopyButton({ text }: { text: string }) {
     <TooltipProvider>
       <Tooltip open={isClicked}>
         <TooltipTrigger asChild>
-          <div
+          <button
+          type="button"
             className="hover:bg-gray-200 p-2 rounded-md hover:cursor-pointer transition-colors duration-200"
             onClick={handleClipboardCopy}
           >
@@ -33,7 +34,7 @@ export default function CopyButton({ text }: { text: string }) {
             ) : (
               <Copy className="text-gray-600 transition-all duration-200" />
             )}
-          </div>
+          </button>
         </TooltipTrigger>
 
         <TooltipContent className="p-2 bg-gray-200 ">

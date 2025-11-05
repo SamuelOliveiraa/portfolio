@@ -113,7 +113,7 @@
     "title": "Some of the notable projects I've built:",
     "project1": {
       "title": "Site.set",
-      "tags": "React.Js | Next.Js | TypeScript |Tailwind CSS |Contentlayer | Shadcn/UI | Next-Intl",
+      "tags": "React.Js | Next.Js | TypeScript |Tailwind CSS |Contentlayer | Shadcn/UI | Next-Intl", 
       "image": "/thumbnail-site-blog.png",
       "link": "https://site-blog-rho.vercel.app/pt",
       "description": "This is a modern blogging project, the goal is to provide a simple and customizable platform for creating an affiliate store and sharing content on a blog."
@@ -131,6 +131,13 @@
       "image": "/thumbnail-kanban-task.webp",
       "link": "https://kanban-task-samuel.vercel.app/",
       "description": "Web application for Kanban-style task management, allowing users to create, organize, and track their tasks intuitively."
+    },
+    "project4": {
+      "title": "Help Desk",
+      "tags": "React.Js | Next.JS | TailwindCSS | TypeScript | Shadcn/UI | Lucide React | Prisma ORM | React Hook Form | PostgreSQL",
+      "image": "/help-desk-thumb.png",
+      "link": "https://help-desk-samuel.vercel.app/login",
+      "description": "Help Desk web application designed to manage support tickets. It allows users to submit requests, technicians to track progress, and administrators to oversee the entire support workflow in an organized and visual way."
     }
   },
   "CopyButton": {

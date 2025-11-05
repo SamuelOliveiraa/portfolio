@@ -14,7 +14,8 @@ export default function SwitchTheme() {
   }
 
   return (
-    <div
+    <button
+      type="button"
       className="mb-4 sm:mb-0 transition-all duration-300 rounded-md ease-in-out flex justify-between sm:justify-center items-center hover:bg-gray-100 p-2 hover:cursor-pointer"
       onClick={toggleTheme}
     >
@@ -24,6 +25,6 @@ export default function SwitchTheme() {
       ) : (
         <Sun className="text-gray-600 " />
       )}
-    </div>
+    </button>
   );
 }

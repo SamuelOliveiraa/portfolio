@@ -136,7 +136,7 @@
       "title": "Help Desk",
       "tags": "React.Js | Next.JS | TailwindCSS | TypeScript | Shadcn/UI | Lucide React | Prisma ORM | React Hook Form | PostgreSQL",
       "image": "/help-desk-thumb.png",
-      "link": "https://help-desk-samuel.vercel.app/login",
+      "link": "https://github.com/SamuelOliveiraa/help-desk",
       "description": "Aplicação web de Help Desk desenvolvida para gerenciar chamados de suporte. Permite que usuários abram solicitações, técnicos acompanhem o andamento e administradores controlem o fluxo de atendimento de forma organizada e visual."
     }
   },

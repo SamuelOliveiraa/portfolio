@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import "./globals.css";
 
 import type { LayoutProps } from "../../../.next/types/app/[locale]/layout";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -85,7 +86,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
               document.documentElement.classList.add('dark');
             }
           } catch (e) {}
-        `
+        `,
           }}
         />
       </head>
@@ -93,7 +94,8 @@ export default async function RootLayout({ children, params }: LayoutProps) {
         <NextIntlClientProvider locale={locale}>
           <ThemeProvider>{children}</ThemeProvider>
         </NextIntlClientProvider>
+        <SpeedInsights />
       </body>
     </html>
-  );
+  )
 }

@@ -30,8 +30,7 @@ export default function ProjectCard({
 				}  mx-4 md:mx-6 `}
 			>
 				<div
-					className={`w-full bg-gray-200
-         p-8 lg:p-12 rounded-t-md md:rounded-t-none ${
+					className={`w-full bg-gray-200 p-8 lg:p-12 rounded-t-md md:rounded-t-none ${
 						invert ? "md:rounded-tr-md md:rounded-br-md" : "md:rounded-tl-md md:rounded-bl-md"
 					} flex items-center justify-center text-center`}
 				>
@@ -79,11 +78,11 @@ export default function ProjectCard({
 						href={link}
 						target="_blank"
 						aria-label={`Link para o projeto ${title} | Link to project ${title}`}
-						className="opacity-0 invisible group-hover:opacity-100 group-hover:visible flex flex-col items-center justify-center w-full h-full absolute top-0 backdrop-blur-md bg-white/10 rounded-md transition-all duration-200 cursor-pointer"
+						className="text-center gap-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible flex flex-col items-center justify-center w-full h-full absolute top-0 backdrop-blur-md bg-white/10 rounded-md transition-all duration-200 cursor-pointer"
 					>
 						<h2 className="text-white text-3xl">Projeto em desenvolvimento</h2>
 
-						<p className="text-white/70 text-sm mt-2">
+						<p className="text-white/70 text-sm mt-2 mx-4 md:max-w-96">
 							Este projeto ainda está em fase de desenvolvimento. Algumas funcionalidades ainda
 							estão sendo finalizadas.
 						</p>

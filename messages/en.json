@@ -22,9 +22,9 @@
   },
   "HeroSection": {
     "title": "Hello, my name is Samuel👋",
-    "intro": "I am a Junior Front-End Developer with hands-on experience in ",
-    "technologies": "React.js, Next.js, TypeScript, TailwindCSS and Node.js.",
-    "summary": " Passionate about technology and creating modern, accessible, and functional interfaces, I am always eager to learn new tools and turn ideas into digital solutions.",
+    "intro": "I am a Junior Full Stack Developer specialized in ",
+    "technologies": "React.js, Next.js, TypeScript and Node.js.",
+    "summary": " With expertise in Tailwind CSS for high-performance interfaces and experience building APIs, I focus on delivering end-to-end projects. I am driven by the challenge of creating scalable, accessible systems that solve real-world problems through code.",
     "availability": "Available for new projects"
   },
   "AboutSection": {

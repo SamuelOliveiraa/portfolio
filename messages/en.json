@@ -91,7 +91,7 @@
   "ContactSection": {
     "tagText": "Get in touch",
     "description": "What's next? Feel free to contact me if you're looking for a developer, have any questions, or just want to connect.",
-    "emailText": "mailto:samuel.oliveira.developer@gmail.com?subject=Professional%20Contact&body=Hello%2C%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20regarding%20your%20portfolio.%0D%0A%0D%0ABest%20regards%2C"
+    "emailText": "mailto:contact@samuel-oliveira.com?subject=New%20Project%20Inquiry%20-%20Full%20Stack%20Development&body=Hi%20Samuel,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20I'm%20interested%20in%20discussing%20a%20new%20project%20with%20you.%0D%0A%0D%0AAre%20you%20currently%20available%20for%20new%20collaborations%20or%20freelance%20work?%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you."
   },
   "ContactLinks": { "text": "You can also find me on these platforms!" },
   "ProjectsSection": {

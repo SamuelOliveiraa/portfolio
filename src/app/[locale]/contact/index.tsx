@@ -22,10 +22,10 @@ export default function Contact() {
           href={t("emailText")}
           target="_blank"
         >
-          contact@samuel-oliveira.com
+          samuel.oliveira.developer@gmail.com
         </a>
 
-        <CopyButton text="contact@samuel-oliveira.com" />
+        <CopyButton text="samuel.oliveira.developer@gmail.com" />
       </div>
 
       <div className="flex items-center gap-2">

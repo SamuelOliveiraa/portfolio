@@ -3,7 +3,7 @@ import Text from "./text";
 
 export default function MarqueeComponent() {
   return (
-    <Marquee className="bg-transparent border-y border-zinc-200 mt-20 text-zinc-300 py-5 select-none">
+    <Marquee className="bg-transparent border-y border-zinc-200 text-zinc-300 py-5 select-none">
       <Text size="textSmall" className="mx-3">
         Next.js
       </Text>

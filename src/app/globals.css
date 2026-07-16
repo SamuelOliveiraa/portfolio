@@ -9,7 +9,7 @@
   body,
   #root {
     width: 100%;
-    height: 100%;
+    height: 100dvh;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -17,7 +17,6 @@
 }
 
 @theme {
-  /* --- CORES DE DESTAQUE (EMERALD) --- */
   --color-emerald-100: #34d399;
   --color-emerald-500: #10b981;
   --color-emerald-900: #059669;
@@ -25,13 +24,13 @@
   /* --- CORES DE BASE: LIGHT & DARK MODE --- */
   /* As variáveis abaixo representam a escala de cinzas baseada na imagem do Style Guide */
 
-  --color-white: #ffffff; /* Superfície dos Cards no Light Mode */
   --color-zinc-50: #fafafa; /* Background principal da página no Light Mode */
   --color-zinc-100: #f4f4f5; /* Muted bg / Input no Light Mode || Texto Principal no Dark Mode */
   --color-zinc-200: #e4e4e7; /* Divisores sutis no Light Mode */
   --color-zinc-500: #71717a; /* Texto de Apoio / Secundários em ambos os modos */
   --color-zinc-800: #1c1c1f; /* Fundo secundário / Input no Dark Mode */
   --color-zinc-900: #18181b; /* Muted background no Dark Mode */
+  --color-zinc-925: #ffffff; /* Superfície dos Cards no Light Mode */
   --color-zinc-950: #09090b; /* Texto Principal no Light Mode || Background principal no Dark Mode */
 
   --font-inter: Inter, sans-serif;
@@ -39,6 +38,31 @@
 
   --custom-title-medium: clamp(1.8rem, 1.2rem + 3vw, 3rem);
   --custom-title-large: clamp(2.6rem, 1.4rem + 6vw, 5.5rem);
+
+  --animate-sun-spin: sun-spin 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-moon-wobble: moon-wobble 0.6s ease-in-out;
+
+  @keyframes sun-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(720deg); /* Gira apenas 720 graus e para */
+    }
+  }
+
+  @keyframes moon-wobble {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-15deg); /* Inclina um pouco para a esquerda */
+    }
+    75% {
+      transform: rotate(30deg); /* Balança um pouco para a direita */
+    }
+  }
 }
 
 html.dark {
@@ -49,7 +73,7 @@ html.dark {
   --color-zinc-950: #f4f4f5;
 
   /* Os cards (white) assumem a cor de card escuro (zinc-925) */
-  --color-white: #111113;
+  --color-zinc-925: #111113;
 
   /* Os inputs/muted bg (zinc-100) assumem o fundo escuro secundário (zinc-800) */
   --color-zinc-100: #1c1c1f;

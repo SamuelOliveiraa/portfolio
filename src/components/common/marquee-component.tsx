@@ -1,30 +1,30 @@
 import { Marquee } from "../ui/marquee";
 import Text from "./text";
 
+const TECHN = [
+  "React",
+  "Prisma",
+  "Node.Js",
+  "Next.js",
+  "PostgreSQL",
+  "TypeScript",
+  "Zustand",
+  "Radix UI ",
+  "Fastify",
+  "Express",
+  "Drizzle",
+  "Docker",
+  "Tailwind CSS"
+];
+
 export default function MarqueeComponent() {
   return (
-    <Marquee className="bg-transparent border-y border-zinc-200 text-zinc-300 py-5 select-none">
-      <Text size="textSmall" className="mx-3">
-        Next.js
-      </Text>
-      <Text size="textSmall" className="mx-3">
-        React
-      </Text>
-      <Text size="textSmall" className="mx-3">
-        Node.Js
-      </Text>
-      <Text size="textSmall" className="mx-3">
-        TypeScript
-      </Text>
-      <Text size="textSmall" className="mx-3">
-        Tailwind CSS
-      </Text>
-      <Text size="textSmall" className="mx-3">
-        PostgreSQL
-      </Text>
-      <Text size="textSmall" className="mx-3">
-        Prisma
-      </Text>
+    <Marquee className="bg-transparent border-y border-zinc-200 text-zinc-300 py-7 select-none">
+      {TECHN.map(tech => (
+        <Text key={tech} size="textMedium" className="mx-5">
+          {tech}
+        </Text>
+      ))}
     </Marquee>
   );
 }

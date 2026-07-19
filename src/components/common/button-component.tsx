@@ -12,8 +12,9 @@ const buttonVariants = tv({
   base: "w-full py-1 px-5 border rounded-sm cursor-pointer transition-all duration-500 flex items-center justify-center gap-1 text-sm font-normal leading-5 font-inter antialiased text-white",
   variants: {
     variant: {
-      outline: "bg-transparent border-zinc-500 opacity-70 hover:opacity-100",
-      default: "bg-emerald-500 hover:bg-emerald-900 border-transparent"
+      outline:
+        "bg-transparent border-zinc-500 opacity-70 hover:opacity-100 text-zinc-950",
+      default: "bg-emerald-900 hover:bg-emerald-500 border-transparent"
     }
   }
 });

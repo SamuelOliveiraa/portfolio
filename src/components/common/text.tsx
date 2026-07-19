@@ -17,8 +17,8 @@ const textVariants = tv({
       textSmall: "text-xs font-medium font-geist-mono",
       textMedium: "text-sm font-normal",
       titleSmall: "text-sm font-semibold",
-      titleMedium: "text-3xl text-title-medium",
-      titleLarge: "text-6xl text-title-large"
+      titleMedium: "text-2xl md:text-5xl text-title-medium",
+      titleLarge: "text-3xl md:text-7xl text-title-large"
     }
   },
   defaultVariants: {

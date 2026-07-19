@@ -41,7 +41,7 @@ const items = [
 
 export default function FaqSection() {
   return (
-    <div className="border-y py-20 px-4 xl:px-0" id="faq">
+    <section className="border-y py-20 px-4 xl:px-0" id="faq">
       <div className="max-w-6xl mx-auto flex flex-col gap-12">
         <div className="flex flex-col gap-2">
           <Text size="textSmall" className="text-emerald-500 uppercase">
@@ -71,6 +71,6 @@ export default function FaqSection() {
           ))}
         </Accordion>
       </div>
-    </div>
+    </section>
   );
 }

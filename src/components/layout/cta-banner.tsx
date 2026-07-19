@@ -5,14 +5,14 @@ import Text from "../common/text";
 
 export default function CtaBanner() {
   return (
-    <div className="py-6 px-4 xl:px-0 md:py-10 border-y" id="cta-banner">
+    <section className="py-6 px-4 xl:px-0 md:py-10 border-y" id="cta-banner">
       <div className="max-w-6xl mx-auto border rounded-md px-6 py-10 md:p-14 flex flex-col md:items-center md:flex-row justify-between gap-10 md:gap-0">
         <div className="flex flex-col gap-4">
           <Text className="text-emerald-500 uppercase" size="textSmall">
             Diagnóstico gratuito
           </Text>
 
-          <Text size="titleMedium" as="h2" className="text-zinc-950">
+          <Text size="titleSmall" as="h2" className="text-zinc-950">
             Não sabe por onde começar?
           </Text>
 
@@ -29,6 +29,6 @@ export default function CtaBanner() {
           </ButtonComponent>
         </Link>
       </div>
-    </div>
+    </section>
   );
 }

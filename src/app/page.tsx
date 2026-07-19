@@ -1,4 +1,5 @@
 import MarqueeComponent from "@/components/common/marquee-component";
+import CommitmentSection from "@/components/layout/commitment-section";
 import CtaBanner from "@/components/layout/cta-banner";
 import FaqSection from "@/components/layout/faq-section";
 import Footer from "@/components/layout/footer";
@@ -15,6 +16,7 @@ export default function Home() {
       <MarqueeComponent />
       <Services />
       <FaqSection />
+      <CommitmentSection />
       <CtaBanner />
       <Footer />
     </>

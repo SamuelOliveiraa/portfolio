@@ -31,7 +31,7 @@ const SERVICES_ITEMS = [
 
 export default function Services() {
   return (
-    <div className="border-y py-20 px-4 xl:px-0" id="services">
+    <section className="border-y py-20 px-4 xl:px-0" id="services">
       <div className="max-w-6xl mx-auto flex flex-col gap-8">
         <div className="flex flex-col gap-2">
           <Text size="textSmall" className="text-emerald-500 uppercase">
@@ -55,6 +55,6 @@ export default function Services() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -9,10 +9,21 @@
   body,
   #root {
     width: 100%;
-    height: 100dvh;
+    min-height: 100vh;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* Força o smooth mesmo se a acessibilidade do sistema pedir para desativar */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: smooth !important;
   }
 }
 
@@ -84,13 +95,13 @@ html.dark {
 
 @utility text-title-medium {
   color: var(--color-zinc-500);
-  font-size: var(--custom-title-medium) !important;
+  font-size: var(--custom-title-medium);
   line-height: 1.2 !important;
 }
 
 @utility text-title-large {
   color: var(--color-zinc-500);
-  font-size: var(--custom-title-large) !important;
+  font-size: var(--custom-title-large);
   line-height: 1.1 !important;
 }
 
@@ -151,6 +162,17 @@ html.dark {
     }
     to {
       transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+  --animate-blink-cursor: blink-cursor 1.2s step-end infinite;
+  @keyframes blink-cursor {
+    0%,
+    49% {
+      opacity: 1;
+    }
+    50%,
+    100% {
+      opacity: 0;
     }
   }
 }

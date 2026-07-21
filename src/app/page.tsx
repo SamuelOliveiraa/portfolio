@@ -5,6 +5,7 @@ import FaqSection from "@/components/layout/faq-section";
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 import HeroSection from "@/components/layout/hero-section";
+import ProcessSection from "@/components/layout/process-section";
 import Services from "@/components/layout/services";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <MarqueeComponent />
       <Services />
       <FaqSection />
+      <ProcessSection />
       <CommitmentSection />
       <CtaBanner />
       <Footer />

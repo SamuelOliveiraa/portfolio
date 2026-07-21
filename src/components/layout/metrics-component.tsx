@@ -2,7 +2,7 @@ import Text from "../common/text";
 
 export default function MetricsComponent() {
   return (
-    <section className="flex flex-row flex-wrap border-t">
+    <section className="flex flex-row flex-wrap border-t mt-10">
       <div className="flex flex-col items-center min-w-60 sm:w-auto flex-1 py-5 border lg:border-l-0">
         <Text size="titleMedium">2+</Text>
 

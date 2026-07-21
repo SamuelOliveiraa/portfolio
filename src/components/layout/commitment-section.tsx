@@ -2,6 +2,27 @@ import { Blocks, Gauge, LifeBuoy } from "lucide-react";
 import ServiceItem from "../common/service-item";
 import Text from "../common/text";
 
+const COMMITMENT_ITEMS = [
+  {
+    icon: Gauge,
+    title: "Garantia de Velocidade",
+    description:
+      "Otimização focada em notas verdes no Google PageSpeed Insights — entregamos performance real."
+  },
+  {
+    icon: LifeBuoy,
+    title: "Suporte Grátis 30 dias",
+    description:
+      "Acompanhamento completo pós-lançamento. Bugs, dúvidas e ajustes sem custo adicional."
+  },
+  {
+    icon: Blocks,
+    title: "Código Escalável",
+    description:
+      "Arquitetura limpa e documentada, preparada para receber novos recursos sem reescrita."
+  }
+];
+
 export default function CommitmentSection() {
   return (
     <section className="border-y py-20 px-4 xl:px-0" id="commitment">
@@ -16,22 +37,15 @@ export default function CommitmentSection() {
           </Text>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
-          <ServiceItem
-            Icon={Gauge}
-            title="Garantia de Velocidade"
-            description="Otimização focada em notas verdes no Google PageSpeed Insights — entregamos performance real."
-          />
-          <ServiceItem
-            Icon={LifeBuoy}
-            title="Suporte Grátis 30 dias"
-            description="Acompanhamento completo pós-lançamento. Bugs, dúvidas e ajustes sem custo adicional."
-          />
-          <ServiceItem
-            Icon={Blocks}
-            title="Código Escalável"
-            description="Arquitetura limpa e documentada, preparada para receber novos recursos sem reescrita."
-          />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {COMMITMENT_ITEMS.map((item, index) => (
+            <ServiceItem
+              key={index}
+              Icon={item.icon}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
         </div>
       </div>
     </section>

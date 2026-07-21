@@ -1,5 +1,5 @@
-import Text from "./text";
 import { ScrollLink } from "./scroll-link";
+import Text from "./text";
 
 export const LinkItem = ({
   children,
@@ -9,12 +9,14 @@ export const LinkItem = ({
   link: string;
 }) => {
   return (
-    <Text
-      as="li"
-      size="textMedium"
-      className="hover:text-zinc-950 transition-colors duration-200"
-    >
-      <ScrollLink targetId={link}>{children}</ScrollLink>
-    </Text>
+    <ScrollLink targetId={link}>
+      <Text
+        as="li"
+        size="textMedium"
+        className="hover:text-zinc-950 transition-colors duration-200"
+      >
+        {children}
+      </Text>
+    </ScrollLink>
   );
 };

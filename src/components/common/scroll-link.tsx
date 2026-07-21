@@ -22,10 +22,10 @@ export function ScrollLink({ targetId, children, className }: ScrollLinkProps) {
   return (
     <ReactScrollLink
       to={targetId}
-      smooth={true}
-      duration={600}
+      smooth="easeOutQuad"
+      duration={100}
       offset={-90}
-      spy={true}
+      spy={false}
       className={className}
       style={{ cursor: "pointer" }}
     >

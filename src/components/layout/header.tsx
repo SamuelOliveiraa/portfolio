@@ -8,11 +8,20 @@ import Logo from "../common/logo";
 import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
+const SECTIONS_LINKS = [
+  { name: "Projetos", link: "projects" },
+  { name: "Serviços", link: "services" },
+  { name: "Contato", link: "contact" },
+  { name: "Sobre", link: "about" },
+  { name: "FAQ", link: "faq" }
+];
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const fn = () => setScrolled(window.scrollY > 30);
+    const fn = () => setScrolled(window.scrollY > 10);
+    fn();
     window.addEventListener("scroll", fn, { passive: true });
     return () => window.removeEventListener("scroll", fn);
   }, []);
@@ -30,10 +39,11 @@ export default function Header() {
 
         <nav className="hidden md:block">
           <ul className="flex justify-between items-center gap-4 text-zinc-500 ">
-            <LinkItem link="services">Serviços</LinkItem>
-            <LinkItem link="about">Sobre</LinkItem>
-            <LinkItem link="projects">Projetos</LinkItem>
-            <LinkItem link="contact">Contato</LinkItem>
+            {SECTIONS_LINKS.map(({ name, link }, index) => (
+              <LinkItem key={index} link={link}>
+                {name}
+              </LinkItem>
+            ))}
           </ul>
         </nav>
 

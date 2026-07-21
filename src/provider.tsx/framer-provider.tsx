@@ -16,7 +16,7 @@ export default function FramerProvider({
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, margin: "-100px" }}
+      viewport={{ once: false, margin: "-50px" }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       style={{ willChange: "transform, opacity" }}
       className={`transform-gpu ${className}`}

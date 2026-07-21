@@ -1,11 +1,20 @@
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import ButtonComponent from "../common/button-component";
 import { LinkItem } from "../common/link-item";
 import Logo from "../common/logo";
 import Text from "../common/text";
-import { ChevronUp, MessageCircle } from "lucide-react";
-import { ScrollLink } from "../common/scroll-link";
+import { ChevronUp } from "lucide-react";
 import FramerProvider from "@/provider.tsx/framer-provider";
+import SocialLinks from "../common/social_links";
+import { ScrollLink } from "../common/scroll-link";
+
+const SECTIONS_LINKS = [
+  { name: "Home", link: "root" },
+  { name: "Projetos", link: "projects" },
+  { name: "Serviços", link: "services" },
+  { name: "Contato", link: "contact" },
+  { name: "Sobre", link: "about" },
+  { name: "FAQ", link: "faq" }
+];
 
 export default function Footer() {
   return (
@@ -24,35 +33,7 @@ export default function Footer() {
                 Samuel Oliveira de Araujo · CNPJ 12.345.678/0001-90
               </Text>
 
-              <div className="flex gap-2">
-                <ButtonComponent
-                  variant="outline"
-                  className="size-8 p-0 opacity-50 hover:scale-110"
-                >
-                  <MessageCircle className="size-4" />
-                </ButtonComponent>
-
-                <ButtonComponent
-                  variant="outline"
-                  className="size-8 p-0 opacity-50 hover:scale-110"
-                >
-                  <FaLinkedin className="size-4" />
-                </ButtonComponent>
-
-                <ButtonComponent
-                  variant="outline"
-                  className="size-8 p-0 opacity-50 hover:scale-110"
-                >
-                  <FaGithub className="size-4" />
-                </ButtonComponent>
-
-                <ButtonComponent
-                  variant="outline"
-                  className="size-8 p-0 opacity-50 hover:scale-110"
-                >
-                  <FaEnvelope className="size-4" />
-                </ButtonComponent>
-              </div>
+              <SocialLinks />
             </div>
 
             <div className="text-zinc-500 flex flex-col md:flex-row gap-10">
@@ -61,12 +42,11 @@ export default function Footer() {
                   <Text as="li" className="text-xs text-zinc-700 select-none">
                     Navegação
                   </Text>
-                  <LinkItem link="root">Home</LinkItem>
-                  <LinkItem link="services">Serviços</LinkItem>
-                  <LinkItem link="contact">Contato</LinkItem>
-                  <LinkItem link="about">Sobre</LinkItem>
-                  <LinkItem link="faq">FAQ</LinkItem>
-                  <LinkItem link="projects">Projetos</LinkItem>
+                  {SECTIONS_LINKS.map(({ name, link }) => (
+                    <LinkItem key={link} link={link}>
+                      {name}
+                    </LinkItem>
+                  ))}
                 </ul>
               </nav>
               <nav>
@@ -74,10 +54,13 @@ export default function Footer() {
                   <Text as="li" className="text-xs text-zinc-700 select-none">
                     Legal
                   </Text>
+
                   <LinkItem link="/politica-privacidade">
                     Politica de Privacidade
                   </LinkItem>
+
                   <LinkItem link="/termos-uso">Termos de uso</LinkItem>
+
                   <LinkItem link="/termos-uso">
                     CNPJ: 12.345.678/0001-90
                   </LinkItem>
@@ -89,14 +72,15 @@ export default function Footer() {
             <Text size="textSmall" className="text-zinc-800">
               © 2026 Samuel Oliveira. Todos os direitos reservados.
             </Text>
-            <ButtonComponent
-              variant="outline"
-              className="size-7 p-0 opacity-40"
-            >
-              <ScrollLink targetId="root">
+
+            <ScrollLink targetId="root">
+              <ButtonComponent
+                variant="outline"
+                className="size-7 p-0 opacity-40"
+              >
                 <ChevronUp className="size-4" />
-              </ScrollLink>
-            </ButtonComponent>
+              </ButtonComponent>
+            </ScrollLink>
           </div>
         </div>
       </footer>

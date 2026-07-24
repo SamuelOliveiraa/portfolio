@@ -4,6 +4,7 @@ import Text from "../common/text";
 import { TypingAnimation } from "../ui/typing-animation";
 import MetricsComponent from "./metrics-component";
 import FramerProvider from "@/provider.tsx/framer-provider";
+import { TYPING_TEXT } from "@/mocks/typing-text";
 
 export default function HeroSection() {
   return (
@@ -23,12 +24,7 @@ export default function HeroSection() {
             <span className="text-emerald-900 block">
               <TypingAnimation
                 className="leading-10 sm:leading-5"
-                words={[
-                  "gera resultados.",
-                  "vende mais.",
-                  "atrai clientes.",
-                  "escala seu negócio."
-                ]}
+                words={TYPING_TEXT}
               />
             </span>
           </Text>

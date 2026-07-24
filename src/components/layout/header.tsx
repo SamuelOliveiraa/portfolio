@@ -1,20 +1,13 @@
 "use client";
 
 import ButtonComponent from "../common/button-component";
-import { ThemeToggle } from "../common/theme-toggle";
+import { ThemeToggle } from "./components/theme-toggle";
 import { Menu } from "lucide-react";
 import { LinkItem } from "../common/link-item";
 import Logo from "../common/logo";
 import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
-
-const SECTIONS_LINKS = [
-  { name: "Projetos", link: "projects" },
-  { name: "Serviços", link: "services" },
-  { name: "Contato", link: "contact" },
-  { name: "Sobre", link: "about" },
-  { name: "FAQ", link: "faq" }
-];
+import { SECTIONS_LINKS } from "@/mocks/section-links";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);

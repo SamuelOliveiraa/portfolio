@@ -1,28 +1,7 @@
-import { Blocks, Gauge, LifeBuoy } from "lucide-react";
+import { COMMITMENT_ITEMS } from "@/mocks/commitment-section-mock";
 import ServiceItem from "../common/service-item";
 import Text from "../common/text";
 import FramerProvider from "@/provider.tsx/framer-provider";
-
-const COMMITMENT_ITEMS = [
-  {
-    icon: Gauge,
-    title: "Garantia de Velocidade",
-    description:
-      "Otimização focada em notas verdes no Google PageSpeed Insights — entregamos performance real."
-  },
-  {
-    icon: LifeBuoy,
-    title: "Suporte Grátis 30 dias",
-    description:
-      "Acompanhamento completo pós-lançamento. Bugs, dúvidas e ajustes sem custo adicional."
-  },
-  {
-    icon: Blocks,
-    title: "Código Escalável",
-    description:
-      "Arquitetura limpa e documentada, preparada para receber novos recursos sem reescrita."
-  }
-];
 
 export default function CommitmentSection() {
   return (

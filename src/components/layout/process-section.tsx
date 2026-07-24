@@ -1,40 +1,7 @@
-import { ClipboardList, PenSquare, Rocket, Terminal } from "lucide-react";
 import Text from "../common/text";
-import ProcessItem from "../common/process-item";
+import ProcessItem from "./components/process-item";
 import FramerProvider from "@/provider.tsx/framer-provider";
-
-const PROCESS_ITENS = [
-  {
-    number: "01",
-    title: "Alinhamento",
-    description:
-      "Conversa para entender o modelo de negócio, objetivos e escopo completo do projeto.",
-    Icon: ClipboardList
-  },
-  {
-    number: "02",
-    title: "Design & Protótipo",
-    description:
-      "Criação visual do fluxo e layout para aprovação antes de qualquer linha de código.",
-    Icon: PenSquare
-  },
-
-  {
-    number: "03",
-    title: "Desenvolvimento",
-    description:
-      "Codificação limpa com Next.js, React e Prisma, com atualizações constantes de progresso",
-    Icon: Terminal
-  },
-
-  {
-    number: "04",
-    title: "Entrega & Suporte",
-    description:
-      "Deploy em produção, onboarding completo e 30 dias de suporte gratuito incluídos.",
-    Icon: Rocket
-  }
-];
+import { PROCESS_ITEMS } from "@/mocks/process-items";
 
 export default function ProcessSection() {
   return (
@@ -52,7 +19,7 @@ export default function ProcessSection() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {PROCESS_ITENS.map(item => (
+            {PROCESS_ITEMS.map(item => (
               <ProcessItem
                 key={item.number}
                 Icon={item.Icon}

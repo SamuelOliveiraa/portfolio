@@ -4,17 +4,9 @@ import Logo from "../common/logo";
 import Text from "../common/text";
 import { ChevronUp } from "lucide-react";
 import FramerProvider from "@/provider.tsx/framer-provider";
-import SocialLinks from "../common/social_links";
+import SocialLinks from "./components/social_links";
 import { ScrollLink } from "../common/scroll-link";
-
-const SECTIONS_LINKS = [
-  { name: "Home", link: "root" },
-  { name: "Projetos", link: "projects" },
-  { name: "Serviços", link: "services" },
-  { name: "Contato", link: "contact" },
-  { name: "Sobre", link: "about" },
-  { name: "FAQ", link: "faq" }
-];
+import { SECTIONS_LINKS } from "@/mocks/section-links";
 
 export default function Footer() {
   return (
@@ -29,7 +21,10 @@ export default function Footer() {
                 Desenvolvimento web para PMEs que querem crescer.
               </Text>
 
-              <Text size="textSmall" className="text-zinc-700">
+              <Text
+                size="textSmall"
+                className="text-zinc-700/50 dark:text-zinc-700"
+              >
                 Samuel Oliveira de Araujo · CNPJ 12.345.678/0001-90
               </Text>
 
@@ -42,6 +37,7 @@ export default function Footer() {
                   <Text as="li" className="text-xs text-zinc-700 select-none">
                     Navegação
                   </Text>
+
                   {SECTIONS_LINKS.map(({ name, link }) => (
                     <LinkItem key={link} link={link}>
                       {name}
@@ -69,7 +65,10 @@ export default function Footer() {
             </div>
           </div>
           <div className="border-t py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-center">
-            <Text size="textSmall" className="text-zinc-800">
+            <Text
+              size="textSmall"
+              className="text-zinc-500/60 dark:text-zinc-700/80"
+            >
               © 2026 Samuel Oliveira. Todos os direitos reservados.
             </Text>
 

@@ -20,7 +20,6 @@ html {
   scroll-behavior: smooth !important;
 }
 
-/* Força o smooth mesmo se a acessibilidade do sistema pedir para desativar */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: smooth !important;
@@ -32,17 +31,14 @@ html {
   --color-emerald-500: #10b981;
   --color-emerald-900: #059669;
 
-  /* --- CORES DE BASE: LIGHT & DARK MODE --- */
-  /* As variáveis abaixo representam a escala de cinzas baseada na imagem do Style Guide */
-
-  --color-zinc-50: #fafafa; /* Background principal da página no Light Mode */
-  --color-zinc-100: #f4f4f5; /* Muted bg / Input no Light Mode || Texto Principal no Dark Mode */
-  --color-zinc-200: #e4e4e7; /* Divisores sutis no Light Mode */
-  --color-zinc-500: #71717a; /* Texto de Apoio / Secundários em ambos os modos */
-  --color-zinc-800: #1c1c1f; /* Fundo secundário / Input no Dark Mode */
-  --color-zinc-900: #18181b; /* Muted background no Dark Mode */
-  --color-zinc-925: #ffffff; /* Superfície dos Cards no Light Mode */
-  --color-zinc-950: #09090b; /* Texto Principal no Light Mode || Background principal no Dark Mode */
+  --color-zinc-50: #fafafa;
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-500: #71717a;
+  --color-zinc-800: #1c1c1f;
+  --color-zinc-900: #18181b;
+  --color-zinc-925: #ffffff;
+  --color-zinc-950: #09090b;
 
   --font-inter: Inter, sans-serif;
   --font-geist-mono: Geist_Mono, monospace;
@@ -58,7 +54,7 @@ html {
       transform: rotate(0deg);
     }
     to {
-      transform: rotate(720deg); /* Gira apenas 720 graus e para */
+      transform: rotate(720deg);
     }
   }
 
@@ -68,28 +64,19 @@ html {
       transform: rotate(0deg);
     }
     25% {
-      transform: rotate(-15deg); /* Inclina um pouco para a esquerda */
+      transform: rotate(-15deg);
     }
     75% {
-      transform: rotate(30deg); /* Balança um pouco para a direita */
+      transform: rotate(30deg);
     }
   }
 }
 
 html.dark {
-  /* O background principal (zinc-50) assume a cor escura (zinc-950) */
   --color-zinc-50: #09090b;
-
-  /* O texto principal (zinc-950) assume a cor clara (zinc-100) */
   --color-zinc-950: #f4f4f5;
-
-  /* Os cards (white) assumem a cor de card escuro (zinc-925) */
   --color-zinc-925: #111113;
-
-  /* Os inputs/muted bg (zinc-100) assumem o fundo escuro secundário (zinc-800) */
   --color-zinc-100: #1c1c1f;
-
-  /* Os divisores (zinc-200) assumem o divisor escuro (zinc-900) */
   --color-zinc-200: #18181b;
 }
 

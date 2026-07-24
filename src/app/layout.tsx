@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import { Toaster } from "react-hot-toast";
 import { Inter, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
+import { CircleCheckBig, CircleX } from "lucide-react";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
 
 const geist_mono = Geist_Mono({
   subsets: ["latin"]
@@ -29,8 +32,35 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body>
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            style: {
+              borderRadius: "8px",
+              background: "#333",
+              color: "#fff"
+            },
+            success: {
+              style: {
+                background: "#508B26",
+                color: "#fff"
+              },
+              icon: <CircleCheckBig />
+            },
+            error: {
+              style: {
+                background: "#ff4d4f", // vermelho
+                color: "#fff"
+              },
+              icon: <CircleX />
+            },
+            duration: 3000
+          }}
+        />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

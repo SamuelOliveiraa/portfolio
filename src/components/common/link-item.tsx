@@ -13,7 +13,7 @@ export const LinkItem = ({
       <Text
         as="li"
         size="textMedium"
-        className="hover:text-zinc-950 transition-colors duration-200"
+        className="hover:text-zinc-950 transition-colors duration-200 text-zinc-500/80"
       >
         {children}
       </Text>

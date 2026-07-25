@@ -22,11 +22,11 @@ export function getUserEmailTemplate({
           Sua mensagem foi recebida com sucesso. Vou analisar os detalhes da sua ideia e te dou um retorno em <strong>até 24 horas</strong>.
         </p>
 
-        <p style="font-size: 14px; color: #71717a; margin: 0 0 12px 0;">
+        <p style="font-size: 14px; color: #18181b; margin: 0 0 12px 0;">
           Caso seja algo urgente, você também pode falar comigo pelos contatos abaixo.
         </p>
 
-        <p style="font-size: 14px; color: #71717a; margin: 0 0 24px 0;">
+        <p style="font-size: 14px; color: #18181b; margin: 0 0 24px 0;">
           Atenciosamente,
         </p>
 
@@ -210,10 +210,8 @@ export function getUserEmailTemplate({
             </tr>
           </tbody>
         </table>
-
       </div>
 
-      <!-- Rodapé Discreto -->
       <div style="max-width: 600px; margin: 16px auto 0 auto; text-align: center; font-size: 12px; color: #71717a;">
         Esta é uma resposta automática enviada para confirmar o recebimento do seu contato.
       </div>

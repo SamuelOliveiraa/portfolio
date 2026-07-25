@@ -32,11 +32,13 @@ export default function Header() {
 
         <nav className="hidden md:block">
           <ul className="flex justify-between items-center gap-4 text-zinc-500 ">
-            {SECTIONS_LINKS.map(({ name, link }, index) => (
-              <LinkItem key={index} link={link}>
-                {name}
-              </LinkItem>
-            ))}
+            {SECTIONS_LINKS.filter((_, index) => index !== 0).map(
+              ({ name, link }, index) => (
+                <LinkItem key={index} link={link}>
+                  {name}
+                </LinkItem>
+              )
+            )}
           </ul>
         </nav>
 

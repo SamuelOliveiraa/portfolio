@@ -18,13 +18,18 @@ export default function CommitmentSection() {
             </Text>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-4">
             {COMMITMENT_ITEMS.map((item, index) => (
               <ServiceItem
                 key={index}
                 Icon={item.icon}
                 title={item.title}
                 description={item.description}
+                className={
+                  index === 2
+                    ? "sm:col-span-2 sm:max-w-86 md:max-w-121 sm:mx-auto lg:col-auto lg:max-w-full lg:mx-0"
+                    : undefined
+                }
               />
             ))}
           </div>

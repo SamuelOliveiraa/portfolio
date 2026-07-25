@@ -70,9 +70,9 @@ export default function Contact() {
   return (
     <FramerProvider>
       <section className="border-y py-20 px-4 xl:px-0" id="contact">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2">
-          <div className="flex flex-col gap-4">
-            <Text size="textSmall" className="text-emerald-500 uppercase">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="flex flex-col md:justify-center gap-4">
+            <Text size="textGeist" className="text-emerald-500 uppercase">
               Contato
             </Text>
 
@@ -107,7 +107,7 @@ export default function Contact() {
           </div>
           <form
             onSubmit={handleSubmit(handleSubmitForm)}
-            className="flex flex-col gap-6 border-l px-8"
+            className="flex flex-col gap-6 border md:border-0 md:border-l p-4 md:pl-8 md:pr-0 md:py-0"
           >
             <Input
               type="text"

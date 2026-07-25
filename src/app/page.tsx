@@ -6,6 +6,7 @@ import FaqSection from "@/components/layout/faq-section";
 import HeroSection from "@/components/layout/hero-section";
 import ProcessSection from "@/components/layout/process-section";
 import Services from "@/components/layout/services";
+import { Testimonials } from "@/components/layout/testimonials";
 
 export default function Home() {
   return (
@@ -14,9 +15,10 @@ export default function Home() {
       <HeroSection />
       <MarqueeComponent />
       <Services />
-      <FaqSection />
       <ProcessSection />
+      <FaqSection />
       <CommitmentSection />
+      <Testimonials />
       <Contact />
       <CtaBanner />
     </>

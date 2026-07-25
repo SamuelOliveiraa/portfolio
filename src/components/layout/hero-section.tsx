@@ -14,7 +14,7 @@ export default function HeroSection() {
         id="/"
       >
         <>
-          <Text size="textSmall" className="text-emerald-500 uppercase">
+          <Text size="textGeist" className="text-emerald-500 uppercase">
             Desenvolvedor Web Full-Stack
           </Text>
 

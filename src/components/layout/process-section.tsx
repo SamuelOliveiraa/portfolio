@@ -9,7 +9,7 @@ export default function ProcessSection() {
       <section className="border-y py-20 px-4 xl:px-0" id="commitment">
         <div className="max-w-6xl mx-auto flex flex-col gap-8">
           <div className="flex flex-col gap-2">
-            <Text size="textSmall" className="text-emerald-500 uppercase">
+            <Text size="textGeist" className="text-emerald-500 uppercase">
               Meu Processo
             </Text>
 

@@ -16,7 +16,7 @@ export default function ProcessItem({
   return (
     <div className="flex flex-col gap-4 p-6 border transition-all duration-200">
       <div className="flex items-center gap-4 text-emerald-500">
-        <Text size="textSmall" className="uppercase">
+        <Text size="textGeist" className="uppercase">
           {number}
         </Text>
 

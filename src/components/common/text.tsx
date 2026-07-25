@@ -5,7 +5,12 @@ type TextProps = {
   as?: React.HTMLElementType;
   children: React.ReactNode;
   size?:
-    "textSmall" | "textMedium" | "titleSmall" | "titleMedium" | "titleLarge";
+    | "textSmall"
+    | "textGeist"
+    | "textMedium"
+    | "titleSmall"
+    | "titleMedium"
+    | "titleLarge";
   className?: string;
   asChild?: boolean;
 };
@@ -14,11 +19,12 @@ const textVariants = tv({
   base: "text-base leading-5 font-bold font-inter antialiased",
   variants: {
     size: {
-      textSmall: "text-xs font-medium font-geist-mono",
+      textGeist: "text-xs font-medium font-geist-mono",
+      textSmall: "text-xs font-medium",
       textMedium: "text-sm font-normal",
       titleSmall: "text-2xl font-semibold",
       titleMedium: "text-2xl md:text-5xl text-title-medium",
-      titleLarge: "text-3xl md:text-7xl text-title-large"
+      titleLarge: "text-2xl sm:text-3xl md:text-7xl text-title-large"
     }
   },
   defaultVariants: {

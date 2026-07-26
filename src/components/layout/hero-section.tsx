@@ -1,55 +1,51 @@
+"use client";
+
 import { ArrowRight } from "lucide-react";
 import { ButtonComponent, ScrollLink, Text } from "../common";
 import { TypingAnimation } from "../ui/typing-animation";
 import MetricsComponent from "./metrics-component";
-import FramerProvider from "@/provider.tsx/framer-provider";
-import { TYPING_TEXT, WHATSAPP_LINK } from "@/mocks";
+import { FramerProvider } from "@/providers";
+import { useTypingText } from "@/content";
+import { WHATSAPP_LINK } from "@/constants";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
+  const t = useTranslations("Hero");
+  const typingText = useTypingText();
+
   return (
     <FramerProvider>
-      <section
-        className="flex flex-col px-4 xl:px-0 gap-6 max-w-6xl mx-auto my-10 lg:mt-16"
-        id="/"
-      >
-        <>
-          <Text size="textGeist" className="text-emerald-500 uppercase">
-            Desenvolvedor Web Full-Stack
-          </Text>
-
-          <Text size="titleLarge" as="h1" className="">
-            <span className="text-zinc-950 block">Desenvolvimento web</span>
-            sob medida que{" "}
-            <span className="text-emerald-900 block">
-              <TypingAnimation
-                className="leading-10 sm:leading-5"
-                words={TYPING_TEXT}
-              />
-            </span>
-          </Text>
-        </>
-
-        <Text size="textMedium" className="max-w-lg text-zinc-500">
-          Do back-end ao front. Código que escala, entrega que não atrasa e
-          comunicação que não deixa dúvidas.
+      <section className="flex flex-col px-4 xl:px-0 gap-6 max-w-6xl mx-auto my-10 lg:mt-16">
+        <Text size="textGeist" className="text-emerald-500 uppercase">
+          {t("eyebrow")}
         </Text>
-
+        <Text size="titleLarge" as="h1">
+          <span className="text-zinc-950 block">{t("title")}</span>
+          {t("titleSuffix")}{" "}
+          <span className="text-emerald-900 block">
+            <TypingAnimation
+              className="leading-10 sm:leading-5"
+              words={typingText}
+            />
+          </span>
+        </Text>
+        <Text size="textMedium" className="max-w-lg text-zinc-500">
+          {t("description")}
+        </Text>
         <div className="flex flex-col sm:flex-row gap-5">
           <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
             <ButtonComponent className="w-fit">
-              Fazer Orçamento
+              {t("budget")}
               <ArrowRight className="size-4 text-white" />
             </ButtonComponent>
           </Link>
-
-          <ScrollLink targetId="projetos">
+          <ScrollLink targetId="projects">
             <ButtonComponent variant="outline" className="w-fit">
-              Ver Projetos
+              {t("projects")}
             </ButtonComponent>
           </ScrollLink>
         </div>
-
         <MetricsComponent />
       </section>
     </FramerProvider>

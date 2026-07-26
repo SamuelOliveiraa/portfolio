@@ -1,4 +1,4 @@
-import { SOCIAL_LINKS } from "@/mocks/";
+import { SOCIAL_LINKS } from "@/constants";
 import { ButtonComponent } from "@/components/common";
 
 export default function SocialLinks() {

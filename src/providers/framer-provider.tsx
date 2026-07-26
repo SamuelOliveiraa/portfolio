@@ -14,13 +14,10 @@ export default function FramerProvider({
 }: FramerProviderProps) {
   const [isScrollingDown, setIsScrollingDown] = useState(true);
   const { scrollY } = useScroll();
+  useMotionValueEvent(scrollY, "change", current =>
+    setIsScrollingDown(current > (scrollY.getPrevious() ?? 0))
+  );
 
-  // Monitora a direção do scroll em tempo real
-  useMotionValueEvent(scrollY, "change", current => {
-    const previous = scrollY.getPrevious() ?? 0;
-    // Se o scroll atual for maior que o anterior, o usuário está DESCENDO
-    setIsScrollingDown(current > previous);
-  });
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}

@@ -1,6 +1,5 @@
 import { MarqueeComponent } from "@/components/layout/components";
 import {
-  Testimonials,
   CommitmentSection,
   Contact,
   CtaBanner,
@@ -14,17 +13,16 @@ import {
 export default function Home() {
   return (
     <>
-      <div id="root" className="sr-only" />
       <HeroSection />
       <MarqueeComponent />
       <Services />
       <About />
       <ProcessSection />
-      <Testimonials />
+      <CtaBanner />
+      {/*<Testimonials />*/}
       <FaqSection />
       <CommitmentSection />
       <Contact />
-      <CtaBanner />
     </>
   );
 }

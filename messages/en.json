@@ -1,0 +1,304 @@
+{
+  "Header": {
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact",
+    "about": "About",
+    "faq": "FAQ",
+    "budget": "Get a quote"
+  },
+  "Hero": {
+    "eyebrow": "Full-stack web developer",
+    "title": "Custom web development",
+    "titleSuffix": "that",
+    "description": "From back end to front end. Code that scales, on-time delivery, and clear communication.",
+    "budget": "Get a quote",
+    "projects": "View projects",
+    "typing": [
+      "drives results.",
+      "sells more.",
+      "attracts clients.",
+      "scales your business."
+    ],
+    "metrics": {
+      "experience": "Years of experience",
+      "projects": "Projects delivered",
+      "clients": "Happy clients",
+      "satisfaction": "Satisfaction rate"
+    }
+  },
+  "Services": {
+    "eyebrow": "What I offer",
+    "title": "Solutions that move the",
+    "highlight": "business needle.",
+    "items": {
+      "saas": {
+        "title": "SaaS and web apps",
+        "description": "Complete applications from scratch — authentication, database, dashboard, and payments. Architecture built to scale."
+      },
+      "landing": {
+        "title": "Conversion landing pages",
+        "description": "Pages focused on turning visitors into clients, with CRO, technical SEO, and maximum performance."
+      },
+      "api": {
+        "title": "API integrations",
+        "description": "REST, GraphQL, webhooks, and integrations with Stripe, WhatsApp, CRMs, and any external service."
+      },
+      "performance": {
+        "title": "Performance and optimization",
+        "description": "Technical audits, Core Web Vitals, and bundle reduction — measurable results, not estimates."
+      }
+    }
+  },
+  "About": {
+    "title_tag": "About me",
+    "title": "Development focused",
+    "highlight": "on what delivers a return.",
+    "description1": "I have developed software for over two years, focused on solving real business problems — not merely writing elegant code. I handle the entire cycle: design, code, and delivery, giving your project my exclusive attention.",
+    "description2": "I work with small and medium-sized businesses that need a genuine technical partner — without middlemen, unnecessary jargon, or last-minute surprises.",
+    "stacks_title": "Main stack",
+    "frontend": "Front end",
+    "backend": "Back end",
+    "infrastructure": "Infrastructure",
+    "integrations": "Integrations"
+  },
+  "Process": {
+    "eyebrow": "My process",
+    "title": "Clarity at",
+    "highlight": "every step.",
+    "items": {
+      "alignment": {
+        "title": "Discovery",
+        "description": "A conversation to understand the business model, objectives, and complete scope of the project."
+      },
+      "design": {
+        "title": "Design and prototype",
+        "description": "Visual creation of the flow and layout for approval before a single line of code is written."
+      },
+      "development": {
+        "title": "Development",
+        "description": "Clean code with Next.js, React, and Prisma, plus regular progress updates."
+      },
+      "delivery": {
+        "title": "Delivery and support",
+        "description": "Production deployment, complete onboarding, and 30 days of free support included."
+      }
+    }
+  },
+  "Cta": {
+    "eyebrow": "Free consultation",
+    "title": "Not sure where to start?",
+    "description": "Let’s build a plan together in a 15-minute conversation. No commitment and no sales pitch.",
+    "action": "Book a consultation"
+  },
+  "Testimonials": {
+    "eyebrow": "Clients",
+    "title": "What people who worked",
+    "highlight": "with me say.",
+    "items": [
+      {
+        "description": "He delivered three weeks ahead of schedule and suggested improvements we had never considered. The final product exceeded every expectation.",
+        "title": "Fernanda Oliveira",
+        "subtitle": "CEO — Fintech"
+      },
+      {
+        "description": "Every technical decision was explained in terms of its business impact. It is rare to find someone who understands product and code so well.",
+        "title": "Rafael Costa",
+        "subtitle": "Head of Product — B2B SaaS"
+      },
+      {
+        "description": "Our landing page tripled its conversion rate in 60 days. Fast delivery, clean code, and exemplary communication.",
+        "title": "Mariana Souza",
+        "subtitle": "Marketing Director — E-commerce"
+      }
+    ]
+  },
+  "Faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "I answer before",
+    "highlight": "you ask.",
+    "items": [
+      {
+        "trigger": "What is the average timeline for a project?",
+        "content": "It depends on complexity. A landing page takes 7 to 14 days; a complete SaaS takes 6 to 12 weeks. I define a detailed schedule during discovery before development starts."
+      },
+      {
+        "trigger": "How does post-delivery support work?",
+        "content": "Every project includes 30 days of free support after launch. I fix bugs, answer questions, and make small adjustments at no extra cost during this period."
+      },
+      {
+        "trigger": "Do you provide ongoing maintenance?",
+        "content": "Yes. I offer monthly maintenance and improvement plans for clients who need regular updates, new features, or continuous monitoring."
+      },
+      {
+        "trigger": "How are costs defined?",
+        "content": "Each project receives a custom quote based on its scope, timeline, and technical complexity. I work with fixed project fees — no surprises on the invoice."
+      },
+      {
+        "trigger": "Can I track progress during development?",
+        "content": "Yes. I use a staging environment available throughout development, with regular updates and direct communication via WhatsApp."
+      }
+    ]
+  },
+  "Commitment": {
+    "title": "My commitment",
+    "main_title": "Built to",
+    "main_title_highlight": "last",
+    "items": {
+      "speed": {
+        "title": "Speed guarantee",
+        "description": "Optimization focused on green Google PageSpeed Insights scores — real performance."
+      },
+      "support": {
+        "title": "30 days of free support",
+        "description": "Complete post-launch support: bugs, questions, and adjustments at no additional cost."
+      },
+      "scalable": {
+        "title": "Scalable code",
+        "description": "Clean, documented architecture ready for new features without rewrites."
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Have a project",
+    "highlight": "in mind?",
+    "description": "I reply within 24 hours. No commitment — tell me what you need and I’ll tell you exactly how I can help.",
+    "whatsapp": "Business WhatsApp",
+    "email": "Business email",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "messagePlaceholder": "Describe your project or idea...",
+    "submit": "Send message",
+    "success": "Message sent successfully! I’ll be in touch soon.",
+    "rateLimit": "You have reached the submission limit. Please try again later.",
+    "error": "Could not send your message. Please try again.",
+    "unexpectedError": "An error occurred while sending the form.",
+    "validation": {
+      "name": "Name is required.",
+      "email": "Enter a valid email address.",
+      "phone": "Phone number is required.",
+      "message": "Message is required."
+    }
+  },
+  "Email": {
+    "subject": "Your message was received successfully! 🚀",
+    "greeting": "Hello",
+    "thanks": "Thank you for reaching out and for your interest in working together.",
+    "received": "Your message was received successfully. I’ll review the details of your idea and get back to you within",
+    "responseTime": "24 hours",
+    "urgent": "If this is urgent, you can also reach me through the contacts below.",
+    "regards": "Kind regards,",
+    "role": "Full-stack web developer",
+    "autoReply": "This is an automatic reply confirming that your message was received."
+  },
+  "Api": {
+    "rateLimit": "You have reached the submission limit. Please try again later.",
+    "requiredFields": "All fields are required.",
+    "success": "Email sent successfully!",
+    "error": "Failed to send email. Please try again later."
+  },
+  "Footer": {
+    "description": "Web development for growing small and medium-sized businesses.",
+    "navigation": "Navigation",
+    "legal": "Legal",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "copyright": "© 2026 Samuel Oliveira. All rights reserved."
+  },
+  "Common": { "backHome": "Back to home" },
+  "Legal": {
+    "label": "Legal",
+    "updated": "Last updated: July 26, 2026",
+    "privacy": {
+      "title": "Privacy policy",
+      "sections": [
+        {
+          "title": "1. Introduction",
+          "body": "This Privacy Policy describes how Samuel Oliveira de Araujo (Brazilian taxpayer ID 12.345.678/0001-90) collects, uses, and protects your information when you use this website and professional portfolio. Your privacy is very important to us, and we are committed to protecting the personal data you share with us."
+        },
+        {
+          "title": "2. Information collection",
+          "body": "We collect only the information strictly necessary to provide and improve our services:",
+          "items": [
+            {
+              "label": "Contact data:",
+              "body": "We collect your name, email address, phone number, and any other information you voluntarily submit through the contact form to request a quote or ask questions."
+            },
+            {
+              "label": "Browsing data:",
+              "body": "We collect anonymized statistical data about site use, such as visited pages, time spent, browser type, and traffic source, through Google Analytics solely to optimize the user experience."
+            }
+          ]
+        },
+        {
+          "title": "3. Use of data",
+          "body": "We use the data we collect exclusively for the following purposes:",
+          "items": [
+            {
+              "body": "Replying to your messages, questions, or quote requests."
+            },
+            {
+              "body": "Providing technical support or clarification regarding contracted projects."
+            },
+            {
+              "body": "Continuously analyzing and improving the portfolio’s performance and usability."
+            }
+          ]
+        },
+        {
+          "title": "4. Sharing and storage",
+          "body": "We do not sell, rent, trade, or share your personally identifiable information with third parties for commercial purposes. Your data is stored securely and retained only as long as needed to fulfill the purposes for which it was collected or as required by law."
+        },
+        {
+          "title": "5. Information security",
+          "body": "We implement reasonable technical and administrative security measures to protect your data from loss, theft, unauthorized access, disclosure, or alteration. However, no internet transmission or electronic storage method is 100% secure."
+        },
+        {
+          "title": "6. Your rights",
+          "body": "Under Brazil’s General Data Protection Law (LGPD), you may request confirmation of data processing, access your stored data, correct incomplete or inaccurate data, or request deletion of your information from our database. To exercise these rights, contact us through our service channels."
+        },
+        {
+          "title": "7. Contact",
+          "body": "If you have questions, suggestions, or concerns about this Privacy Policy or how your data is handled, contact us through the form on the home page or directly by institutional support email."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of use",
+      "sections": [
+        {
+          "title": "1. Acceptance of terms",
+          "body": "By accessing and using this website, Samuel Oliveira de Araujo’s portfolio, you fully agree to these Terms of Use. If you disagree with any part of them, please do not continue using or browsing this site."
+        },
+        {
+          "title": "2. Permitted use of the website",
+          "body": "This site presents Samuel Oliveira’s software development services, showcases case studies and projects, and enables direct contact for service provision. You agree to use it only for lawful purposes and in a way that does not infringe third-party rights or restrict others’ use of the site."
+        },
+        {
+          "title": "3. Intellectual property",
+          "body": "All content on this site — including text, graphics, logos, icons, images, source code, layout, and design — belongs to Samuel Oliveira de Araujo (Brazilian taxpayer ID 12.345.678/0001-90) or is properly licensed. Reproduction, distribution, modification, or commercial use of any content is prohibited without express written permission."
+        },
+        {
+          "title": "4. Disclaimer",
+          "body": "We strive to keep the site up to date and error-free, but do not guarantee uninterrupted operation or that it will be free from viruses, failures, or delays. Samuel Oliveira de Araujo is not liable for direct or indirect damages arising from using or being unable to use this website."
+        },
+        {
+          "title": "5. Third-party links",
+          "body": "The site may contain links to third-party websites or services, such as GitHub and LinkedIn, which we do not control or maintain. We are not responsible for their content, privacy policies, or practices."
+        },
+        {
+          "title": "6. Changes to the terms",
+          "body": "We may revise and change these Terms of Use at any time without prior notice. The latest version will always be available in the site footer with its update date. Continued use after changes constitutes acceptance."
+        },
+        {
+          "title": "7. Governing law and venue",
+          "body": "These Terms of Use are governed by the laws of the Federative Republic of Brazil. Any dispute arising from the use of this site shall be submitted to the courts of the developer’s home district, to the exclusion of any other jurisdiction."
+        }
+      ]
+    }
+  }
+}

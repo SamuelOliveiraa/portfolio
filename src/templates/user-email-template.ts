@@ -1,33 +1,43 @@
 interface UserEmailTemplateParams {
   name: string;
+  content: {
+    greeting: string;
+    thanks: string;
+    received: string;
+    responseTime: string;
+    urgent: string;
+    regards: string;
+    role: string;
+    autoReply: string;
+  };
 }
 
 export function getUserEmailTemplate({
-  name
+  name,
+  content
 }: UserEmailTemplateParams): string {
   return `
     <div style="background-color: #fafafa; padding: 40px 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
       <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e4e4e7; border-radius: 8px; padding: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
 
-        <!-- Mensagem de Boas-vindas -->
         <h2 style="color: #10b981; font-size: 20px; font-weight: 600; margin: 0 0 16px 0;">
-          Olá, ${name}! 👋
+          ${content.greeting}, ${name}! 👋
         </h2>
 
         <p style="font-size: 14px; line-height: 1.6; color: #18181b; margin: 0 0 12px 0;">
-          Obrigado pelo contato e pelo interesse em trabalharmos juntos.
+          ${content.thanks}
         </p>
 
         <p style="font-size: 14px; line-height: 1.6; color: #18181b; margin: 0 0 20px 0;">
-          Sua mensagem foi recebida com sucesso. Vou analisar os detalhes da sua ideia e te dou um retorno em <strong>até 24 horas</strong>.
+          ${content.received} <strong>${content.responseTime}</strong>.
         </p>
 
         <p style="font-size: 14px; color: #18181b; margin: 0 0 12px 0;">
-          Caso seja algo urgente, você também pode falar comigo pelos contatos abaixo.
+          ${content.urgent}
         </p>
 
         <p style="font-size: 14px; color: #18181b; margin: 0 0 24px 0;">
-          Atenciosamente,
+          ${content.regards}
         </p>
 
         <!-- ASSINATURA ORIGINAL INTCTA -->
@@ -81,7 +91,7 @@ export function getUserEmailTemplate({
                     font-weight: normal;
                   "
                 >
-                  Desenvolvedor Web Full Stack
+                  ${content.role}
                 </h3>
                 <table cellpadding="0" cellspacing="0" border="0">
                   <tbody valign="middle">
@@ -213,7 +223,7 @@ export function getUserEmailTemplate({
       </div>
 
       <div style="max-width: 600px; margin: 16px auto 0 auto; text-align: center; font-size: 12px; color: #71717a;">
-        Esta é uma resposta automática enviada para confirmar o recebimento do seu contato.
+        ${content.autoReply}
       </div>
     </div>
   `;

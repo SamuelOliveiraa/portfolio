@@ -2,13 +2,16 @@
 
 import { ButtonComponent, LinkItem, Logo } from "../common";
 import { ThemeToggle } from "./components";
-import { Menu, X } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import { twMerge } from "tailwind-merge";
-import { SECTIONS_LINKS, WHATSAPP_LINK } from "@/mocks";
+import { SECTIONS_LINKS, WHATSAPP_LINK } from "@/constants";
 import Link from "next/link";
+import { Squash as Hamburger } from "hamburger-react";
+import LanguageToggle from "./components/language-toggle";
+import { useEffect, useRef, useState } from "react";
 
 export default function Header() {
+  const t = useTranslations("Header");
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const headerRef = useRef<HTMLDivElement>(null);
@@ -18,7 +21,6 @@ export default function Header() {
     fn();
     window.addEventListener("scroll", fn, { passive: true });
 
-    // Fecha o menu ao clicar fora
     const handleClickOutside = (event: MouseEvent) => {
       if (
         headerRef.current &&
@@ -28,18 +30,11 @@ export default function Header() {
       }
     };
 
-    // Fecha o menu ao rolar a página
-    // const handleScroll = () => {
-    //   setIsMenuOpen(false);
-    // };
-
     document.addEventListener("mousedown", handleClickOutside);
-    // window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", fn);
       window.removeEventListener("mousedown", handleClickOutside);
-      // window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -58,9 +53,9 @@ export default function Header() {
         <nav className="hidden md:block">
           <ul className="flex justify-between items-center gap-4 text-zinc-500 ">
             {SECTIONS_LINKS.filter((_, index) => index !== 0).map(
-              ({ name, link }, index) => (
+              ({ link }, index) => (
                 <LinkItem key={index} link={link}>
-                  {name}
+                  {t(link)}
                 </LinkItem>
               )
             )}
@@ -68,40 +63,44 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-2">
+          <LanguageToggle />
           <ThemeToggle />
           <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-            <ButtonComponent className="w-fit">Fazer Orçamento</ButtonComponent>
+            <ButtonComponent className="w-fit">{t("budget")}</ButtonComponent>
           </Link>
         </div>
 
-        <button
-          className="block md:hidden p-2"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          {isMenuOpen ? <X /> : <Menu />}
-        </button>
+        <div className="block md:hidden p-2" aria-label="Toggle menu">
+          <Hamburger
+            toggled={isMenuOpen}
+            toggle={setIsMenuOpen}
+            size={24}
+            duration={0.3}
+            rounded
+          />
+        </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-zinc-50 border-y md:hidden p-4 flex flex-col gap-4">
           <nav>
             <ul className="flex flex-col gap-4 text-zinc-500">
               {SECTIONS_LINKS.filter((_, index) => index !== 0).map(
-                ({ name, link }, index) => (
+                ({ link }, index) => (
                   <LinkItem
                     key={index}
                     link={link}
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {name}
+                    {t(link)}
                   </LinkItem>
                 )
               )}
             </ul>
           </nav>
-          <div>
+          <div className="flex items-center gap-2">
+            <LanguageToggle />
+
             <ThemeToggle />
           </div>
           <div className="flex items-center gap-2">
@@ -112,7 +111,7 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
               className="w-full"
             >
-              <ButtonComponent>Fazer Orçamento</ButtonComponent>
+              <ButtonComponent>{t("budget")}</ButtonComponent>
             </Link>
           </div>
         </div>

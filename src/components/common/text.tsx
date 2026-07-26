@@ -13,7 +13,7 @@ type TextProps = {
     | "titleLarge";
   className?: string;
   asChild?: boolean;
-};
+} & React.HTMLAttributes<HTMLElement>;
 
 const textVariants = tv({
   base: "text-base leading-5 font-bold font-inter antialiased",

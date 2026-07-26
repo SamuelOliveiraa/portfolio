@@ -5,6 +5,8 @@ import nodemailer from "nodemailer";
 import { isRateLimited } from "../lib/rate-limit";
 import { getAdminEmailTemplate } from "@/templates/admin-email-template";
 import { getUserEmailTemplate } from "@/templates/user-email-template";
+import ptMessages from "@/messages/pt.json";
+import enMessages from "@/messages/en.json";
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -15,23 +17,28 @@ const transporter = nodemailer.createTransport({
 });
 
 export async function POST(request: NextRequest) {
+  const defaultLocale =
+    request.cookies.get("NEXT_LOCALE")?.value === "en" ? "en" : "pt";
+  let messages = defaultLocale === "en" ? enMessages : ptMessages;
+
   try {
     const limited = await isRateLimited(request);
 
     if (limited) {
       return NextResponse.json(
         {
-          error: "Você atingiu o limite de envios. Tente novamente mais tarde."
+          error: messages.Api.rateLimit
         },
         { status: 429 }
       );
     }
 
-    const { name, email, message, phone } = await request.json();
+    const { name, email, message, phone, locale } = await request.json();
+    messages = locale === "en" ? enMessages : ptMessages;
 
     if (!name || !email || !message || !phone) {
       return NextResponse.json(
-        { error: "Todos os campos são obrigatórios." },
+        { error: messages.Api.requiredFields },
         { status: 400 }
       );
     }
@@ -48,20 +55,17 @@ export async function POST(request: NextRequest) {
       transporter.sendMail({
         from: `"Samuel Oliveira" <${process.env.GMAIL_USER}>`,
         to: email,
-        subject: "Sua mensagem foi recebida com sucesso! 🚀",
-        html: getUserEmailTemplate({ name })
+        subject: messages.Email.subject,
+        html: getUserEmailTemplate({ name, content: messages.Email })
       })
     ]);
 
     return NextResponse.json(
-      { success: true, message: "E-mails enviados com sucesso!" },
+      { success: true, message: messages.Api.success },
       { status: 200 }
     );
   } catch (error) {
     console.error("Erro no envio do e-mail ", error);
-    return NextResponse.json(
-      { error: "Falha ao enviar e-mail. Tente novamente mais tarde." },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: messages.Api.error }, { status: 500 });
   }
 }

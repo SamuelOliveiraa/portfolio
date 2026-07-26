@@ -1,0 +1,304 @@
+{
+  "Header": {
+    "projects": "Projetos",
+    "services": "Serviços",
+    "contact": "Contato",
+    "about": "Sobre",
+    "faq": "FAQ",
+    "budget": "Fazer orçamento"
+  },
+  "Hero": {
+    "eyebrow": "Desenvolvedor web full-stack",
+    "title": "Desenvolvimento web",
+    "titleSuffix": "sob medida que",
+    "description": "Do back-end ao front-end. Código que escala, entrega no prazo e comunicação sem dúvidas.",
+    "budget": "Fazer orçamento",
+    "projects": "Ver projetos",
+    "typing": [
+      "gera resultados.",
+      "vende mais.",
+      "atrai clientes.",
+      "escala seu negócio."
+    ],
+    "metrics": {
+      "experience": "Anos de experiência",
+      "projects": "Projetos entregues",
+      "clients": "Clientes satisfeitos",
+      "satisfaction": "Taxa de satisfação"
+    }
+  },
+  "Services": {
+    "eyebrow": "O que ofereço",
+    "title": "Soluções que movem o",
+    "highlight": "ponteiro do negócio.",
+    "items": {
+      "saas": {
+        "title": "SaaS e aplicações web",
+        "description": "Aplicações completas do zero — autenticação, banco de dados, painel e pagamentos. Arquitetura pronta para escalar."
+      },
+      "landing": {
+        "title": "Landing pages de conversão",
+        "description": "Páginas focadas em transformar visitantes em clientes, com CRO, SEO técnico e máxima performance."
+      },
+      "api": {
+        "title": "Integrações de APIs",
+        "description": "REST, GraphQL, webhooks e integrações com Stripe, WhatsApp, CRMs e qualquer serviço externo."
+      },
+      "performance": {
+        "title": "Performance e otimização",
+        "description": "Auditoria técnica, Core Web Vitals e redução de bundle — resultados mensuráveis, não estimativas."
+      }
+    }
+  },
+  "About": {
+    "title_tag": "Sobre mim",
+    "title": "Desenvolvimento focado",
+    "highlight": "no que traz retorno.",
+    "description1": "Desenvolvo software há mais de dois anos com foco em resolver problemas reais de negócio — não só em escrever código elegante. Sou responsável por todo o ciclo: design, código e entrega, garantindo atenção exclusiva ao seu projeto.",
+    "description2": "Atendo pequenas e médias empresas que precisam de um parceiro técnico de verdade — sem intermediários, jargões desnecessários ou surpresas no final.",
+    "stacks_title": "Stacks principais",
+    "frontend": "Front-end",
+    "backend": "Back-end",
+    "infrastructure": "Infraestrutura",
+    "integrations": "Integrações"
+  },
+  "Process": {
+    "eyebrow": "Meu processo",
+    "title": "Clareza em",
+    "highlight": "cada etapa.",
+    "items": {
+      "alignment": {
+        "title": "Alinhamento",
+        "description": "Conversa para entender o modelo de negócio, os objetivos e o escopo completo do projeto."
+      },
+      "design": {
+        "title": "Design e protótipo",
+        "description": "Criação visual do fluxo e do layout para aprovação antes de qualquer linha de código."
+      },
+      "development": {
+        "title": "Desenvolvimento",
+        "description": "Código limpo com Next.js, React e Prisma, além de atualizações constantes de progresso."
+      },
+      "delivery": {
+        "title": "Entrega e suporte",
+        "description": "Deploy em produção, onboarding completo e 30 dias de suporte gratuito incluídos."
+      }
+    }
+  },
+  "Cta": {
+    "eyebrow": "Diagnóstico gratuito",
+    "title": "Não sabe por onde começar?",
+    "description": "Vamos montar um plano juntos em uma conversa de 15 minutos. Sem compromisso e sem pitch de vendas.",
+    "action": "Agendar diagnóstico"
+  },
+  "Testimonials": {
+    "eyebrow": "Clientes",
+    "title": "Quem já trabalhou",
+    "highlight": "comigo diz.",
+    "items": [
+      {
+        "description": "Entregou três semanas antes do prazo e ainda sugeriu melhorias que nunca tínhamos imaginado. O produto final superou todas as expectativas.",
+        "title": "Fernanda Oliveira",
+        "subtitle": "CEO — Fintech"
+      },
+      {
+        "description": "Cada decisão técnica foi explicada em termos de impacto para o negócio. É raro encontrar alguém que entende tanto de produto quanto de código.",
+        "title": "Rafael Costa",
+        "subtitle": "Head de Produto — SaaS B2B"
+      },
+      {
+        "description": "Nossa landing page triplicou a taxa de conversão em 60 dias. Entrega rápida, código limpo e comunicação exemplar.",
+        "title": "Mariana Souza",
+        "subtitle": "Diretora de Marketing — E-commerce"
+      }
+    ]
+  },
+  "Faq": {
+    "eyebrow": "Dúvidas frequentes",
+    "title": "Respondo antes",
+    "highlight": "de você perguntar.",
+    "items": [
+      {
+        "trigger": "Qual é o prazo médio de um projeto?",
+        "content": "Depende da complexidade. Uma landing page leva de 7 a 14 dias. Um SaaS completo, de 6 a 12 semanas. Defino um cronograma detalhado na fase de alinhamento antes de iniciar o desenvolvimento."
+      },
+      {
+        "trigger": "Como funciona o suporte pós-entrega?",
+        "content": "Todo projeto inclui 30 dias de suporte gratuito após o lançamento. Corrijo bugs, tiro dúvidas e realizo pequenos ajustes sem custo adicional nesse período."
+      },
+      {
+        "trigger": "Você faz manutenção contínua?",
+        "content": "Sim. Ofereço planos mensais de manutenção e evolução para clientes que precisam de atualizações regulares, novos recursos ou monitoramento contínuo."
+      },
+      {
+        "trigger": "Como são definidos os custos?",
+        "content": "Cada projeto recebe um orçamento personalizado com base no escopo, prazo e complexidade técnica. Trabalho com valores fixos por projeto — sem surpresas na fatura."
+      },
+      {
+        "trigger": "Posso acompanhar o progresso durante o desenvolvimento?",
+        "content": "Sim. Utilizo um ambiente de staging acessível durante todo o desenvolvimento, com atualizações regulares e comunicação direta via WhatsApp."
+      }
+    ]
+  },
+  "Commitment": {
+    "title": "Meu compromisso",
+    "main_title": "Construído para",
+    "main_title_highlight": "durar",
+    "items": {
+      "speed": {
+        "title": "Garantia de velocidade",
+        "description": "Otimização focada em notas verdes no Google PageSpeed Insights — performance real."
+      },
+      "support": {
+        "title": "30 dias de suporte grátis",
+        "description": "Acompanhamento completo pós-lançamento: bugs, dúvidas e ajustes sem custo adicional."
+      },
+      "scalable": {
+        "title": "Código escalável",
+        "description": "Arquitetura limpa e documentada, preparada para receber novos recursos sem reescritas."
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Contato",
+    "title": "Tem um projeto",
+    "highlight": "em mente?",
+    "description": "Respondo em até 24 horas. Sem compromisso — conte o que você precisa e eu digo exatamente como posso ajudar.",
+    "whatsapp": "WhatsApp profissional",
+    "email": "E-mail profissional",
+    "name": "Nome",
+    "namePlaceholder": "Seu nome",
+    "emailLabel": "E-mail",
+    "phone": "Telefone",
+    "message": "Mensagem",
+    "messagePlaceholder": "Descreva seu projeto ou ideia...",
+    "submit": "Enviar mensagem",
+    "success": "Mensagem enviada com sucesso! Em breve entrarei em contato.",
+    "rateLimit": "Você atingiu o limite de envios. Tente novamente mais tarde.",
+    "error": "Erro ao enviar mensagem. Tente novamente.",
+    "unexpectedError": "Ocorreu um erro ao tentar enviar o formulário.",
+    "validation": {
+      "name": "O nome é obrigatório.",
+      "email": "Digite um e-mail válido.",
+      "phone": "O telefone é obrigatório.",
+      "message": "A mensagem é obrigatória."
+    }
+  },
+  "Email": {
+    "subject": "Sua mensagem foi recebida com sucesso! 🚀",
+    "greeting": "Olá",
+    "thanks": "Obrigado pelo contato e pelo interesse em trabalharmos juntos.",
+    "received": "Sua mensagem foi recebida com sucesso. Vou analisar os detalhes da sua ideia e te dou um retorno em",
+    "responseTime": "até 24 horas",
+    "urgent": "Caso seja algo urgente, você também pode falar comigo pelos contatos abaixo.",
+    "regards": "Atenciosamente,",
+    "role": "Desenvolvedor web full-stack",
+    "autoReply": "Esta é uma resposta automática enviada para confirmar o recebimento do seu contato."
+  },
+  "Api": {
+    "rateLimit": "Você atingiu o limite de envios. Tente novamente mais tarde.",
+    "requiredFields": "Todos os campos são obrigatórios.",
+    "success": "E-mail enviado com sucesso!",
+    "error": "Falha ao enviar e-mail. Tente novamente mais tarde."
+  },
+  "Footer": {
+    "description": "Desenvolvimento web para PMEs que querem crescer.",
+    "navigation": "Navegação",
+    "legal": "Legal",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de uso",
+    "copyright": "© 2026 Samuel Oliveira. Todos os direitos reservados."
+  },
+  "Common": { "backHome": "Voltar para o início" },
+  "Legal": {
+    "label": "Legal",
+    "updated": "Última atualização: 26 de julho de 2026",
+    "privacy": {
+      "title": "Política de privacidade",
+      "sections": [
+        {
+          "title": "1. Introdução",
+          "body": "Esta Política de Privacidade descreve como nós, Samuel Oliveira de Araujo (CNPJ 12.345.678/0001-90), coletamos, usamos e protegemos suas informações ao utilizar nosso website e portfólio profissional. Sua privacidade é muito importante para nós, e estamos comprometidos em proteger os dados pessoais que você compartilha conosco."
+        },
+        {
+          "title": "2. Coleta de informações",
+          "body": "Coletamos apenas as informações estritamente necessárias para fornecer e aprimorar nossos serviços:",
+          "items": [
+            {
+              "label": "Dados de contato:",
+              "body": "Coletamos seu nome, e-mail, número de telefone e quaisquer outras informações que você envie voluntariamente pelo formulário de contato, para solicitar orçamentos ou tirar dúvidas."
+            },
+            {
+              "label": "Dados de navegação:",
+              "body": "Coletamos dados estatísticos anonimizados sobre o uso do site, como páginas visitadas, tempo de permanência, tipo de navegador e origem do tráfego, por meio do Google Analytics, exclusivamente para otimizar a experiência do usuário."
+            }
+          ]
+        },
+        {
+          "title": "3. Uso dos dados",
+          "body": "Utilizamos os dados coletados exclusivamente para os seguintes propósitos:",
+          "items": [
+            {
+              "body": "Responder às suas mensagens, dúvidas ou solicitações de orçamento."
+            },
+            {
+              "body": "Prestar suporte técnico ou esclarecimentos sobre projetos contratados."
+            },
+            {
+              "body": "Analisar e melhorar continuamente o desempenho e a usabilidade do portfólio."
+            }
+          ]
+        },
+        {
+          "title": "4. Compartilhamento e armazenamento",
+          "body": "Não vendemos, alugamos, trocamos ou compartilhamos suas informações de identificação pessoal com terceiros para fins comerciais. Seus dados são armazenados com segurança e mantidos somente pelo tempo necessário para cumprir as finalidades para as quais foram coletados ou conforme exigido por lei."
+        },
+        {
+          "title": "5. Segurança da informação",
+          "body": "Implementamos medidas de segurança técnicas e administrativas razoáveis para proteger seus dados contra perda, roubo, acesso não autorizado, divulgação ou alteração. Ainda assim, nenhum método de transmissão pela internet ou armazenamento eletrônico é 100% seguro."
+        },
+        {
+          "title": "6. Seus direitos (LGPD)",
+          "body": "Em conformidade com a Lei Geral de Proteção de Dados (LGPD), você pode solicitar a confirmação do tratamento de seus dados, acessá-los, corrigir dados incompletos ou inexatos, ou pedir a exclusão de suas informações da nossa base. Para exercer esses direitos, entre em contato pelos nossos canais de atendimento."
+        },
+        {
+          "title": "7. Contato",
+          "body": "Se tiver dúvidas, sugestões ou preocupações sobre esta Política de Privacidade ou o tratamento dos seus dados, entre em contato pelo formulário da página inicial ou diretamente pelo e-mail de suporte institucional."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Termos de uso",
+      "sections": [
+        {
+          "title": "1. Aceitação dos termos",
+          "body": "Ao acessar e utilizar este website, o portfólio de Samuel Oliveira de Araujo, você concorda integralmente com estes Termos de Uso. Caso não concorde com qualquer parte deles, solicitamos que não continue utilizando ou navegando no site."
+        },
+        {
+          "title": "2. Uso permitido do website",
+          "body": "Este site apresenta os serviços de desenvolvimento de software de Samuel Oliveira, exibe cases e projetos e possibilita o contato direto para a prestação de serviços. Você se compromete a utilizá-lo apenas para fins lícitos e de forma que não infrinja direitos de terceiros nem restrinja o uso do site por outras pessoas."
+        },
+        {
+          "title": "3. Propriedade intelectual",
+          "body": "Todo o conteúdo deste site — incluindo textos, gráficos, logotipos, ícones, imagens, códigos-fonte, layout e design — pertence a Samuel Oliveira de Araujo (CNPJ 12.345.678/0001-90) ou foi devidamente licenciado. É proibida a reprodução, distribuição, modificação ou uso comercial de qualquer parte do conteúdo sem autorização expressa por escrito."
+        },
+        {
+          "title": "4. Isenção de responsabilidade",
+          "body": "Empenhamo-nos para manter o site atualizado e livre de erros, mas não garantimos que seu funcionamento será ininterrupto, livre de vírus, falhas ou atrasos. Samuel Oliveira de Araujo não se responsabiliza por danos diretos ou indiretos decorrentes do uso ou da impossibilidade de uso deste website."
+        },
+        {
+          "title": "5. Links para terceiros",
+          "body": "O site pode conter links para websites ou serviços de terceiros, como GitHub e LinkedIn, que não são controlados nem mantidos por nós. Não nos responsabilizamos pelo conteúdo, pelas políticas de privacidade ou pelas práticas desses sites ou serviços."
+        },
+        {
+          "title": "6. Modificações dos termos",
+          "body": "Podemos revisar e alterar estes Termos de Uso a qualquer momento, sem aviso prévio. A versão mais recente estará sempre disponível no rodapé do site com a data de atualização. O uso continuado do site após alterações constitui sua aceitação tácita."
+        },
+        {
+          "title": "7. Lei aplicável e foro",
+          "body": "Estes Termos de Uso são regidos pelas leis da República Federativa do Brasil. Para controvérsias decorrentes do uso deste site, fica eleito o foro da comarca de domicílio do desenvolvedor, com exclusão de qualquer outro, por mais privilegiado que seja."
+        }
+      ]
+    }
+  }
+}

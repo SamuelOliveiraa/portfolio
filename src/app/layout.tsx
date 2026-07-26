@@ -5,6 +5,7 @@ import { Inter, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { CircleCheckBig, CircleX } from "lucide-react";
 import { Header, Footer } from "@/components/layout";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const geist_mono = Geist_Mono({
   subsets: ["latin"]
@@ -60,6 +61,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <GoogleAnalytics gaId={process.env.GA_ID!} />
         </ThemeProvider>
       </body>
     </html>

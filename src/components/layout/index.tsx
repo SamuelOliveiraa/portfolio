@@ -1,0 +1,25 @@
+import Services from "./services";
+import Contact from "./contact";
+import CommitmentSection from "./commitment-section";
+import CtaBanner from "./cta-banner";
+import FaqSection from "./faq-section";
+import Footer from "./footer";
+import Header from "./header";
+import HeroSection from "./hero-section";
+import MetricsComponent from "./metrics-component";
+import ProcessSection from "./process-section";
+import Testimonials from "./testimonials";
+
+export {
+  Footer,
+  Header,
+  Contact,
+  Services,
+  CtaBanner,
+  FaqSection,
+  HeroSection,
+  Testimonials,
+  ProcessSection,
+  MetricsComponent,
+  CommitmentSection
+};

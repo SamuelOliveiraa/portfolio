@@ -9,7 +9,11 @@ interface ScrollLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> 
   children: React.ReactNode;
 }
 
-export function ScrollLink({ targetId, children, className }: ScrollLinkProps) {
+export default function ScrollLink({
+  targetId,
+  children,
+  className
+}: ScrollLinkProps) {
   const isExternalLink = targetId.startsWith("/");
 
   if (isExternalLink) {

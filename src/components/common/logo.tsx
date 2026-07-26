@@ -1,5 +1,4 @@
-import { ScrollLink } from "./scroll-link";
-import Text from "./text";
+import { ScrollLink, Text } from "./";
 
 export default function Logo() {
   return (

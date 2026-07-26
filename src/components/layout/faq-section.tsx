@@ -1,12 +1,12 @@
 import FramerProvider from "@/provider.tsx/framer-provider";
-import Text from "../common/text";
+import { Text } from "@/components/common";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger
 } from "../ui/accordion";
-import { FAQ_ITEMS } from "@/mocks/faq-section-mock";
+import { FAQ_ITEMS } from "@/mocks";
 
 export default function FaqSection() {
   return (

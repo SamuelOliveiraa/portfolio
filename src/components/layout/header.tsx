@@ -1,13 +1,11 @@
 "use client";
 
-import ButtonComponent from "../common/button-component";
-import { ThemeToggle } from "./components/theme-toggle";
+import { ButtonComponent, LinkItem, Logo } from "../common";
+import { ThemeToggle } from "./components";
 import { Menu } from "lucide-react";
-import { LinkItem } from "../common/link-item";
-import Logo from "../common/logo";
 import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
-import { SECTIONS_LINKS } from "@/mocks/section-links";
+import { SECTIONS_LINKS } from "@/mocks";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);

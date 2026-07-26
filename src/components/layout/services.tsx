@@ -1,7 +1,6 @@
-import Text from "../common/text";
-import ServiceItem from "../common/service-item";
+import { Text, ServiceItem } from "@/components/common";
 import FramerProvider from "@/provider.tsx/framer-provider";
-import { SERVICES_ITEMS } from "@/mocks/service-items";
+import { SERVICES_ITEMS } from "@/mocks";
 
 export default function Services() {
   return (

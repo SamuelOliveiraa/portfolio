@@ -1,4 +1,4 @@
-import Text from "../../common/text";
+import { Text } from "@/components/common";
 
 interface ProcessItemProps {
   title: string;

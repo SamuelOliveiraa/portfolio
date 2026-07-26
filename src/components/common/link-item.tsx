@@ -1,13 +1,13 @@
-import { ScrollLink } from "./scroll-link";
+import ScrollLink from "./scroll-link";
 import Text from "./text";
 
-export const LinkItem = ({
+export default function LinkItem({
   children,
   link
 }: {
   children: React.ReactNode;
   link: string;
-}) => {
+}) {
   return (
     <ScrollLink targetId={link}>
       <Text
@@ -19,4 +19,4 @@ export const LinkItem = ({
       </Text>
     </ScrollLink>
   );
-};
+}

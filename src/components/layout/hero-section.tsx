@@ -1,10 +1,9 @@
 import { ArrowRight } from "lucide-react";
-import ButtonComponent from "../common/button-component";
-import Text from "../common/text";
+import { ButtonComponent, Text } from "../common";
 import { TypingAnimation } from "../ui/typing-animation";
 import MetricsComponent from "./metrics-component";
 import FramerProvider from "@/provider.tsx/framer-provider";
-import { TYPING_TEXT } from "@/mocks/typing-text";
+import { TYPING_TEXT } from "@/mocks";
 
 export default function HeroSection() {
   return (

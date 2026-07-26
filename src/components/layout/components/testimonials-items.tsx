@@ -1,4 +1,4 @@
-import Text from "@/components/common/text";
+import { Text } from "@/components/common";
 
 export interface TestimonialsItemProps {
   description: string;
@@ -6,7 +6,7 @@ export interface TestimonialsItemProps {
   subtitle: string;
 }
 
-export default function TestimonialsItem({
+export default function TestimonialsItems({
   description,
   title,
   subtitle

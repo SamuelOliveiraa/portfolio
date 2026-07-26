@@ -1,9 +1,9 @@
 import FramerProvider from "@/provider.tsx/framer-provider";
-import Text from "../common/text";
-import TestimonialsItem from "./components/testimonials-items";
-import { testimonialsItemsMock } from "@/mocks/testimonials-items-mock";
+import { Text } from "@/components/common";
+import { TestimonialsItems } from "./components";
+import { TESTIMONIAL_ITEMS } from "@/mocks";
 
-export function Testimonials() {
+export default function Testimonials() {
   return (
     <FramerProvider>
       <section className="border-y py-20 px-4 xl:px-0" id="contact">
@@ -19,9 +19,9 @@ export function Testimonials() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3">
-            {testimonialsItemsMock.map(
+            {TESTIMONIAL_ITEMS.map(
               ({ description, title, subtitle }, index) => (
-                <TestimonialsItem
+                <TestimonialsItems
                   key={index}
                   description={description}
                   title={title}

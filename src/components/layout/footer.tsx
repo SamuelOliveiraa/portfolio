@@ -1,12 +1,8 @@
-import ButtonComponent from "../common/button-component";
-import { LinkItem } from "../common/link-item";
-import Logo from "../common/logo";
-import Text from "../common/text";
+import { ButtonComponent, LinkItem, Logo, Text, ScrollLink } from "../common";
 import { ChevronUp } from "lucide-react";
 import FramerProvider from "@/provider.tsx/framer-provider";
-import SocialLinks from "./components/social_links";
-import { ScrollLink } from "../common/scroll-link";
-import { SECTIONS_LINKS } from "@/mocks/section-links";
+import { SocialLinks } from "./components";
+import { SECTIONS_LINKS } from "@/mocks";
 
 export default function Footer() {
   return (

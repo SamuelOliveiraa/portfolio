@@ -1,7 +1,7 @@
 import FramerProvider from "@/provider.tsx/framer-provider";
 import { Marquee } from "../../ui/marquee";
-import Text from "../../common/text";
-import { MARQUEE_TECHS } from "@/mocks/marquee-mocks";
+import { Text } from "@/components/common";
+import { MARQUEE_TECHS } from "@/mocks";
 
 export default function MarqueeComponent() {
   return (

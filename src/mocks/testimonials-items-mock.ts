@@ -1,6 +1,6 @@
 import { TestimonialsItemProps } from "@/components/layout/components/testimonials-items";
 
-export const testimonialsItemsMock: TestimonialsItemProps[] = [
+export const TESTIMONIAL_ITEMS: TestimonialsItemProps[] = [
   {
     description:
       "Entregou três semanas antes do prazo e ainda sugeriu melhorias que nunca tínhamos pensado. O produto final superou todas as expectativas.",

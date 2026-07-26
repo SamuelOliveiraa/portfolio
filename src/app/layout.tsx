@@ -4,8 +4,7 @@ import { Toaster } from "react-hot-toast";
 import { Inter, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { CircleCheckBig, CircleX } from "lucide-react";
-import Header from "@/components/layout/header";
-import Footer from "@/components/layout/footer";
+import { Header, Footer } from "@/components/layout";
 
 const geist_mono = Geist_Mono({
   subsets: ["latin"]

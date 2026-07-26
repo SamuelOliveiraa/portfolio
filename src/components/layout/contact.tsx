@@ -1,18 +1,15 @@
 "use client";
 
 import FramerProvider from "@/provider.tsx/framer-provider";
-import Text from "../common/text";
+import { Text, ButtonComponent, Input, ExternalLink } from "../common";
 import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 import { ArrowRight, MessageCircle } from "lucide-react";
-import ExternalLink from "../common/external-link";
-import Input from "../common/input";
 import { useForm } from "react-hook-form";
 import { twMerge } from "tailwind-merge";
-import ButtonComponent from "../common/button-component";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import toast from "react-hot-toast";
-import { EMAIL_LINK, LINKEDIN_LINK, WHATSAPP_LINK } from "@/mocks/social-links";
+import { EMAIL_LINK, LINKEDIN_LINK, WHATSAPP_LINK } from "@/mocks";
 
 const contactSchema = z.object({
   name: z.string().min(1, "O nome do usuário é obrigatório"),

@@ -1,7 +1,6 @@
 import Link from "next/link";
-import ButtonComponent from "../common/button-component";
+import { ButtonComponent, Text } from "@/components/common";
 import { CalendarCheck } from "lucide-react";
-import Text from "../common/text";
 import FramerProvider from "@/provider.tsx/framer-provider";
 
 export default function CtaBanner() {

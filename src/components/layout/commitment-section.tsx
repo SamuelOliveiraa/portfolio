@@ -1,6 +1,5 @@
-import { COMMITMENT_ITEMS } from "@/mocks/commitment-section-mock";
-import ServiceItem from "../common/service-item";
-import Text from "../common/text";
+import { COMMITMENT_ITEMS } from "@/mocks";
+import { Text, ServiceItem } from "../common";
 import FramerProvider from "@/provider.tsx/framer-provider";
 
 export default function CommitmentSection() {

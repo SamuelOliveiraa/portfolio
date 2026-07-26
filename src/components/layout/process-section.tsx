@@ -1,7 +1,7 @@
-import Text from "../common/text";
-import ProcessItem from "./components/process-item";
+import { Text } from "@/components/common";
+import { ProcessItem } from "./components";
 import FramerProvider from "@/provider.tsx/framer-provider";
-import { PROCESS_ITEMS } from "@/mocks/process-items";
+import { PROCESS_ITEMS } from "@/mocks";
 
 export default function ProcessSection() {
   return (

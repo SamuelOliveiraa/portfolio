@@ -7,7 +7,7 @@ import { SECTIONS_LINKS } from "@/mocks";
 export default function Footer() {
   return (
     <FramerProvider>
-      <footer className="px-4 xl:p-0" id="footer">
+      <footer className="px-4 xl:p-0 border-t" id="footer">
         <div className="max-w-6xl mx-auto flex flex-col">
           <div className="flex flex-col gap-10 md:flex-row justify-between px-4 lg:px-0 py-10">
             <div className="flex flex-col gap-4">
@@ -47,13 +47,13 @@ export default function Footer() {
                     Legal
                   </Text>
 
-                  <LinkItem link="/politica-privacidade">
+                  <LinkItem link="/privacy-policy">
                     Politica de Privacidade
                   </LinkItem>
 
-                  <LinkItem link="/termos-uso">Termos de uso</LinkItem>
+                  <LinkItem link="/terms-of-use">Termos de uso</LinkItem>
 
-                  <LinkItem link="/termos-uso">
+                  <LinkItem link="/terms-of-use">
                     CNPJ: 12.345.678/0001-90
                   </LinkItem>
                 </ul>

@@ -1,9 +1,10 @@
-import { ScrollLink, Text } from "./";
+import Link from "next/link";
+import Text from "./text";
 
 export default function Logo() {
   return (
-    <Text size="textGeist" asChild className="uppercase w-fit">
-      <ScrollLink targetId="root">DEV.SAMUEL</ScrollLink>
+    <Text size="textGeist" className="uppercase w-fit">
+      <Link href="/">DEV.SAMUEL</Link>
     </Text>
   );
 }

@@ -27,7 +27,7 @@ export default function ScrollLink({
     <ReactScrollLink
       to={targetId}
       smooth="easeOutQuad"
-      duration={100}
+      duration={200}
       offset={-90}
       spy={false}
       className={className}

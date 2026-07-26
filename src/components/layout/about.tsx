@@ -43,7 +43,7 @@ export default function About() {
                   {stack.title}
                 </Text>
 
-                <ul className="flex gap-2">
+                <ul className="flex flex-wrap gap-2">
                   {stack.stacks.map((item, index) => (
                     <AboutListItem key={`${stack.title}-${index}`}>
                       {item}

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ButtonComponent, Text } from "@/components/common";
 import { CalendarCheck } from "lucide-react";
 import FramerProvider from "@/provider.tsx/framer-provider";
+import { WHATSAPP_LINK } from "@/mocks";
 
 export default function CtaBanner() {
   return (
@@ -23,7 +24,7 @@ export default function CtaBanner() {
             </Text>
           </div>
 
-          <Link href={"/"}>
+          <Link href={WHATSAPP_LINK} rel="noopener noreferrer" target="_blank">
             <ButtonComponent className="w-fit p-3 gap-2">
               <CalendarCheck className="size-4" />
               <Text className="text-xs">Agendar Diagnostico</Text>

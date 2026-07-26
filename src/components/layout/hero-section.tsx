@@ -1,9 +1,10 @@
 import { ArrowRight } from "lucide-react";
-import { ButtonComponent, Text } from "../common";
+import { ButtonComponent, ScrollLink, Text } from "../common";
 import { TypingAnimation } from "../ui/typing-animation";
 import MetricsComponent from "./metrics-component";
 import FramerProvider from "@/provider.tsx/framer-provider";
-import { TYPING_TEXT } from "@/mocks";
+import { TYPING_TEXT, WHATSAPP_LINK } from "@/mocks";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -35,14 +36,18 @@ export default function HeroSection() {
         </Text>
 
         <div className="flex flex-col sm:flex-row gap-5">
-          <ButtonComponent className="w-fit">
-            Fazer Orçamento
-            <ArrowRight className="size-4 text-white" />
-          </ButtonComponent>
+          <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+            <ButtonComponent className="w-fit">
+              Fazer Orçamento
+              <ArrowRight className="size-4 text-white" />
+            </ButtonComponent>
+          </Link>
 
-          <ButtonComponent variant="outline" className="w-fit">
-            Ver Projetos
-          </ButtonComponent>
+          <ScrollLink targetId="projetos">
+            <ButtonComponent variant="outline" className="w-fit">
+              Ver Projetos
+            </ButtonComponent>
+          </ScrollLink>
         </div>
 
         <MetricsComponent />

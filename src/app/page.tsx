@@ -7,6 +7,7 @@ import {
   FaqSection,
   HeroSection,
   ProcessSection,
+  About,
   Services
 } from "@/components/layout";
 
@@ -17,10 +18,11 @@ export default function Home() {
       <HeroSection />
       <MarqueeComponent />
       <Services />
+      <About />
       <ProcessSection />
+      <Testimonials />
       <FaqSection />
       <CommitmentSection />
-      <Testimonials />
       <Contact />
       <CtaBanner />
     </>

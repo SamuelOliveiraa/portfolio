@@ -13,6 +13,7 @@ import {
   GITHUB_LINK,
   EMAIL_LINK
 } from "./social-links";
+import { ABOUT_STACKS } from "./about-stacks-mock";
 
 export {
   FAQ_ITEMS,
@@ -27,5 +28,6 @@ export {
   WHATSAPP_LINK,
   LINKEDIN_LINK,
   GITHUB_LINK,
-  EMAIL_LINK
+  EMAIL_LINK,
+  ABOUT_STACKS
 };

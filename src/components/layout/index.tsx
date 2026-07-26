@@ -9,8 +9,10 @@ import HeroSection from "./hero-section";
 import MetricsComponent from "./metrics-component";
 import ProcessSection from "./process-section";
 import Testimonials from "./testimonials";
+import About from "./about";
 
 export {
+  About,
   Footer,
   Header,
   Contact,

@@ -50,7 +50,7 @@ export default function Header() {
       <div className="max-w-6xl w-full mx-auto flex justify-between items-center">
         <Logo />
 
-        <nav className="hidden md:block">
+        <nav aria-label="Navegação principal" className="hidden md:block">
           <ul className="flex justify-between items-center gap-4 text-zinc-500 ">
             {SECTIONS_LINKS.filter((_, index) => index !== 0).map(
               ({ link }, index) => (
@@ -65,25 +65,37 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-2">
           <LanguageToggle />
           <ThemeToggle />
-          <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-            <ButtonComponent className="w-fit">{t("budget")}</ButtonComponent>
-          </Link>
+          <ButtonComponent asChild className="w-fit">
+            <Link
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("budget")}
+            </Link>
+          </ButtonComponent>
         </div>
 
-        <div className="block md:hidden p-2" aria-label="Toggle menu">
+        <div className="block md:hidden p-2">
           <Hamburger
             toggled={isMenuOpen}
             toggle={setIsMenuOpen}
             size={24}
             duration={0.3}
             rounded
+            label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
           />
         </div>
       </div>
 
       {isMenuOpen && (
-        <div className="absolute top-full left-0 w-full bg-zinc-50 border-y md:hidden p-4 flex flex-col gap-4">
-          <nav>
+        <div
+          id="mobile-menu"
+          className="absolute top-full left-0 w-full bg-zinc-50 border-y md:hidden p-4 flex flex-col gap-4"
+        >
+          <nav aria-label="Navegação mobile">
             <ul className="flex flex-col gap-4 text-zinc-500">
               {SECTIONS_LINKS.filter((_, index) => index !== 0).map(
                 ({ link }, index) => (
@@ -104,15 +116,19 @@ export default function Header() {
             <ThemeToggle />
           </div>
           <div className="flex items-center gap-2">
-            <Link
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setIsMenuOpen(false)}
+            <ButtonComponent
+              asChild
               className="w-full"
+              onClick={() => setIsMenuOpen(false)}
             >
-              <ButtonComponent>{t("budget")}</ButtonComponent>
-            </Link>
+              <Link
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("budget")}
+              </Link>
+            </ButtonComponent>
           </div>
         </div>
       )}

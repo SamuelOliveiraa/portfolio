@@ -34,12 +34,16 @@ export default function HeroSection() {
           {t("description")}
         </Text>
         <div className="flex flex-col sm:flex-row gap-5">
-          <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-            <ButtonComponent className="w-fit">
+          <ButtonComponent asChild className="w-fit">
+            <Link
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {t("budget")}
               <ArrowRight className="size-4 text-white" />
-            </ButtonComponent>
-          </Link>
+            </Link>
+          </ButtonComponent>
           <ScrollLink targetId="projects">
             <ButtonComponent variant="outline" className="w-fit">
               {t("projects")}

@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth !important;
+  color-scheme: light dark;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -239,8 +240,15 @@ html.dark {
   }
   body {
     @apply bg-background text-foreground;
+    text-rendering: optimizeLegibility;
   }
   html {
     @apply font-sans;
+  }
+  :focus-visible {
+    @apply outline-2 outline-emerald-500 outline-offset-2;
+  }
+  section[id] {
+    scroll-margin-top: 6rem;
   }
 }

@@ -7,7 +7,11 @@ interface ExternalLinkProps {
   Icon: React.ElementType;
 }
 
-export default function ExternalLink({ link, text, Icon }: ExternalLinkProps) {
+export default function ExternalLink({
+  link = "#",
+  text,
+  Icon
+}: ExternalLinkProps) {
   return (
     <Text as="li" size="textMedium" className="w-fit">
       <a

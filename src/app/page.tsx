@@ -12,7 +12,7 @@ import {
 
 export default function Home() {
   return (
-    <>
+    <main id="main-content">
       <HeroSection />
       <MarqueeComponent />
       <Services />
@@ -23,6 +23,6 @@ export default function Home() {
       <FaqSection />
       <CommitmentSection />
       <Contact />
-    </>
+    </main>
   );
 }

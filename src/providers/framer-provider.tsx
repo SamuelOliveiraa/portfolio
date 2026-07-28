@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { motion, useMotionValueEvent, useReducedMotion, useScroll } from "framer-motion";
 import { ReactNode, useState } from "react";
 
 interface FramerProviderProps {
@@ -14,9 +14,14 @@ export default function FramerProvider({
 }: FramerProviderProps) {
   const [isScrollingDown, setIsScrollingDown] = useState(true);
   const { scrollY } = useScroll();
+  // const shouldReduceMotion = useReducedMotion();
   useMotionValueEvent(scrollY, "change", current =>
     setIsScrollingDown(current > (scrollY.getPrevious() ?? 0))
   );
+
+  // if (shouldReduceMotion) {
+  //   return <div className={`transform-gpu ${className}`}>{children}</div>;
+  // }
 
   return (
     <motion.div

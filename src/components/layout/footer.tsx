@@ -64,8 +64,10 @@ export default function Footer() {
               <ButtonComponent
                 variant="outline"
                 className="size-7 p-0 opacity-40"
+                aria-label="Voltar ao topo da pagina"
               >
                 <ChevronUp className="size-4" />
+                <span className="sr-only">Voltar ao topo da pagina</span>
               </ButtonComponent>
             </ScrollLink>
           </div>

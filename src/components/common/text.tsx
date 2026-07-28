@@ -2,7 +2,7 @@ import { Slot } from "@radix-ui/react-slot";
 import { tv } from "tailwind-variants";
 
 type TextProps = {
-  as?: React.HTMLElementType;
+  as?: React.ElementType;
   children: React.ReactNode;
   size?:
     | "textSmall"
@@ -19,7 +19,7 @@ const textVariants = tv({
   base: "text-base leading-5 font-bold font-inter antialiased",
   variants: {
     size: {
-      textGeist: "text-xs font-medium font-geist-mono",
+      textGeist: "text-xs font-medium font-geist-mono tracking-[0.2em] uppercase",
       textSmall: "text-xs font-medium",
       textMedium: "text-sm font-normal",
       titleSmall: "text-2xl font-semibold",

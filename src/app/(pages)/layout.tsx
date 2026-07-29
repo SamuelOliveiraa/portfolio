@@ -18,7 +18,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.BASE_URL || "https://samuel-oliveira.com"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://samuel-oliveira.com"
+  ),
   title: {
     default: "Samuel Oliveira | Desenvolvimento Web",
     template: "%s | Samuel Oliveira"
@@ -39,7 +41,9 @@ export const metadata: Metadata = {
     "Back-end",
     "Portfólio"
   ],
-  authors: [{ name: "Samuel Oliveira", url: `${process.env.BASE_URL}` }],
+  authors: [
+    { name: "Samuel Oliveira", url: `${process.env.NEXT_PUBLIC_SITE_URL}` }
+  ],
   creator: "Samuel Oliveira",
   publisher: "Samuel Oliveira",
   formatDetection: {
@@ -68,7 +72,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: `${process.env.BASE_URL}`,
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}`,
     title: "Samuel Oliveira | Desenvolvimento Web",
     description:
       "Portfólio profissional de Samuel Oliveira com foco em sites institucionais, landing pages e soluções web voltadas para conversão.",

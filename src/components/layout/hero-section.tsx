@@ -16,7 +16,10 @@ export default function HeroSection() {
 
   return (
     <FramerProvider>
-      <section className="flex flex-col px-4 xl:px-0 gap-6 max-w-6xl mx-auto my-10 lg:mt-16">
+      <section
+        className="flex flex-col px-4 xl:px-0 gap-6 max-w-6xl mx-auto my-10 lg:mt-16"
+        id="hero-section"
+      >
         <Text size="textGeist" className="text-emerald-500 uppercase">
           {t("eyebrow")}
         </Text>

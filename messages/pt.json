@@ -32,21 +32,21 @@
     "title": "Soluções que movem o",
     "highlight": "ponteiro do negócio.",
     "items": {
-      "saas": {
-        "title": "SaaS e aplicações web",
-        "description": "Aplicações completas do zero — autenticação, banco de dados, painel e pagamentos. Arquitetura pronta para escalar."
+      "card1": {
+        "title": "Criação de Sites",
+        "description": "Criação de páginas completas do zero focadas em vendas online: desde a estrutura visual até a organização dos botões e textos."
       },
-      "landing": {
-        "title": "Landing pages de conversão",
-        "description": "Páginas focadas em transformar visitantes em clientes, com CRO, SEO técnico e máxima performance."
-      },
-      "api": {
+      "card2": {
         "title": "Integrações de APIs",
         "description": "REST, GraphQL, webhooks e integrações com Stripe, WhatsApp, CRMs e qualquer serviço externo."
       },
-      "performance": {
-        "title": "Performance e otimização",
-        "description": "Auditoria técnica, Core Web Vitals e redução de bundle — resultados mensuráveis, não estimativas."
+      "card3": {
+        "title": "Landing pages de alta conversão",
+        "description": "Páginas modernas, responsivas e focadas em transformar visitantes em clientes, com design exclusivo."
+      },
+      "card4": {
+        "title": "Manutenção e Suporte Contínuo",
+        "description": "Acompanhamento pós-lançamento com 30 dias de garantia e opção de planos de manutenção para manter seu site seguro e atualizado."
       }
     }
   },
@@ -69,7 +69,7 @@
     "items": {
       "alignment": {
         "title": "Alinhamento",
-        "description": "Conversa para entender o modelo de negócio, os objetivos e o escopo completo do projeto."
+        "description": "Entendo a fundo o seu produto, seu público-alvo e seus objetivos para criar uma estrutura focada em vendas."
       },
       "design": {
         "title": "Design e protótipo",

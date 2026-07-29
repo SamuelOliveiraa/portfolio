@@ -11,6 +11,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import toast from "react-hot-toast";
 import { EMAIL_LINK, LINKEDIN_LINK, WHATSAPP_LINK } from "@/constants";
 import { useLocale, useTranslations } from "next-intl";
+import { formatPhone } from "@/lib/mask";
 
 type FormValues = {
   name: string;
@@ -25,7 +26,7 @@ export default function Contact() {
   const contactSchema = z.object({
     name: z.string().min(1, t("validation.name")),
     email: z.email(t("validation.email")),
-    phone: z.string().min(1, t("validation.phone")),
+    phone: z.string().min(14, t("validation.phone")),
     message: z.string().min(1, t("validation.message"))
   });
   const {
@@ -109,15 +110,21 @@ export default function Contact() {
             />
             <Input
               type="text"
+              maxLength={15}
               label={t("phone")}
               placeholder="(11) 99999-9999"
-              register={register("phone")}
+              register={register("phone", {
+                onChange: e => {
+                  e.target.value = formatPhone(e.target.value);
+                }
+              })}
               error={errors.phone}
             />
+
             <div className="flex flex-col gap-1">
               <Text
                 size="textSmall"
-                className={errors.message ? "text-red-500" : "text-zinc-400"}
+                className={errors.message ? "text-red-400/90" : "text-zinc-400"}
               >
                 {t("message")}
               </Text>
@@ -130,11 +137,12 @@ export default function Contact() {
                 {...register("message")}
               />
               {errors.message && (
-                <span className="text-sm text-red-500">
+                <span className="text-sm text-red-400/90">
                   {errors.message.message}
                 </span>
               )}
             </div>
+
             <ButtonComponent type="submit" loading={isSubmitting}>
               {t("submit")}
               <ArrowRight className="size-3" />

@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import type { Metadata, Viewport } from "next";
-import "./globals.css";
+import "../globals.css";
 import { Toaster } from "react-hot-toast";
 import { Inter, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
@@ -18,9 +18,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://samuel-oliveira.com"),
+  metadataBase: new URL(process.env.BASE_URL || "https://samuel-oliveira.com"),
   title: {
-    default: "Samuel Oliveira | Desenvolvimento de Sites que Vendem",
+    default: "Samuel Oliveira | Desenvolvimento Web",
     template: "%s | Samuel Oliveira"
   },
   description:
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "Back-end",
     "Portfólio"
   ],
-  authors: [{ name: "Samuel Oliveira", url: "https://samuel-oliveira.com" }],
+  authors: [{ name: "Samuel Oliveira", url: `${process.env.BASE_URL}` }],
   creator: "Samuel Oliveira",
   publisher: "Samuel Oliveira",
   formatDetection: {
@@ -68,8 +68,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://samuel-oliveira.com",
-    title: "Samuel Oliveira | Desenvolvimento de Sites que Vendem",
+    url: `${process.env.BASE_URL}`,
+    title: "Samuel Oliveira | Desenvolvimento Web",
     description:
       "Portfólio profissional de Samuel Oliveira com foco em sites institucionais, landing pages e soluções web voltadas para conversão.",
     siteName: "Samuel Oliveira Portfolio",
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Samuel Oliveira | Desenvolvimento de Sites que Vendem",
+    title: "Samuel Oliveira | Desenvolvimento Web",
     description:
       "Portfólio profissional com foco em desenvolvimento web com alto impacto comercial e performance.",
     images: ["/og-image.svg"]
@@ -106,6 +106,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1
 };
+
 export default async function RootLayout({
   children
 }: Readonly<{
@@ -123,7 +124,7 @@ export default async function RootLayout({
       <body className="min-h-screen bg-background text-foreground antialiased">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-sm focus:bg-emerald-900 focus:px-4 focus:py-2 focus:text-white"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-100 focus:rounded-sm focus:bg-emerald-900 focus:px-4 focus:py-2 focus:text-white"
         >
           Pular para o conteúdo
         </a>

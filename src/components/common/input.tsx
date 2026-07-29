@@ -35,7 +35,7 @@ export default function Input({
     <div className="flex flex-col gap-1">
       <Text
         size="textSmall"
-        className={error ? "text-red-500" : "text-zinc-400"}
+        className={error ? "text-red-400/90" : "text-zinc-400"}
       >
         {label}
       </Text>
@@ -52,7 +52,9 @@ export default function Input({
         {...rest}
       />
 
-      {error && <span className="text-sm text-red-500">{error.message}</span>}
+      {error && (
+        <span className="text-sm text-red-400/90">{error.message}</span>
+      )}
     </div>
   );
 }

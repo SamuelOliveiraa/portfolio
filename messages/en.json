@@ -32,19 +32,19 @@
     "title": "Solutions that move the",
     "highlight": "business needle.",
     "items": {
-      "saas": {
+      "card1": {
         "title": "SaaS and web apps",
         "description": "Complete applications from scratch — authentication, database, dashboard, and payments. Architecture built to scale."
       },
-      "landing": {
+      "card2": {
         "title": "Conversion landing pages",
         "description": "Pages focused on turning visitors into clients, with CRO, technical SEO, and maximum performance."
       },
-      "api": {
+      "card3": {
         "title": "API integrations",
         "description": "REST, GraphQL, webhooks, and integrations with Stripe, WhatsApp, CRMs, and any external service."
       },
-      "performance": {
+      "card4": {
         "title": "Performance and optimization",
         "description": "Technical audits, Core Web Vitals, and bundle reduction — measurable results, not estimates."
       }

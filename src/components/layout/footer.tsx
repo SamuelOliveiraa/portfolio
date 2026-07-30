@@ -48,7 +48,9 @@ export default function Footer() {
                   </Text>
                   <LinkItem link="/privacy-policy">{t("privacy")}</LinkItem>
                   <LinkItem link="/terms-of-use">{t("terms")}</LinkItem>
-                  <Text as="li">CNPJ: 12.345.678/0001-90</Text>
+                  <LinkItem link="/terms-of-use">
+                    CNPJ: 12.345.678/0001-90
+                  </LinkItem>
                 </ul>
               </nav>
             </div>
@@ -60,16 +62,17 @@ export default function Footer() {
             >
               {t("copyright")}
             </Text>
-            <ScrollLink targetId="root">
-              <ButtonComponent
-                variant="outline"
-                className="size-7 p-0 opacity-40"
-                aria-label="Voltar ao topo da pagina"
-              >
+            <ButtonComponent
+              variant="outline"
+              className="size-7 p-0 opacity-40 hover:opacity-100 hover:scale-110 focus-visible:opacity-100 focus-visible:scale-110"
+              aria-label="Voltar ao topo da pagina"
+              asChild
+            >
+              <ScrollLink targetId="root">
                 <ChevronUp className="size-4" />
                 <span className="sr-only">Voltar ao topo da pagina</span>
-              </ButtonComponent>
-            </ScrollLink>
+              </ScrollLink>
+            </ButtonComponent>
           </div>
         </div>
       </footer>

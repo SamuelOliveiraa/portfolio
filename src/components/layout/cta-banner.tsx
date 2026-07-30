@@ -24,12 +24,16 @@ export default function CtaBanner() {
               {t("description")}
             </Text>
           </div>
-          <Link href={WHATSAPP_LINK} rel="noopener noreferrer" target="_blank">
-            <ButtonComponent className="w-fit p-3 gap-2">
+          <ButtonComponent className="w-fit p-3 gap-2" asChild>
+            <Link
+              href={WHATSAPP_LINK}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <CalendarCheck className="size-4" />
               <Text className="text-xs">{t("action")}</Text>
-            </ButtonComponent>
-          </Link>
+            </Link>
+          </ButtonComponent>
         </div>
       </section>
     </FramerProvider>

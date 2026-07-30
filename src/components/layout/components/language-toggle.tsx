@@ -1,6 +1,5 @@
 "use client";
 
-import { Text } from "@/components/common";
 import { twMerge } from "tailwind-merge";
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
@@ -15,25 +14,34 @@ export default function LanguageToggle() {
   };
 
   return (
-    <div className="flex items-center cursor-pointer">
-      <Text
+    <div
+      className="flex items-center cursor-pointer"
+      role="group"
+      aria-label="Selecionar idioma"
+    >
+      <button
+        aria-pressed={locale === "pt"}
+        aria-label="Mudar para Português"
         className={twMerge(
-          "border p-2 rounded-tl-sm rounded-bl-sm flex items-center justify-center transition-all duration-200",
+          "border p-2 rounded-tl-sm rounded-bl-sm flex items-center justify-center transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-black focus-visible:ring-offset-white dark:focus-visible:ring-white dark:focus-visible:ring-offset-black",
           locale === "pt" ? "bg-emerald-900 text-white" : ""
         )}
         onClick={() => handleLanguageChange("pt")}
       >
         PT
-      </Text>
-      <Text
+      </button>
+
+      <button
+        aria-pressed={locale === "en"}
+        aria-label="Switch to English"
         className={twMerge(
-          "border p-2 rounded-tr-sm rounded-br-sm flex items-center justify-center transition-all duration-200",
+          "border p-2 rounded-tr-sm rounded-br-sm flex items-center justify-center transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-black focus-visible:ring-offset-white dark:focus-visible:ring-white dark:focus-visible:ring-offset-black",
           locale === "en" ? "bg-emerald-900 text-white" : ""
         )}
         onClick={() => handleLanguageChange("en")}
       >
         EN
-      </Text>
+      </button>
     </div>
   );
 }

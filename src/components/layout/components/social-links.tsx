@@ -9,7 +9,7 @@ export default function SocialLinks() {
           asChild
           variant="outline"
           key={`social-link-${index}`}
-          className="size-8 p-0 opacity-50 hover:scale-110"
+          className="size-8 p-0 opacity-50 transition-all duration-300 hover:opacity-100 hover:scale-110 focus-visible:opacity-100 focus-visible:scale-110"
         >
           <a
             href={link}

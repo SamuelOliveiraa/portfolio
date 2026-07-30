@@ -47,11 +47,9 @@ export default function HeroSection() {
               <ArrowRight className="size-4 text-white" />
             </Link>
           </ButtonComponent>
-          <ScrollLink targetId="projects">
-            <ButtonComponent variant="outline" className="w-fit">
-              {t("projects")}
-            </ButtonComponent>
-          </ScrollLink>
+          <ButtonComponent variant="outline" className="w-fit" asChild>
+            <ScrollLink targetId="about">{t("projects")}</ScrollLink>
+          </ButtonComponent>
         </div>
         <MetricsComponent />
       </section>

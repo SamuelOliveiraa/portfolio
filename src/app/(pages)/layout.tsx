@@ -96,8 +96,8 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
-    apple: [{ url: "/icon.svg" }]
+    icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
+    apple: "/apple-touch-icon.png"
   },
   manifest: "/site.webmanifest"
 };

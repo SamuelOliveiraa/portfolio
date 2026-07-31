@@ -1,10 +1,17 @@
 import Link from "next/link";
-import Text from "./text";
+import Image from "next/image";
 
 export default function Logo() {
   return (
-    <Text size="textGeist" className="uppercase w-fit">
-      <Link href="/">DEV.SAMUEL</Link>
-    </Text>
+    <Link href="/" className="w-fit">
+      <Image
+        alt="Logo"
+        src="/favicon.ico"
+        width={100}
+        height={100}
+        className="size-12"
+        loading="eager"
+      />
+    </Link>
   );
 }

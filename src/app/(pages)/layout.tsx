@@ -126,12 +126,6 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-screen bg-background text-foreground antialiased">
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-100 focus:rounded-sm focus:bg-emerald-900 focus:px-4 focus:py-2 focus:text-white"
-        >
-          Pular para o conteúdo
-        </a>
         <NextIntlClientProvider messages={messages}>
           <Toaster
             position="top-right"
@@ -161,7 +155,9 @@ export default async function RootLayout({
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div id="root" className="sr-only" />
             <Header />
-            {children}
+            <main id="main-content" tabIndex={-1}>
+              {children}
+            </main>
             <Footer />
             <GoogleAnalytics gaId={process.env.GA_ID!} />
           </ThemeProvider>

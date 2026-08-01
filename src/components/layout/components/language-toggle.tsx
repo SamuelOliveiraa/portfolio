@@ -23,7 +23,7 @@ export default function LanguageToggle() {
         aria-pressed={locale === "pt"}
         aria-label="Mudar para Português"
         className={twMerge(
-          "border p-2 rounded-tl-sm rounded-bl-sm flex items-center justify-center transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-black focus-visible:ring-offset-white dark:focus-visible:ring-white dark:focus-visible:ring-offset-black",
+          "border cursor-pointer p-2 rounded-tl-sm rounded-bl-sm flex items-center justify-center transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-black focus-visible:ring-offset-white dark:focus-visible:ring-white dark:focus-visible:ring-offset-black",
           locale === "pt" ? "bg-emerald-900 text-white" : ""
         )}
         onClick={() => handleLanguageChange("pt")}
@@ -35,7 +35,7 @@ export default function LanguageToggle() {
         aria-pressed={locale === "en"}
         aria-label="Switch to English"
         className={twMerge(
-          "border p-2 rounded-tr-sm rounded-br-sm flex items-center justify-center transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-black focus-visible:ring-offset-white dark:focus-visible:ring-white dark:focus-visible:ring-offset-black",
+          "border cursor-pointer p-2 rounded-tr-sm rounded-br-sm flex items-center justify-center transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-black focus-visible:ring-offset-white dark:focus-visible:ring-white dark:focus-visible:ring-offset-black",
           locale === "en" ? "bg-emerald-900 text-white" : ""
         )}
         onClick={() => handleLanguageChange("en")}

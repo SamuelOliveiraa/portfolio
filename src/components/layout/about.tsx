@@ -5,7 +5,6 @@ import { Text } from "../common";
 import { AboutListItem } from "./components";
 import { useAboutStacks } from "@/content";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 
 export default function About() {
   const t = useTranslations("About");

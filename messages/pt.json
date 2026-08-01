@@ -300,5 +300,16 @@
         }
       ]
     }
+  },
+  "ErrorPage": {
+    "title": "Algo deu errado por aqui",
+    "message": "Sua solicitação não pôde ser processada no momento. Tente recarregar ou, se o problema persistir, entre em contato.",
+    "button1": "Tentar Novamente",
+    "button2": "Voltar para o Início"
+  },
+  "NotFoundPage": {
+    "title": "Ops! Parece que você se perdeu por aqui...",
+    "message": "Que tal voltar ao início ou entrar em contato para conversarmos sobre seu projeto?",
+    "button": "Voltar para o Início"
   }
 }

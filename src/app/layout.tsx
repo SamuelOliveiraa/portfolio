@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import type { Metadata, Viewport } from "next";
-import "../globals.css";
+import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { Inter, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
@@ -125,7 +125,7 @@ export default async function RootLayout({
       className={`${inter.className} ${geist_mono.className}`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen bg-background text-foreground antialiased">
+      <body className="min-h-screen flex flex-col bg-background text-foreground antialiased">
         <NextIntlClientProvider messages={messages}>
           <Toaster
             position="top-right"
@@ -155,7 +155,11 @@ export default async function RootLayout({
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div id="root" className="sr-only" />
             <Header />
-            <main id="main-content" tabIndex={-1}>
+            <main
+              id="main-content"
+              className="flex flex-col flex-1"
+              tabIndex={-1}
+            >
               {children}
             </main>
             <Footer />

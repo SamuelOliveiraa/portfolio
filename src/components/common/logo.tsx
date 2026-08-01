@@ -7,9 +7,9 @@ export default function Logo() {
       <Image
         alt="Logo"
         src="/favicon.ico"
-        width={100}
-        height={100}
-        className="size-12"
+        width={50}
+        height={50}
+        className="size-9"
         loading="eager"
       />
     </Link>

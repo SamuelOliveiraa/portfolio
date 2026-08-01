@@ -300,5 +300,16 @@
         }
       ]
     }
+  },
+  "ErrorPage": {
+    "title": "Something went wrong",
+    "message": "Your request couldn't be processed right now. Try reloading or, if the problem persists, feel free to get in touch.",
+    "button1": "Try Again",
+    "button2": "Back to Home"
+  },
+  "NotFoundPage": {
+    "title": "Oops! Looks like you got lost...",
+    "message": "How about going back to the home page or reaching out to discuss your project?",
+    "button": "Back to Home"
   }
 }

@@ -43,7 +43,7 @@ export default function Header() {
       id="header"
       ref={headerRef}
       className={twMerge(
-        "w-full p-4 xl:px-0 sticky top-0 left-0 z-50 transition-all duration-300",
+        "w-full px-4 py-1 xl:px-0 md:py-4 sticky top-0 left-0 z-50 transition-all duration-300",
         scrolled && "bg-zinc-50/90 backdrop-blur-md border-b"
       )}
     >
@@ -76,7 +76,7 @@ export default function Header() {
           </ButtonComponent>
         </div>
 
-        <div className="block md:hidden p-2">
+        <div className="block md:hidden">
           <Hamburger
             toggled={isMenuOpen}
             toggle={setIsMenuOpen}

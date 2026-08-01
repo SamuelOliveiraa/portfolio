@@ -11,7 +11,6 @@ import {
 } from "@/components/layout";
 
 export default function Home() {
-  throw new Error("");
   return (
     <main id="main-content">
       <HeroSection />

@@ -11,6 +11,7 @@ export default function Logo() {
         height={50}
         className="size-9"
         loading="eager"
+        priority
       />
     </Link>
   );

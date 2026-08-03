@@ -1,14 +1,13 @@
 "use client";
 
 import { ButtonComponent, LinkItem, Logo } from "../common";
-import { ThemeToggle } from "./components";
+import { ThemeToggle, LanguageToggle } from "./components";
 import { useTranslations } from "next-intl";
 import { twMerge } from "tailwind-merge";
 import { SECTIONS_LINKS, WHATSAPP_LINK } from "@/constants";
-import Link from "next/link";
 import { Squash as Hamburger } from "hamburger-react";
-import LanguageToggle from "./components/language-toggle";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 export default function Header() {
   const t = useTranslations("Header");

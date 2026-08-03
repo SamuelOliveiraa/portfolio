@@ -1,15 +1,19 @@
+import TestimonialsItems from "./testimonials-items";
 import MarqueeComponent from "./marquee-component";
+import LanguageToggle from "./language-toggle";
 import ProcessItem from "./process-item";
+import ProjectItem from "./project-item";
 import SocialLinks from "./social-links";
 import ThemeToggle from "./theme-toggle";
-import TestimonialsItems from "./testimonials-items";
 import TagTech from "./tag-tech";
 
 export {
-  MarqueeComponent,
+  TagTech,
   ProcessItem,
+  ProjectItem,
   SocialLinks,
-  TestimonialsItems,
   ThemeToggle,
-  AboutListItem
+  LanguageToggle,
+  TestimonialsItems,
+  MarqueeComponent
 };

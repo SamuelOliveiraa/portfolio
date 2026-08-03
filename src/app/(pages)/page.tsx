@@ -1,15 +1,15 @@
 import { MarqueeComponent } from "@/components/layout/components";
 import {
-  CommitmentSection,
+  About,
   Contact,
+  Services,
+  Projects,
   CtaBanner,
   FaqSection,
   HeroSection,
   ProcessSection,
-  About,
-  Services
+  CommitmentSection
 } from "@/components/layout";
-import Projects from "@/components/layout/projects";
 
 export default function Home() {
   return (

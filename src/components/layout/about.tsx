@@ -4,7 +4,7 @@ import { FramerProvider } from "@/providers";
 import { Text } from "../common";
 import { useAboutStacks } from "@/content";
 import { useTranslations } from "next-intl";
-import TagTech from "./components/tag-tech";
+import { TagTech } from "./components";
 
 export default function About() {
   const t = useTranslations("About");

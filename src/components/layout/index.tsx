@@ -8,6 +8,7 @@ import Header from "./header";
 import HeroSection from "./hero-section";
 import MetricsComponent from "./metrics-component";
 import ProcessSection from "./process-section";
+import Projects from "./projects";
 import Testimonials from "./testimonials";
 import About from "./about";
 
@@ -18,6 +19,7 @@ export {
   Contact,
   Services,
   CtaBanner,
+  Projects,
   FaqSection,
   HeroSection,
   Testimonials,

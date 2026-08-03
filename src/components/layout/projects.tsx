@@ -2,7 +2,7 @@
 
 import { FramerProvider } from "@/providers";
 import { Text } from "../common";
-import ProjectItem from "./components/project-item";
+import { ProjectItem } from "./components";
 import { useTranslations } from "next-intl";
 import { useProjectsItems } from "@/content";
 

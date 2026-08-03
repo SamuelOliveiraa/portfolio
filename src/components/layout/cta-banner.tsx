@@ -21,7 +21,7 @@ export default function CtaBanner() {
             >
               {t("eyebrow")}
             </Text>
-            <Text as="h2" size="titleSmall" as="h2" className="text-zinc-950">
+            <Text as="h2" size="titleSmall" className="text-zinc-950">
               {t("title")}
             </Text>
             <Text as="p" className="max-w-md text-zinc-500">

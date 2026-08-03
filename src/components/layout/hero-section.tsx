@@ -23,7 +23,7 @@ export default function HeroSection() {
         <Text as="h3" size="textGeist" className="text-emerald-500 uppercase">
           {t("eyebrow")}
         </Text>
-        <Text as="h2" size="titleLarge" as="h1">
+        <Text as="h1" size="titleLarge">
           <span className="text-zinc-950 block">{t("title")}</span>
           {t("titleSuffix")}{" "}
           <span className="text-emerald-900 block">

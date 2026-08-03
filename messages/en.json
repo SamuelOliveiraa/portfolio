@@ -113,6 +113,9 @@
       }
     ]
   },
+  "PersonalCard": {
+    "message": "Full-Stack Developer · Available for projects"
+  },
   "Faq": {
     "eyebrow": "Frequently asked questions",
     "title": "I answer before",
@@ -139,6 +142,34 @@
         "content": "Yes. I use a staging environment available throughout development, with regular updates and direct communication via WhatsApp."
       }
     ]
+  },
+  "Projects": {
+    "eyebrow": "Featured projects",
+    "title": "Real problems,",
+    "highlight": "concrete solutions.",
+    "items": {
+      "card1": {
+        "description": "Replaced Excel spreadsheets with a time tracking, PTO, and payroll system for 200+ employees.",
+        "title": "HR SaaS Platform",
+        "link": "https://portfolio-staging-samuel.vercel.app/",
+        "techs": ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+        "src": "https://raw.githubusercontent.com/SamuelOliveiraa/help-desk/main/public/og-image.png"
+      },
+      "card2": {
+        "description": "Replaced Excel spreadsheets with a time tracking, PTO, and payroll system for 200+ employees.",
+        "title": "HR SaaS Platform",
+        "link": "https://portfolio-staging-samuel.vercel.app/",
+        "techs": ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+        "src": "https://raw.githubusercontent.com/SamuelOliveiraa/help-desk/main/public/og-image.png"
+      },
+      "card3": {
+        "description": "Replaced Excel spreadsheets with a time tracking, PTO, and payroll system for 200+ employees.",
+        "title": "HR SaaS Platform",
+        "link": "https://portfolio-staging-samuel.vercel.app/",
+        "techs": ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+        "src": "https://raw.githubusercontent.com/SamuelOliveiraa/help-desk/main/public/og-image.png"
+      }
+    }
   },
   "Commitment": {
     "title": "My commitment",

@@ -113,6 +113,9 @@
       }
     ]
   },
+  "PersonalCard": {
+    "message": "Desenvolvedor Full-Stack · Disponível para projetos"
+  },
   "Faq": {
     "eyebrow": "Dúvidas frequentes",
     "title": "Respondo antes",

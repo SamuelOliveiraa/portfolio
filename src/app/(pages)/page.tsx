@@ -10,12 +10,14 @@ import {
   ProcessSection,
   CommitmentSection
 } from "@/components/layout";
+import PersonalCard from "@/components/layout/components/personal-card";
 
 export default function Home() {
   return (
     <main id="main-content">
       <HeroSection />
       <MarqueeComponent />
+      <PersonalCard />
       <Services />
       <About />
       <Projects />

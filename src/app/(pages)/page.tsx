@@ -9,6 +9,7 @@ import {
   About,
   Services
 } from "@/components/layout";
+import Projects from "@/components/layout/projects";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <MarqueeComponent />
       <Services />
       <About />
+      <Projects />
       <ProcessSection />
       <CtaBanner />
       {/*<Testimonials />*/}

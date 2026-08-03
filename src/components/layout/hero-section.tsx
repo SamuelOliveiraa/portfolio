@@ -20,10 +20,10 @@ export default function HeroSection() {
         className="flex flex-col px-4 xl:px-0 gap-6 max-w-6xl mx-auto my-10 lg:mt-16"
         id="hero-section"
       >
-        <Text size="textGeist" className="text-emerald-500 uppercase">
+        <Text as="h3" size="textGeist" className="text-emerald-500 uppercase">
           {t("eyebrow")}
         </Text>
-        <Text size="titleLarge" as="h1">
+        <Text as="h2" size="titleLarge" as="h1">
           <span className="text-zinc-950 block">{t("title")}</span>
           {t("titleSuffix")}{" "}
           <span className="text-emerald-900 block">
@@ -33,7 +33,7 @@ export default function HeroSection() {
             />
           </span>
         </Text>
-        <Text size="textMedium" className="max-w-lg text-zinc-500">
+        <Text as="p" size="textMedium" className="max-w-lg text-zinc-500">
           {t("description")}
         </Text>
         <div className="flex flex-col sm:flex-row gap-5">

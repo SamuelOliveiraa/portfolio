@@ -14,10 +14,14 @@ export default function Testimonials() {
       <section className="border-y py-20 px-4 xl:px-0" id="testimonials">
         <div className="max-w-6xl mx-auto flex flex-col gap-6">
           <div className="flex flex-col md:justify-center gap-4">
-            <Text size="textGeist" className="text-emerald-500 uppercase">
+            <Text
+              as="h3"
+              size="textGeist"
+              className="text-emerald-500 uppercase"
+            >
               {t("eyebrow")}
             </Text>
-            <Text size="titleMedium" className="max-w-3xl">
+            <Text as="h2" size="titleMedium" className="max-w-3xl">
               <span className="text-zinc-950">{t("title")}</span>{" "}
               {t("highlight")}
             </Text>

@@ -2,9 +2,9 @@
 
 import { FramerProvider } from "@/providers";
 import { Text } from "../common";
-import { AboutListItem } from "./components";
 import { useAboutStacks } from "@/content";
 import { useTranslations } from "next-intl";
+import TagTech from "./components/tag-tech";
 
 export default function About() {
   const t = useTranslations("About");
@@ -18,7 +18,7 @@ export default function About() {
               {t("title_tag")}
             </Text>
 
-            <Text size="titleMedium" className="max-w-3xl">
+            <Text as="h2" size="titleMedium" className="max-w-3xl">
               <span className="text-zinc-950">{t("title")}</span>{" "}
               {t("highlight")}
             </Text>
@@ -33,14 +33,6 @@ export default function About() {
           </div>
 
           <div className="flex flex-col gap-4 border md:border-0 md:border-l p-4 md:pl-8 md:pr-0 md:py-0">
-            {/*<Image
-              src="https://avatars.githubusercontent.com/u/86499135?v=4"
-              alt="Samuel Oliveira"
-              width={350}
-              height={300}
-              className="rounded-sm"
-            />*/}
-
             <div className="flex flex-col gap-6">
               <Text size="textGeist" className="text-emerald-500 uppercase">
                 {t("stacks_title")}
@@ -54,9 +46,7 @@ export default function About() {
 
                   <ul className="flex flex-wrap gap-2">
                     {stack.stacks.map((item, index) => (
-                      <AboutListItem key={`${stack.title}-${index}`}>
-                        {item}
-                      </AboutListItem>
+                      <TagTech key={`${stack.title}-${index}`}>{item}</TagTech>
                     ))}
                   </ul>
                 </div>

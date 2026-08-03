@@ -60,14 +60,18 @@ export default function Contact() {
       <section className="border-y py-20 px-4 xl:px-0" id="contact">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex flex-col md:justify-center gap-4">
-            <Text size="textGeist" className="text-emerald-500 uppercase">
+            <Text
+              as="h3"
+              size="textGeist"
+              className="text-emerald-500 uppercase"
+            >
               {t("eyebrow")}
             </Text>
-            <Text size="titleMedium" className="max-w-3xl">
+            <Text as="h2" size="titleMedium" className="max-w-3xl">
               <span className="text-zinc-950">{t("title")}</span>{" "}
               {t("highlight")}
             </Text>
-            <Text size="textMedium" className="text-zinc-500 max-w-xs">
+            <Text as="p" size="textMedium" className="text-zinc-500 max-w-xs">
               {t("description")}
             </Text>
             <nav>

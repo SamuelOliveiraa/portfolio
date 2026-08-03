@@ -14,10 +14,14 @@ export default function CtaBanner() {
       <section className="py-6 px-4 xl:px-0 md:py-10 border-y" id="cta-banner">
         <div className="max-w-6xl mx-auto border rounded-md px-6 py-10 md:p-14 flex flex-col md:items-center md:flex-row justify-between gap-10 md:gap-0">
           <div className="flex flex-col gap-4">
-            <Text className="text-emerald-500 uppercase" size="textGeist">
+            <Text
+              as="h3"
+              className="text-emerald-500 uppercase"
+              size="textGeist"
+            >
               {t("eyebrow")}
             </Text>
-            <Text size="titleSmall" as="h2" className="text-zinc-950">
+            <Text as="h2" size="titleSmall" as="h2" className="text-zinc-950">
               {t("title")}
             </Text>
             <Text as="p" className="max-w-md text-zinc-500">

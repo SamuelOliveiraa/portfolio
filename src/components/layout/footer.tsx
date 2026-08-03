@@ -17,7 +17,9 @@ export default function Footer() {
           <div className="flex flex-col gap-10 md:flex-row justify-between px-4 lg:px-0 py-10">
             <div className="flex flex-col gap-4">
               <Logo />
-              <Text className="text-zinc-600 max-w-56">{t("description")}</Text>
+              <Text as="p" className="text-zinc-600 max-w-56">
+                {t("description")}
+              </Text>
               <Text
                 size="textGeist"
                 className="text-zinc-700/50 dark:text-zinc-700"

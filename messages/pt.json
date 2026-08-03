@@ -140,6 +140,34 @@
       }
     ]
   },
+  "Projects": {
+    "eyebrow": "Projetos selecionados",
+    "title": "Problemas reais,",
+    "highlight": "soluções concretas.",
+    "items": {
+      "card1": {
+        "description": "Substituí planilhas de Excel por um sistema de ponto, férias e folha de pagamento para 200+ colaboradores.",
+        "title": "Plataforma SaaS de RH",
+        "link": "https://portfolio-staging-samuel.vercel.app/",
+        "techs": ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+        "src": "https://raw.githubusercontent.com/SamuelOliveiraa/help-desk/main/public/og-image.png"
+      },
+      "card2": {
+        "description": "Substituí planilhas de Excel por um sistema de ponto, férias e folha de pagamento para 200+ colaboradores.",
+        "title": "Plataforma SaaS de RH",
+        "link": "https://portfolio-staging-samuel.vercel.app/",
+        "techs": ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+        "src": "https://raw.githubusercontent.com/SamuelOliveiraa/help-desk/main/public/og-image.png"
+      },
+      "card3": {
+        "description": "Substituí planilhas de Excel por um sistema de ponto, férias e folha de pagamento para 200+ colaboradores.",
+        "title": "Plataforma SaaS de RH",
+        "link": "https://portfolio-staging-samuel.vercel.app/",
+        "techs": ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+        "src": "https://raw.githubusercontent.com/SamuelOliveiraa/help-desk/main/public/og-image.png"
+      }
+    }
+  },
   "Commitment": {
     "title": "Meu compromisso",
     "main_title": "Construído para",

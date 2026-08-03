@@ -1,17 +1,17 @@
 "use client";
 
-import { Text } from "@/components/common";
-import { ProcessItem } from "./components";
 import { FramerProvider } from "@/providers";
-import { useProcessItems } from "@/content";
+import { Text } from "../common";
+import ProjectItem from "./components/project-item";
 import { useTranslations } from "next-intl";
+import { useProjectsItems } from "@/content";
 
-export default function ProcessSection() {
-  const t = useTranslations("Process");
-  const items = useProcessItems();
+export default function Projects() {
+  const t = useTranslations("Projects");
+  const items = useProjectsItems();
   return (
     <FramerProvider>
-      <section className="border-y py-20 px-4 xl:px-0" id="process">
+      <section className="border-y py-20 px-4 xl:px-0" id="services">
         <div className="max-w-6xl mx-auto flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <Text
@@ -22,18 +22,20 @@ export default function ProcessSection() {
               {t("eyebrow")}
             </Text>
             <Text as="h2" size="titleMedium" className="max-w-3xl">
-              <span className="text-zinc-950">{t("title")} </span>
+              <span className="text-zinc-950">{t("title")}</span>{" "}
               {t("highlight")}
             </Text>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {items.map(item => (
-              <ProcessItem
-                key={item.number}
-                Icon={item.Icon}
-                number={item.number}
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
+            {items.map((item, index) => (
+              <ProjectItem
+                key={index}
                 title={item.title}
                 description={item.description}
+                link={item.link}
+                techs={item.techs}
+                src={item.src}
               />
             ))}
           </div>

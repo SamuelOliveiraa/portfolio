@@ -23,9 +23,11 @@ export default function ServiceItem({
     >
       <Icon className="text-emerald-500" />
 
-      <Text className="text-zinc-950">{title}</Text>
+      <Text as="h2" className="text-zinc-950">
+        {title}
+      </Text>
 
-      <Text size="textSmall" className="text-zinc-500 max-w-lg">
+      <Text as="p" size="textSmall" className="text-zinc-500 max-w-lg">
         {description}
       </Text>
     </div>

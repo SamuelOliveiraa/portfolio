@@ -51,7 +51,7 @@
     }
   },
   "About": {
-    "title_tag": "About me",
+    "eyebrow": "About me",
     "title": "Development focused",
     "highlight": "on what delivers a return.",
     "description1": "I have developed software for over two years, focused on solving real business problems — not merely writing elegant code. I handle the entire cycle: design, code, and delivery, giving your project my exclusive attention.",
@@ -154,25 +154,11 @@
         "link": "https://portfolio-staging-samuel.vercel.app/",
         "techs": ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
         "src": "https://raw.githubusercontent.com/SamuelOliveiraa/help-desk/main/public/og-image.png"
-      },
-      "card2": {
-        "description": "Replaced Excel spreadsheets with a time tracking, PTO, and payroll system for 200+ employees.",
-        "title": "HR SaaS Platform",
-        "link": "https://portfolio-staging-samuel.vercel.app/",
-        "techs": ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
-        "src": "https://raw.githubusercontent.com/SamuelOliveiraa/help-desk/main/public/og-image.png"
-      },
-      "card3": {
-        "description": "Replaced Excel spreadsheets with a time tracking, PTO, and payroll system for 200+ employees.",
-        "title": "HR SaaS Platform",
-        "link": "https://portfolio-staging-samuel.vercel.app/",
-        "techs": ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
-        "src": "https://raw.githubusercontent.com/SamuelOliveiraa/help-desk/main/public/og-image.png"
       }
     }
   },
   "Commitment": {
-    "title": "My commitment",
+    "eyebrow": "My commitment",
     "main_title": "Built to",
     "main_title_highlight": "last",
     "items": {

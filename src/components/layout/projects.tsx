@@ -11,7 +11,7 @@ export default function Projects() {
   const items = useProjectsItems();
   return (
     <FramerProvider>
-      <section className="border-y py-20 px-4 xl:px-0" id="services">
+      <section id="projects" className="border-y py-20 px-4 xl:px-0">
         <div className="max-w-6xl mx-auto flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <Text
@@ -27,7 +27,7 @@ export default function Projects() {
             </Text>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {items.map((item, index) => (
               <ProjectItem
                 key={index}

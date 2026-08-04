@@ -25,10 +25,11 @@ export default async function PrivacyPolicyPage() {
             >
               {t("privacy.title")}
             </Text>
-            <Text size="textSmall" className="text-zinc-500">
+            <Text as="p" size="textSmall" className="text-zinc-500">
               {t("updated")}
             </Text>
           </header>
+
           <article className="flex flex-col gap-8">
             {sections.map(section => (
               <section key={section.title} className="flex flex-col gap-3">
@@ -45,19 +46,19 @@ export default async function PrivacyPolicyPage() {
                 {section.items && (
                   <ul className="list-disc pl-5 text-zinc-500 space-y-2 leading-relaxed">
                     {section.items.map((item, index) => (
-                      <li key={index}>
-                        <Text
-                          size="textMedium"
-                          className="font-normal text-zinc-500"
-                        >
-                          {item.label && (
-                            <strong className="text-zinc-950 font-semibold">
-                              {item.label}{" "}
-                            </strong>
-                          )}
-                          {item.body}
-                        </Text>
-                      </li>
+                      <Text
+                        key={index}
+                        as="li"
+                        size="textMedium"
+                        className="font-normal text-zinc-500"
+                      >
+                        {item.label && (
+                          <strong className="text-zinc-950 font-semibold">
+                            {item.label}{" "}
+                          </strong>
+                        )}
+                        {item.body}
+                      </Text>
                     ))}
                   </ul>
                 )}

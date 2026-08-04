@@ -21,21 +21,28 @@ export default function ProjectItem({
 }: ProjectItemProps) {
   return (
     <div className="border">
-      <div className="w-full group overflow-hidden">
-        <Image
-          className="w-full h-full object-fill group-hover:scale-105 transition-all duration-300"
-          src={src}
-          alt={`Image of project ${title}`}
-          width={300}
-          height={200}
-        />
+      <div className="w-full relative aspect-video group overflow-hidden">
+        <Link
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full h-full"
+        >
+          <Image
+            className="w-full scale-105 hover:scale-110 transition-all duration-300"
+            src={src}
+            alt={`Image of project ${title}`}
+            width={300}
+            height={200}
+          />
+        </Link>
       </div>
 
       <div className="flex flex-col gap-4 p-6">
         <Text as="h2" size="titleSmall">
           {title}
         </Text>
-        <Text size="textSmall" className="text-zinc-500">
+        <Text as="p" size="textSmall" className="text-zinc-500">
           {description}
         </Text>
         <div className="flex items-center gap-2 flex-wrap">
@@ -44,8 +51,17 @@ export default function ProjectItem({
           ))}
         </div>
 
-        <Text size="textSmall" className="text-emerald-500 w-fit mt-4 block">
-          <Link href={link} className="flex items-center gap-2">
+        <Text
+          asChild
+          size="textSmall"
+          className="text-emerald-500 w-fit mt-4 block"
+        >
+          <Link
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+          >
             Ver Projeto
             <ExternalLink className="size-4" />
           </Link>

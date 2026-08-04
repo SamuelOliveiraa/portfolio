@@ -15,7 +15,7 @@ export default function About() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex flex-col md:justify-center gap-4">
             <Text size="textGeist" className="text-emerald-500 uppercase">
-              {t("title_tag")}
+              {t("eyebrow")}
             </Text>
 
             <Text as="h2" size="titleMedium" className="max-w-3xl">
@@ -23,11 +23,11 @@ export default function About() {
               {t("highlight")}
             </Text>
 
-            <Text size="textSmall" className="text-zinc-500 max-w-md">
+            <Text as="p" size="textSmall" className="text-zinc-500 max-w-md">
               {t("description1")}
             </Text>
 
-            <Text size="textSmall" className="text-zinc-500 max-w-md">
+            <Text as="p" size="textSmall" className="text-zinc-500 max-w-md">
               {t("description2")}
             </Text>
           </div>
@@ -40,15 +40,19 @@ export default function About() {
 
               {stacks.map((stack, index) => (
                 <div className="flex flex-col gap-3" key={`${stack}-${index}`}>
-                  <Text size="textGeist" className="text-zinc-500 uppercase">
+                  <Text
+                    as="h3"
+                    size="textGeist"
+                    className="text-zinc-500 uppercase"
+                  >
                     {stack.title}
                   </Text>
 
-                  <ul className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2">
                     {stack.stacks.map((item, index) => (
                       <TagTech key={`${stack.title}-${index}`}>{item}</TagTech>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               ))}
             </div>

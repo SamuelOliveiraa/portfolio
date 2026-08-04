@@ -51,7 +51,7 @@
     }
   },
   "About": {
-    "title_tag": "Sobre mim",
+    "eyebrow": "Sobre mim",
     "title": "Desenvolvimento focado",
     "highlight": "no que traz retorno.",
     "description1": "Desenvolvo software há mais de dois anos com foco em resolver problemas reais de negócio — não só em escrever código elegante. Sou responsável por todo o ciclo: design, código e entrega, garantindo atenção exclusiva ao seu projeto.",
@@ -149,30 +149,22 @@
     "highlight": "soluções concretas.",
     "items": {
       "card1": {
-        "description": "Substituí planilhas de Excel por um sistema de ponto, férias e folha de pagamento para 200+ colaboradores.",
-        "title": "Plataforma SaaS de RH",
-        "link": "https://portfolio-staging-samuel.vercel.app/",
-        "techs": ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
-        "src": "https://raw.githubusercontent.com/SamuelOliveiraa/help-desk/main/public/og-image.png"
-      },
-      "card2": {
-        "description": "Substituí planilhas de Excel por um sistema de ponto, férias e folha de pagamento para 200+ colaboradores.",
-        "title": "Plataforma SaaS de RH",
-        "link": "https://portfolio-staging-samuel.vercel.app/",
-        "techs": ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
-        "src": "https://raw.githubusercontent.com/SamuelOliveiraa/help-desk/main/public/og-image.png"
-      },
-      "card3": {
-        "description": "Substituí planilhas de Excel por um sistema de ponto, férias e folha de pagamento para 200+ colaboradores.",
-        "title": "Plataforma SaaS de RH",
-        "link": "https://portfolio-staging-samuel.vercel.app/",
-        "techs": ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+        "description": "Help Desk é uma aplicação full-stack criada para centralizar e gerenciar o ciclo de vida completo de chamados técnicos.",
+        "title": "Help Desk",
+        "link": "https://help-desk-samuel.vercel.app/",
+        "techs": [
+          "Next.js",
+          "React.js",
+          "Prisma ORM",
+          "PostgreSQL",
+          "Tailwind CSS"
+        ],
         "src": "https://raw.githubusercontent.com/SamuelOliveiraa/help-desk/main/public/og-image.png"
       }
     }
   },
   "Commitment": {
-    "title": "Meu compromisso",
+    "eyebrow": "Meu compromisso",
     "main_title": "Construído para",
     "main_title_highlight": "durar",
     "items": {

@@ -26,8 +26,12 @@ export default function ProcessItem({
       </div>
 
       <div className="flex flex-col gap-4">
-        <Text className="text-zinc-950">{title}</Text>
-        <Text className="text-zinc-500">{description}</Text>
+        <Text as="h3" className="text-zinc-950">
+          {title}
+        </Text>
+        <Text as="p" className="text-zinc-500">
+          {description}
+        </Text>
       </div>
     </div>
   );

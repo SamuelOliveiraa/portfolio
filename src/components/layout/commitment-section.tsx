@@ -30,15 +30,11 @@ export default function CommitmentSection() {
       <section className="border-y py-20 px-4 xl:px-0" id="commitment">
         <div className="max-w-6xl mx-auto flex flex-col gap-8">
           <div className="flex flex-col gap-2">
-            <Text
-              as="h2"
-              size="textGeist"
-              className="text-emerald-500 uppercase"
-            >
-              {t("title")}
+            <Text size="textGeist" className="text-emerald-500 uppercase">
+              {t("eyebrow")}
             </Text>
 
-            <Text size="titleMedium" className="max-w-3xl">
+            <Text as="h2" size="titleMedium" className="max-w-3xl">
               <span className="text-zinc-950">{t("main_title")}</span>{" "}
               {t("main_title_highlight")}.
             </Text>

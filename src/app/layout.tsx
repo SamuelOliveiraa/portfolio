@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     siteName: "Samuel Oliveira Portfolio",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Samuel Oliveira - Desenvolvedor Full Stack"
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
     title: "Samuel Oliveira | Desenvolvimento Web",
     description:
       "Portfólio profissional com foco em desenvolvimento web com alto impacto comercial e performance.",
-    images: ["/og-image.svg"]
+    images: ["/og-image.webp"]
   },
 
   icons: {

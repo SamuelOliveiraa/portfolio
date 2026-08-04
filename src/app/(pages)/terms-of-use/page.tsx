@@ -18,13 +18,13 @@ export default async function TermsOfUsePage() {
               {t("label")}
             </Text>
             <Text
-              size="titleMedium"
               as="h1"
+              size="titleMedium"
               className="text-zinc-950 font-bold"
             >
               {t("terms.title")}
             </Text>
-            <Text size="textSmall" className="text-zinc-500">
+            <Text as="p" size="textSmall" className="text-zinc-500">
               {t("updated")}
             </Text>
           </header>
@@ -35,8 +35,8 @@ export default async function TermsOfUsePage() {
                   {section.title}
                 </Text>
                 <Text
-                  size="textMedium"
                   as="p"
+                  size="textMedium"
                   className="text-zinc-500 leading-relaxed font-normal"
                 >
                   {section.body}

@@ -19,7 +19,7 @@ export default function MetricsComponent() {
           key={label}
           className={`flex flex-col items-center min-w-52 sm:w-auto flex-1 py-5 border ${index === 0 ? "lg:border-l-0" : ""} ${index === 3 ? "lg:border-r-0" : ""}`}
         >
-          <Text size="titleMedium">
+          <Text as="h2" size="titleMedium">
             <NumberTicker value={value} startValue={startValue} />
             {suffix}
           </Text>

@@ -152,7 +152,13 @@
         "description": "Help Desk é uma aplicação full-stack criada para centralizar e gerenciar o ciclo de vida completo de chamados técnicos.",
         "title": "Help Desk",
         "link": "https://help-desk-samuel.vercel.app/",
+        "link2": "https://github.com/SamuelOliveiraa/help-desk",
         "techs": [
+          "Next.js",
+          "React.js",
+          "Prisma ORM",
+          "PostgreSQL",
+          "Tailwind CSS",
           "Next.js",
           "React.js",
           "Prisma ORM",

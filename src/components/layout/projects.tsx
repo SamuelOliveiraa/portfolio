@@ -34,6 +34,7 @@ export default function Projects() {
                 title={item.title}
                 description={item.description}
                 link={item.link}
+                link2={item.link2}
                 techs={item.techs}
                 src={item.src}
               />

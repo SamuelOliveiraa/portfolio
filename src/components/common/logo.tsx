@@ -6,7 +6,7 @@ export default function Logo() {
     <Link href="/" className="w-fit">
       <Image
         alt="Logo"
-        src="/favicon.ico"
+        src="/icone.ico"
         width={50}
         height={50}
         className="size-9"

@@ -152,6 +152,7 @@
         "description": "Replaced Excel spreadsheets with a time tracking, PTO, and payroll system for 200+ employees.",
         "title": "HR SaaS Platform",
         "link": "https://portfolio-staging-samuel.vercel.app/",
+        "link2": "https://github.com/SamuelOliveiraa/help-desk",
         "techs": ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
         "src": "https://raw.githubusercontent.com/SamuelOliveiraa/help-desk/main/public/og-image.png"
       }

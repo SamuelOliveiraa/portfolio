@@ -8,6 +8,7 @@ interface ProjectItem {
   techs: string[];
   src: string;
   link: string;
+  link2: string;
 }
 
 export function useProjectsItems(): ProjectItem[] {
@@ -19,21 +20,16 @@ export function useProjectsItems(): ProjectItem[] {
       description: t("items.card1.description"),
       techs: t.raw("items.card1.techs") as string[],
       src: t("items.card1.src"),
-      link: t("items.card1.link")
+      link: t("items.card1.link"),
+      link2: t("items.card1.link2")
     }
     // {
     //   title: t("items.card2.title"),
     //   description: t("items.card2.description"),
     //   techs: t.raw("items.card2.techs") as string[],
     //   src: t("items.card2.src"),
-    //   link: t("items.card2.link")
-    // },
-    // {
-    //   title: t("items.card3.title"),
-    //   description: t("items.card3.description"),
-    //   techs: t.raw("items.card3.techs") as string[],
-    //   src: t("items.card3.src"),
-    //   link: t("items.card3.link")
+    //   link: t("items.card2.link"),
+    //   link2: t("items.card1.link2")
     // }
   ];
 }

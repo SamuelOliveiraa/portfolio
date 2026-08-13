@@ -10,6 +10,7 @@ interface ProjectItemProps {
   description: string;
   techs: string[];
   link: string;
+  link2: string;
 }
 
 export default function ProjectItem({
@@ -17,11 +18,13 @@ export default function ProjectItem({
   title,
   description,
   techs,
-  link
+  link,
+  link2
 }: ProjectItemProps) {
+  const techsToShow = techs.slice(0, 6);
   return (
-    <div className="border">
-      <div className="w-full relative aspect-video group overflow-hidden">
+    <div className="border rounded-md">
+      <div className="w-full relative aspect-video group overflow-hidden rounded-tl-md rounded-tr-md">
         <Link
           href={link}
           target="_blank"
@@ -46,26 +49,47 @@ export default function ProjectItem({
           {description}
         </Text>
         <div className="flex items-center gap-2 flex-wrap">
-          {techs.map(tech => (
-            <TagTech key={tech}>{tech}</TagTech>
+          {techsToShow.map((tech, index) => (
+            <TagTech key={`item-${tech}-${index}`}>{tech}</TagTech>
           ))}
+          {techs.length > 6 && (
+            <TagTech>+ {techs.length - techsToShow.length}</TagTech>
+          )}
         </div>
 
-        <Text
-          asChild
-          size="textSmall"
-          className="text-emerald-500 w-fit mt-4 block"
-        >
-          <Link
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2"
+        <div className="flex items-center gap-4">
+          <Text
+            asChild
+            size="textSmall"
+            className="text-emerald-500 w-fit mt-4 block"
           >
-            Ver Projeto
-            <ExternalLink className="size-4" />
-          </Link>
-        </Text>
+            <Link
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              Ver projeto
+              <ExternalLink className="size-4" />
+            </Link>
+          </Text>
+
+          <Text
+            asChild
+            size="textSmall"
+            className="text-emerald-500 w-fit mt-4 block"
+          >
+            <Link
+              href={link2}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              Github
+              <ExternalLink className="size-4" />
+            </Link>
+          </Text>
+        </div>
       </div>
     </div>
   );

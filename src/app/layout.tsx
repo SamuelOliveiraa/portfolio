@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_BASE_URL || "https://samuel-oliveira.com"
   ),
   title: {
-    default: "Samuel Oliveira | Desenvolvimento Web",
+    default: "Samuel Oliveira Dev | Desenvolvimento Web",
     template: "%s | Samuel Oliveira"
   },
   description:

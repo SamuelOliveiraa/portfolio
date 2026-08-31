@@ -24,7 +24,7 @@ export default function Footer() {
                 size="textGeist"
                 className="text-zinc-700/50 dark:text-zinc-700"
               >
-                Samuel Oliveira de Araujo · CNPJ 12.345.678/0001-90
+                Samuel Oliveira Dev · CNPJ 12.345.678/0001-90
               </Text>
               <SocialLinks />
             </div>

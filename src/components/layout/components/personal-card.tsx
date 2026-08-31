@@ -35,7 +35,7 @@ export default function PersonalCard() {
 
             <div className="text-center sm:text-left flex flex-col gap-1">
               <Text as="p" size="textMedium">
-                Samuel Oliveira
+                Samuel Oliveira - Dev
               </Text>
               <Text as="p" size="textSmall" className="text-zinc-500">
                 {t("message")}

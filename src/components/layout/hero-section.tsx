@@ -48,7 +48,7 @@ export default function HeroSection() {
             </Link>
           </ButtonComponent>
           <ButtonComponent variant="outline" className="w-fit" asChild>
-            <ScrollLink targetId="about">{t("projects")}</ScrollLink>
+            <ScrollLink targetId="projects">{t("projects")}</ScrollLink>
           </ButtonComponent>
         </div>
         <MetricsComponent />

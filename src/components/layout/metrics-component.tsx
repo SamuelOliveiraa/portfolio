@@ -7,10 +7,10 @@ import { useTranslations } from "next-intl";
 export default function MetricsComponent() {
   const t = useTranslations("Hero.metrics");
   const metrics = [
-    [2, "+", "experience", 40],
-    [8, "+", "projects"],
-    [50, "+", "clients"],
-    [97, "%", "satisfaction"]
+    [1, "+", "experience", 40],
+    [2, "+", "projects", 40],
+    [2, "+", "clients", 40],
+    [98, "%", "satisfaction"]
   ] as const;
   return (
     <section className="flex flex-row flex-wrap border-t mt-10">

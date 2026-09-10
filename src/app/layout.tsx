@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_BASE_URL || "https://samuel-oliveira.com"
   ),
   title: {
-    default: "Samuel Oliveira | Desenvolvedor Freelancer Web",
+    default: "Samuel Oliveira | Desenvolvedor Web Freelancer",
     template: "%s | Samuel Oliveira"
   },
   description:
@@ -94,7 +94,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
-    title: "Samuel Oliveira | Desenvolvedor Freelancer Web",
+    title: "Samuel Oliveira | Desenvolvedor Web Freelancer",
     description:
       "Desenvolvedor freelancer especializado em sites institucionais, landing pages e soluções digitais para empresas e empreendedores.",
     siteName: "Samuel Oliveira Portfolio",
@@ -110,7 +110,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Samuel Oliveira | Desenvolvedor Freelancer Web",
+    title: "Samuel Oliveira | Desenvolvedor Web Freelancer",
     description:
       "Desenvolvimento web sob medida para empresas e empreendedores. Sites modernos, landing pages otimizadas e soluções digitais de alto impacto.",
     images: ["/og-image.webp"]
@@ -122,6 +122,130 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest"
 };
+
+export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || "https://samuel-oliveira.com"
+  ),
+  title: {
+    default: "Samuel Oliveira | Desenvolvedor Web Freelancer",
+    template: "%s | Samuel Oliveira"
+  },
+  description:
+    "Desenvolvedor freelancer especializado em sites modernos, landing pages e soluções digitais sob medida para empresas e empreendedores.",
+  keywords: [
+    "Desenvolvedor Freelancer",
+    "Freelancer Web",
+    "Criação de Sites",
+    "Landing Pages",
+    "Sites Institucionais",
+    "E-commerce",
+    "Lojas Virtuais",
+    "Sites Responsivos",
+    "Aplicações Web",
+    "Web Apps",
+    "Consultoria Web",
+    "Sites para Empresas",
+    "Sites para Empreendedores",
+    "Sites para Negócios Locais",
+    "Marketing Digital",
+    "Conversão Online",
+    "Desenvolvedor Full Stack",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Tailwind CSS",
+    "Front-end Freelancer",
+    "Back-end Freelancer",
+    "UX Design",
+    "UI Design",
+    "SEO",
+    "Otimização de Sites",
+    "Performance Web",
+    "Desenvolvedor Web Vila Velha",
+    "Desenvolvedor Web Espírito Santo",
+    "Samuel Oliveira Dev",
+    "Portfólio Samuel Oliveira"
+  ],
+  authors: [
+    { name: "Samuel Oliveira", url: `${process.env.NEXT_PUBLIC_BASE_URL}` }
+  ],
+  creator: "Samuel Oliveira",
+  publisher: "Samuel Oliveira",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+
+  alternates: {
+    canonical: "/"
+  },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
+    title: "Samuel Oliveira | Desenvolvedor Web Freelancer",
+    description:
+      "Sites institucionais, landing pages e soluções digitais sob medida para empresas e empreendedores.",
+    siteName: "Samuel Oliveira Portfolio",
+    images: [
+      {
+        url: "/og-image.webp",
+        width: 1200,
+        height: 630,
+        alt: "Samuel Oliveira - Desenvolvedor Freelancer Full Stack"
+      }
+    ]
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Samuel Oliveira | Desenvolvedor Web Freelancer",
+    description:
+      "Desenvolvimento web sob medida para empresas e empreendedores. Sites modernos e landing pages otimizadas.",
+    images: ["/og-image.webp"],
+    site: "@seuusuario" // ajuste para seu @ real no Twitter/X
+  },
+
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon.svg", type: "image/svg+xml" }
+    ],
+    apple: "/favicon-32x32.png"
+  },
+  manifest: "/site.webmanifest",
+
+  other: {
+    // JSON-LD inline para dados estruturados
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Samuel Oliveira | Desenvolvedor Web Freelancer",
+      "url": "https://samuel-oliveira.com",
+      "description":
+        "Desenvolvedor freelancer especializado em sites modernos, landing pages e soluções digitais sob medida para empresas e empreendedores."
+    })
+  }
+};
+
 
 
 export const viewport: Viewport = {

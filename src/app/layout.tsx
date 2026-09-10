@@ -22,24 +22,45 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_BASE_URL || "https://samuel-oliveira.com"
   ),
   title: {
-    default: "Samuel Oliveira Dev | Desenvolvimento Web",
+    default: "Samuel Oliveira | Desenvolvedor Freelancer Web",
     template: "%s | Samuel Oliveira"
   },
   description:
-    "Portfólio profissional de Samuel Oliveira para desenvolvimento de sites, landing pages e soluções web com foco em conversão, performance e experiência do usuário.",
+    "Desenvolvedor freelancer especializado em sites modernos, landing pages otimizadas e soluções digitais sob medida. Ajudo empresas e empreendedores a transformar presença online em resultados reais.",
   keywords: [
+    "Desenvolvedor Freelancer",
+    "Freelancer Web",
+    "Criação de Sites",
+    "Landing Pages",
+    "Sites Institucionais",
+    "E-commerce",
+    "Lojas Virtuais",
+    "Sites Responsivos",
+    "Aplicações Web",
+    "Web Apps",
+    "Consultoria Web",
+    "Sites para Empresas",
+    "Sites para Empreendedores",
+    "Sites para Negócios Locais",
+    "Marketing Digital",
+    "Conversão Online",
     "Desenvolvedor Full Stack",
-    "Desenvolvedor React",
+    "React",
     "Next.js",
     "TypeScript",
     "Node.js",
     "Tailwind CSS",
-    "Desenvolvedor Web",
-    "Vila Velha",
-    "Espírito Santo",
-    "Front-end",
-    "Back-end",
-    "Portfólio"
+    "Front-end Freelancer",
+    "Back-end Freelancer",
+    "UX Design",
+    "UI Design",
+    "SEO",
+    "Otimização de Sites",
+    "Performance Web",
+    "Desenvolvedor Web Vila Velha",
+    "Desenvolvedor Web Espírito Santo",
+    "Samuel Oliveira Dev",
+    "Portfólio Samuel Oliveira"
   ],
   authors: [
     { name: "Samuel Oliveira", url: `${process.env.NEXT_PUBLIC_BASE_URL}` }
@@ -73,25 +94,25 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
-    title: "Samuel Oliveira | Desenvolvimento Web",
+    title: "Samuel Oliveira | Desenvolvedor Freelancer Web",
     description:
-      "Portfólio profissional de Samuel Oliveira com foco em sites institucionais, landing pages e soluções web voltadas para conversão.",
+      "Desenvolvedor freelancer especializado em sites institucionais, landing pages e soluções digitais para empresas e empreendedores.",
     siteName: "Samuel Oliveira Portfolio",
     images: [
       {
         url: "/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Samuel Oliveira - Desenvolvedor Full Stack"
+        alt: "Samuel Oliveira - Desenvolvedor Freelancer Full Stack"
       }
     ]
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Samuel Oliveira | Desenvolvimento Web",
+    title: "Samuel Oliveira | Desenvolvedor Freelancer Web",
     description:
-      "Portfólio profissional com foco em desenvolvimento web com alto impacto comercial e performance.",
+      "Desenvolvimento web sob medida para empresas e empreendedores. Sites modernos, landing pages otimizadas e soluções digitais de alto impacto.",
     images: ["/og-image.webp"]
   },
 
@@ -101,6 +122,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest"
 };
+
 
 export const viewport: Viewport = {
   themeColor: [

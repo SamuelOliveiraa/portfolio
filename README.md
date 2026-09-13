@@ -1,120 +1,55 @@
-# Portfólio de Vendas — Samuel Oliveira
+# 🚀 Portfólio Profissional — Samuel Oliveira | Desenvolvedor Web Freelancer
 
-## Visão Geral
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)
+![React](https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38BDF8?style=flat-square&logo=tailwind-css)
 
-Este projeto é um portfólio profissional desenvolvido com Next.js, React e TypeScript, com foco em conversão, autoridade digital e geração de oportunidades de negócio. A proposta é apresentar Samuel Oliveira como especialista em desenvolvimento web, reforçando confiança para clientes que buscam soluções modernas, rápidas e orientadas a resultados.
+Este é o repositório do meu portfólio profissional e plataforma de serviços freelancers. O projeto foi desenvolvido com foco em alta performance, SEO, internacionalização e arquitetura moderna de software.
 
-## Objetivo do Projeto
+🔗 **Acesse a aplicação em produção:** [samuel-oliveira.com](https://samuel-oliveira.com)
 
-O objetivo principal deste projeto é funcionar como um portfólio de vendas, ou seja, não apenas mostrar trabalhos, mas também:
+---
 
-- gerar confiança para visitantes e potenciais clientes;
-- comunicar claramente os serviços oferecidos;
-- estimular contato via WhatsApp, e-mail e redes sociais;
-- destacar benefícios como performance, acessibilidade, SEO e experiência do usuário;
-- transformar tráfego em oportunidade comercial.
+## 🎯 Sobre o Freelancer & Proposta de Valor
 
-## Principais Características
+Sou **Samuel Oliveira**, Desenvolvedor Full Stack atuando no mercado freelancer com criação de aplicações web de alto impacto. Ajudo empresas, infoprodutores e profissionais liberais a transformar sua presença digital por meio de:
 
-- Interface moderna e responsiva;
-- Design focado em conversão;
-- Seções estratégicas: destaque, serviços, sobre, processo, FAQ e contato;
-- Navegação fluida e otimizada para dispositivos móveis;
-- Suporte a múltiplos idiomas;
-- Integração com formulário de contato e envio de e-mails;
-- Otimizações para SEO, acessibilidade e performance.
+- **Landing Pages de Alta Conversão:** Estruturadas com copy estratégica, alta velocidade e foco em geração de leads/vendas.
+- **Sites Institucionais Sob Medida:** Presença digital sólida, moderna e totalmente otimizada para motores de busca (SEO).
+- **Aplicações Web Customizadas:** Dashboards, sistemas de chamados (Help Desk) e painéis administrativos utilizando Node.js e React/Next.js.
 
-## Stack Tecnológica
+---
 
-- Next.js 16
-- React 19
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- next-intl
-- react-hook-form
-- zod
-- nodemailer
+## ✨ Destaques Técnicos do Projeto
 
-## Estrutura do Projeto
+- **Arquitetura Next.js App Router:** Aproveitamento completo de Server Components (RSC) para tempo de carregamento mínimo e indexação SEO imediata.
+- **Internacionalização (i18n):** Suporte nativo a múltiplos idiomas via `next-intl`.
+- **E-mail & Captação de Leads:** Integração dinâmica com `Nodemailer`, `react-hook-form` e validação com `Zod`.
+- **Animações e Acessibilidade:** Transições fluidas com `Framer Motion`, suporte a tema Claro/Escuro (`next-themes`) e navegação por teclado totalmente adaptada (A11y).
+- **SEO & Metadados Otimizados:** Implementação completa de Open Graph (OG Images), JSON-LD, `sitemap.xml` e `robots.txt` dinâmicos.
+
+---
+
+## 🛠️ Stack Tecnológica
+
+- **Core:** Next.js 16, React 19, TypeScript
+- **Estilização:** Tailwind CSS, Lucide React
+- **Internacionalização:** `next-intl`
+- **Formulários & Validação:** `react-hook-form`, `zod`
+- **Serviços & Email:** `Nodemailer`, `@next/third-parties/google` (Google Analytics)
+
+---
+
+## 📂 Estrutura do Projeto
 
 ```text
 src/
-  app/                # Rotas e layout principal
-  components/         # Componentes reutilizáveis e de layout
-  constants/          # Dados e links constantes
-  content/            # Textos e conteúdos dinâmicos
-  lib/                # Utilitários
-  providers/          # Providers de contexto e animações
-  templates/          # Templates de e-mail
+ ├── app/            # Rotas, layouts, sitemap e robots.txt
+ ├── components/     # Componentes de interface, layout e UI reutilizáveis
+ ├── constants/      # Constantes Globais e conteúdos fixos
+ ├── content/        # Textos e traduções da aplicação
+ ├── lib/            # Configurações de utilitários e validações
+ ├── providers/      # Providers de tema, animação e contexto
+ └── templates/      # Templates de e-mails em HTML/JSX
 ```
-
-## Requisitos
-
-Antes de iniciar, certifique-se de ter instalado:
-
-- Node.js 20+
-- npm ou pnpm
-
-## Instalação
-
-```bash
-npm install
-```
-
-## Execução Local
-
-```bash
-npm run dev
-```
-
-A aplicação estará disponível em http://localhost:3000.
-
-## Scripts Disponíveis
-
-```bash
-npm run dev      # inicia o ambiente de desenvolvimento
-npm run build    # gera a build de produção
-npm run start    # inicia a aplicação em modo produção
-npm run lint     # executa a análise de código com ESLint
-```
-
-## Variáveis de Ambiente
-
-Crie um arquivo .env.local na raiz do projeto com as variáveis necessárias, por exemplo:
-
-```env
-GA_ID=seu-google-analytics-id
-EMAIL_USER=seu-email
-EMAIL_PASS=sua-senha
-```
-
-## SEO e Acessibilidade
-
-Este projeto foi estruturado com foco em:
-
-- metadata otimizada para compartilhamento social;
-- tags de Open Graph e Twitter Cards;
-- navegação por teclado;
-- semântica correta de headings e seções;
-- foco visível em elementos interativos;
-- suporte a tema claro/escuro;
-- redução de movimento para usuários que preferem menos animações.
-
-## Melhorias Recomendadas para Score de Lighthouse
-
-Para manter resultados próximos de 95%+, recomenda-se:
-
-- manter imagens otimizadas e com dimensões explícitas;
-- continuar priorizando conteúdo acima da dobra;
-- reduzir JavaScript não essencial para o primeiro carregamento;
-- validar continuamente textos e links com foco em clareza comercial;
-- monitorar performance em produção com Lighthouse e Web Vitals.
-
-## Autor
-
-Samuel Oliveira
-
-## Licença
-
-Este projeto é de uso pessoal e profissional. Consulte o autor antes de reutilizar partes significativas do código.

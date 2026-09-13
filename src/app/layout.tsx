@@ -98,8 +98,7 @@ export const metadata: Metadata = {
     url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
     title: "Samuel Oliveira | Desenvolvedor Web Freelancer",
     description:
-      "Sites institucionais, landing pages e soluções digitais sob medida para empresas e empreendedores.",
-    siteName: "Samuel Oliveira Portfolio",
+      "Desenvolvedor freelancer especializado em sites modernos, landing pages e soluções digitais sob medida para empresas e empreendedores.",
     images: [
       {
         url: "/og-image.webp",
@@ -114,7 +113,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Samuel Oliveira | Desenvolvedor Web Freelancer",
     description:
-      "Desenvolvimento web sob medida para empresas e empreendedores. Sites modernos e landing pages otimizadas.",
+      "Desenvolvedor freelancer especializado em sites modernos, landing pages e soluções digitais sob medida para empresas e empreendedores.",
     images: ["/og-image.webp"],
   },
 

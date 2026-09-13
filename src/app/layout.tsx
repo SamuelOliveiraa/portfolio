@@ -9,12 +9,14 @@ import { CircleCheckBig, CircleX } from "lucide-react";
 import { Header, Footer } from "@/components/layout";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-const geist_mono = Geist_Mono({
-  subsets: ["latin"]
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono"
 });
 
 const inter = Inter({
-  subsets: ["latin"]
+  subsets: ["latin"],
+  variable: "--font-inter"
 });
 
 export const metadata: Metadata = {
@@ -154,11 +156,12 @@ export default async function RootLayout({
 }>) {
   const locale = await getLocale();
   const messages = await getMessages();
+  const gaId = process.env.NEXT_PUBLIC_GA_ID || process.env.GA_ID;
 
   return (
     <html
       lang={locale}
-      className={`${inter.className} ${geist_mono.className}`}
+      className={`${inter.variable} ${geistMono.variable} ${inter.className}`}
       suppressHydrationWarning
     >
       <body className="min-h-screen flex flex-col bg-background text-foreground antialiased">
@@ -199,7 +202,7 @@ export default async function RootLayout({
               {children}
             </main>
             <Footer />
-            <GoogleAnalytics gaId={process.env.GA_ID!} />
+            {gaId && <GoogleAnalytics gaId={gaId} />}
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

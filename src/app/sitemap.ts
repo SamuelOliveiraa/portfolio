@@ -1,21 +1,24 @@
 import { MetadataRoute } from "next";
 
+const baseUrl =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://samuel-oliveira.com";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
+      url: `${baseUrl}/`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1.0
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/privacy-policy`,
+      url: `${baseUrl}/privacy-policy`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/terms-of-use`,
+      url: `${baseUrl}/terms-of-use`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8

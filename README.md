@@ -1,4 +1,4 @@
-# Samuel Oliveira | [Portfólio](https://portfolio-samuel-oliveira.vercel.app/pt)
+# Samuel Oliveira | [Portfólio](https://portfolio-samuel-oliveira.vercel.app/pt) 
 
 ![Image of Portfolio](public/og-image.png)
 
